@@ -1,25 +1,21 @@
 import "./App.css";
-import { useTranslation } from "react-i18next";
-import { Button } from "@/components/ui/button";
-import { useEffect } from "react";
+// import { useTranslation } from "react-i18next";
+// import { Button } from "@/components/ui/button";
+import { Route, Routes } from "react-router-dom";
+import Layout from "./components/layout";
+import Home from "./components/home";
+import Content from "./components/content";
 
 function App() {
-  const { t, i18n } = useTranslation();
-
-  useEffect(() => {
-    const lng = navigator.language;
-    i18n.changeLanguage(lng);
-  }, [])
-  
-  const lng = navigator.language;
-
   return (
     <>
-      <p>{t('greeting.hello')}</p>
-      <p>
-        Browser language: {lng}
-      </p>
-      <Button className="bg-slate-600">Click me</Button>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="content" element={<Content />} />
+        </Route>
+        <Route path="*" element={<div>404 Page not found</div>} />
+      </Routes>
     </>
   );
 }
