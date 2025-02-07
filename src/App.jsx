@@ -5,6 +5,11 @@ import Layout from "./components/layout";
 import Content from "./components/content";
 import Surgery from './pages/surgery'
 import Details from "./pages/details";
+import Error from "./pages/error";
+
+// import Contact from "./pages/contact";
+// import Appointment from "./pages/appointment";
+
 
 function App() {
   return (
@@ -15,8 +20,13 @@ function App() {
           {/* <Route path="content" element={<Content />} /> */}
           <Route path="/services" element={<Details />} />
           <Route path="/surgery" element={<Surgery />} />
+
+          {/* <Route path="/contact" element={<Contact />} />
+          <Route path="/appointment" element={<Appointment />} /> */}
+
+          <Route path="*" element={<Error />} />
+
         </Route>
-        <Route path="*" element={<div>404 Page not found</div>} />
       </Routes>
     </>
   );

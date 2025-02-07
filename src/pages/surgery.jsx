@@ -13,7 +13,7 @@ import {
   SelectValue,
   CustomInput,
 } from "@/ui/select"
-import { Phone } from "lucide-react"; // Import icons from lucide-react
+import { Phone } from "lucide-react"; 
 
 
 function Surgery() {
@@ -29,21 +29,15 @@ function Surgery() {
 <div className="w-[100%]">
 
 <div className="w-[100%] bg-cover bg-no-repeat md:flex justify-between xl:px-32 lg:px-20 sm:px-2 items-center py-[200px] bg-center h-full mb-[30px]"
-  style={{ backgroundImage: "url('/img/showcase1.png')" }}>
-  <div className="flex flex-col gap-10">
-    <h3 className="font-bold text-xl opacity-50">
-      We are here for your care 
-    </h3>
-    <h1 className="text-5xl font-bold">Our Services</h1>
+  style={{ backgroundImage: "url('../src/assets/img/showcase1.png')" }}>
+<div className="flex flex-col gap-10 sm:ml-10 md:ml-0 ml-10 ">
+<h3 className="font-bold text-xl opacity-50">We are here for your care </h3>
+  <h1 className="text-6xl font-bold text-[#223545]">Our Services</h1>
   </div>
-  <div className="flex gap-1 font-semibold">
-    <Link to="/" className="opacity-50 text-gray-900 no-underline">
-      Home
-    </Link>
-    <p>|</p>
-    <Link to="/services" className="text-red-600 no-underline">
-      Services
-    </Link>
+<div className="flex gap-1 font-semibold sm:ml-10 md:ml-0 ml-10 sm:mt-10 md:mt-0 mt-10 ">
+  <Link to="/" onClick={() => window.scrollTo(0, 0)} className="opacity-50 text-gray-900 no-underline">Home</Link>
+<p>|</p>
+ <Link to="/services" onClick={() => window.scrollTo(0, 0)} className="text-red-600 no-underline"> Services </Link>
   </div>
 </div>
 
@@ -54,7 +48,7 @@ function Surgery() {
 <div className="relative flex flex-col w-[100%] sm:w-1/2 lg:w-2./5 text-end justify-center">
   
 <div className="flex justify-end">
-<img className="w-32 sm:w-40 lg:w-48" src="../img/back_icon.png" alt="back" />
+<img className="w-32 sm:w-40 lg:w-48" src="../src/assets/img/back_icon.png" alt="back" />
 </div>
 
 <div className="absolute inset-0">
@@ -80,53 +74,53 @@ anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit volupta
 <div className="flex flex-row flex-wrap mx-auto w-[88%] mb-24">
 
 <div className="flex flex-col mx-auto text-center w-[390px] h-[450px] justify-center cursor-pointer transition-shadow duration-500 hover:shadow-2xl">
-<img className="w-22 sm:w-22 lg:w-28 mx-auto" src="../img/1.png" alt="1" />
+<img className="w-22 sm:w-22 lg:w-28 mx-auto" src="../src/assets/img/1.png" alt="1" />
 <p className="text-2xl font-bold mt-8 cursor-pointer text-[#223545] hover:text-[#8fb569] transition-colors duration-500">Body Surgery</p>
 <p className="text-xs sm:text-sm lg:text-base leading-relaxed text-gray-500 my-4">Ut enim ad minim veniam, quis nostrud <br></br>exercitation ullamco laboris nisi ut <br></br>aliquip ex ea commodo.</p>
-<p className="text-gray-500 mb-10 hover:text-[#8fb569] font-bold cursor-pointer transition-colors duration-500">Read More</p>
+<Link to="/services" onClick={() => window.scrollTo(0, 0)}> <p className="text-gray-500 mb-10 hover:text-[#8fb569] font-bold cursor-pointer transition-colors duration-500">Read More</p> </Link>
 </div> 
 
 <div className="flex flex-col mx-auto text-center w-[390px] h-[450px] justify-center cursor-pointer transition-shadow duration-500 hover:shadow-2xl">
-<img className="w-22 sm:w-22 lg:w-28 mx-auto" src="../img/2.png" alt="1" />
+<img className="w-22 sm:w-22 lg:w-28 mx-auto" src="../src/assets/img/2.png" alt="1" />
 <p className="text-2xl font-bold mt-8 cursor-pointer text-[#223545] hover:text-[#8fb569] transition-colors duration-500">Dental Care</p>
 <p className="text-xs sm:text-sm lg:text-base leading-relaxed text-gray-500 my-4">Ut enim ad minim veniam, quis nostrud <br></br>exercitation ullamco laboris nisi ut <br></br>aliquip ex ea commodo.</p>
-<p className="text-gray-500 mb-10 hover:text-[#8fb569] font-bold cursor-pointer transition-colors duration-500">Read More</p>
+<Link to="/services" onClick={() => window.scrollTo(0, 0)}> <p className="text-gray-500 mb-10 hover:text-[#8fb569] font-bold cursor-pointer transition-colors duration-500">Read More</p> </Link>
 </div> 
 
 <div className="flex flex-col mx-auto text-center w-[390px] h-[450px] justify-center cursor-pointer transition-shadow duration-500 hover:shadow-2xl">
-<img className="w-22 sm:w-22 lg:w-28 mx-auto" src="../img/3.png" alt="1" />
+<img className="w-22 sm:w-22 lg:w-28 mx-auto" src="../src/assets/img/3.png" alt="1" />
 <p className="text-2xl font-bold mt-8 cursor-pointer text-[#223545] hover:text-[#8fb569] transition-colors duration-500">Service-Content</p>
 <p className="text-xs sm:text-sm lg:text-base leading-relaxed text-gray-500 my-4">Ut enim ad minim veniam, quis nostrud <br></br>exercitation ullamco laboris nisi ut <br></br>aliquip ex ea commodo.</p>
-<p className="text-gray-500 mb-10 hover:text-[#8fb569] font-bold cursor-pointer transition-colors duration-500">Read More</p>
+<Link to="/services" onClick={() => window.scrollTo(0, 0)}> <p className="text-gray-500 mb-10 hover:text-[#8fb569] font-bold cursor-pointer transition-colors duration-500">Read More</p> </Link>
 </div> 
 
 
 <div className="flex flex-col mx-auto text-center w-[390px] h-[450px] justify-center cursor-pointer transition-shadow duration-500 hover:shadow-2xl">
-<img className="w-22 sm:w-22 lg:w-28 mx-auto" src="../img/4.png" alt="1" />
+<img className="w-22 sm:w-22 lg:w-28 mx-auto" src="../src/assets/img/4.png" alt="1" />
 <p className="text-2xl font-bold mt-8 cursor-pointer text-[#223545] hover:text-[#8fb569] transition-colors duration-500">Blood Cancer</p>
 <p className="text-xs sm:text-sm lg:text-base leading-relaxed text-gray-500 my-4">Ut enim ad minim veniam, quis nostrud <br></br>exercitation ullamco laboris nisi ut <br></br>aliquip ex ea commodo.</p>
-<p className="text-gray-500 mb-10 hover:text-[#8fb569] font-bold cursor-pointer transition-colors duration-500">Read More</p>
+<Link to="/services" onClick={() => window.scrollTo(0, 0)}> <p className="text-gray-500 mb-10 hover:text-[#8fb569] font-bold cursor-pointer transition-colors duration-500">Read More</p> </Link>
 </div> 
 
 <div className="flex flex-col mx-auto text-center w-[390px] h-[450px] justify-center cursor-pointer transition-shadow duration-500 hover:shadow-2xl">
-<img className="w-22 sm:w-22 lg:w-28 mx-auto" src="../img/5.png" alt="1" />
+<img className="w-22 sm:w-22 lg:w-28 mx-auto" src="../src/assets/img/5.png" alt="1" />
 <p className="text-2xl font-bold mt-8 cursor-pointer text-[#223545] hover:text-[#8fb569] transition-colors duration-500">Neurology Surgery</p>
 <p className="text-xs sm:text-sm lg:text-base leading-relaxed text-gray-500 my-4">Ut enim ad minim veniam, quis nostrud <br></br>exercitation ullamco laboris nisi ut <br></br>aliquip ex ea commodo.</p>
-<p className="text-gray-500 mb-10 hover:text-[#8fb569] font-bold cursor-pointer transition-colors duration-500">Read More</p>
+<Link to="/services" onClick={() => window.scrollTo(0, 0)}> <p className="text-gray-500 mb-10 hover:text-[#8fb569] font-bold cursor-pointer transition-colors duration-500">Read More</p> </Link>
 </div> 
 
 <div className="flex flex-col mx-auto text-center w-[390px] h-[450px] justify-center  cursor-pointer transition-shadow duration-500 hover:shadow-2xl">
-<img className="w-22 sm:w-22 lg:w-28 mx-auto" src="../img/6.png" alt="1" />
+<img className="w-22 sm:w-22 lg:w-28 mx-auto" src="../src/assets/img/6.png" alt="1" />
 <p className="text-2xl font-bold mt-8 cursor-pointer text-[#223545] hover:text-[#8fb569] transition-colors duration-500">Allergic Issue</p>
 <p className="text-xs sm:text-sm lg:text-base leading-relaxed text-gray-500 my-4">Ut enim ad minim veniam, quis nostrud <br></br>exercitation ullamco laboris nisi ut <br></br>aliquip ex ea commodo.</p>
-<p className="text-gray-500 mb-10 hover:text-[#8fb569] font-bold cursor-pointer transition-colors duration-500">Read More</p>
+<Link to="/services" onClick={() => window.scrollTo(0, 0)}> <p className="text-gray-500 mb-10 hover:text-[#8fb569] font-bold cursor-pointer transition-colors duration-500">Read More</p> </Link>
 </div> 
 </div>
 
 
 
 <div className="relative inset-0 w-[100%] bg-cover bg-no-repeat md:flex justify-between xl:px-32 lg:px-20 sm:px-2 items-center py-[120px] bg-center h-full mb-[30px] "
-  style={{ backgroundImage: "url('/img/showcase2.png')" }}>
+  style={{ backgroundImage: "url('../src/assets/img/showcase2.png')" }}>
   <div className="absolute inset-0 bg-[#344755] opacity-90"></div>
 {/* <div className="relative inset-0 bg-[#344755] opacity-90"> */}
 
@@ -143,7 +137,7 @@ overnight services or live-in services, please <br />
 call (+00)888.666.88 so we can discuss <br />
 prices with you.</p> 
 
-<Link  to="/services" ><Button variant="default" size="custom">MAKE APPOINTMENT</Button> </Link>
+<Link  to="/appointment" onClick={() => window.scrollTo(0, 0)}><Button variant="default" size="custom">MAKE APPOINTMENT</Button> </Link>
 </div>
 
 <div className="flex bg-white text-black w-[90%] max-w-[450px] h-[500px] rounded mx-auto my-auto sm:w-[90%] sm:h-[480px] sm:flex sm:justify-center md:w-[450px] md:h-[575px] md:flex md:justify-center lg:w-[450px] lg:h-[575px] lg:flex lg:justify-center">
@@ -193,7 +187,7 @@ prices with you.</p>
 
 <div className="flex flex-col lg:flex-row justify-between gap-10 bg-white w-[80%] mx-auto shadow-lg mt-20"> 
 <div className="flex justify-center">
-<img src="../img/doc1.png" className="w-[600px]  sm:w-[600px] md:w-[600px] lg:w-[600px] sm:h-[500px] md:h-[500px] lg:h-[500px]" />
+<img src="../src/assets/img/doc1.png" className="w-[600px]  sm:w-[600px] md:w-[600px] lg:w-[600px] sm:h-[500px] md:h-[500px] lg:h-[500px]" />
 </div>
 
 <div className="w-[100%] px-4 sm:px-6 md:px-8 lg:w-[530px] my-auto flex flex-col  lg:mr-10">
@@ -209,7 +203,7 @@ esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
 occaecat cupidatat non proident, sunt in culpa qui officia 
 deserunt mollit anim id est laborum.</TextComponent>
 
-<Link  to="/services" > <Button variant="default" size="contactCustom" className="mb-10">CONTACT US</Button> </Link>
+<Link  to="/contact" onClick={() => window.scrollTo(0, 0)}> <Button variant="default" size="contactCustom" className="mb-10">CONTACT US</Button> </Link>
 </div>
   
 </div>
@@ -227,11 +221,13 @@ Duis aute irure dolor in reprehenderit in voluptate velit
 esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
 occaecat cupidatat non proident, sunt in culpa qui officia 
 deserunt mollit anim id est laborum.</TextComponent>
-<Link  to="/services" ><Button variant="default" size="colorpink" className="mb-10">APPLY TODAY</Button> </Link>
+<Link to="/contact" onClick={() => window.scrollTo(0, 0)}>
+  <Button variant="default" size="colorpink" className="mb-10">APPLY TODAY</Button>
+</Link>
 </div>
 
 <div className="flex justify-center ">
-<img src="../img/doc2.jpg" className="" />
+<img src="../src/assets/img/doc2.jpg" className="" />
 </div>
 </div>
 

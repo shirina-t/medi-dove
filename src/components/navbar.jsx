@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <>
       <div className="flex items-center justify-between bg-light-blue md:pl-[50px] lg:pl-[150px] flex-col md:flex-row">
-        <div className="flex gap-5 text-gray-600 text-[15px] mt-[20px] md:0">
+        <div className="flex gap-5 text-gray-600 text-[15px] mt-[20px] md:0 ">
           <p className="flex items-center gap-1 tracking-tighter">
             <Phone className="w-[18px] h-[18px]" /> +1 800 833 9780
           </p>
@@ -32,14 +32,14 @@ const Navbar = () => {
           MAKE APPOINTMENT
         </Link>
       </div>
-      <nav className="sticky left-0 top-0 z-50">
+      <nav className="sticky left-0 top-0 z-50 ">
         <div
           id="wrapper"
-          className="relative w-full h-[120px] bg-white flex items-center z-4"
+          className="relative w-full h-[120px] bg-white flex items-center z-4  "
         >
           <Link
             to="/"
-            className="absolute left-[0px] md:left-[35px] top-1/2 transform -translate-y-1/2 z-5"
+            className="absolute left-[0px] md:left-[35px] top-1/2 transform -translate-y-1/2 z-5 "
           >
             <img src={mediDoveLogo} alt="Logo" className="h-full" />
           </Link>
@@ -65,11 +65,11 @@ const Navbar = () => {
               {/*Dropdown*/}
               {isSurgeryDropdownOpen && (
                 <div className="absolute left-0 top-full w-[250px] h-[150px] bg-white p-[30px] border-t-[5px] border-dark-pink shadow-md z-10 flex flex-col justify-around">
-                  <Link to="/" className="hover:text-dark-pink">
-                    Services
+                  <Link to="/surgery" className="hover:text-dark-pink">
+                    Our Services
                   </Link>
-                  <Link to="/" className="hover:text-dark-pink">
-                    Details
+                  <Link to="/services" className="hover:text-dark-pink">
+                    Services Details
                   </Link>
                 </div>
               )}

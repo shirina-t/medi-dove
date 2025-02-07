@@ -23,11 +23,13 @@ const buttonVariants = cva(
         sm: "h-8 rounded-md px-3 text-xs",
         lg: "h-10 rounded-md px-8",
         icon: "h-9 w-9",
-        custom: "h-[62px] w-[285px] ", 
+        custom: "h-[62px] w-[285px] hover:bg-[#e12454] shadow-[0px_2px_8px_#8fb569] hover:shadow-[0px_2px_8px_#e12454] transition-all duration-300 ease-in-out", 
         submitCustom: "h-[60px] w-[100%] sm:w-[450px] md:w-[450px] bg-[#e12454] hover:bg-[#8fb569] rounded-none flex mx-auto",
         contactCustom: "h-[62px] w-[230px] hover:bg-[#e12454] shadow-[0px_2px_8px_#8fb569] hover:shadow-[0px_2px_8px_#e12454] transition-all duration-300 ease-in-out",
         colorpink:" bg-[#e12454] hover:bg-[#8fb569] h-[62px] w-[230px]",
-        differentSize:"h-[62px] w-[275px] hover:bg-[#8fb569] bg-[#e12454]"
+        differentSize:"h-[62px] w-[275px] hover:bg-[#8fb569] bg-[#e12454]",
+        errorSize:"h-[62px] w-[245px] hover:bg-[#8fb569] bg-[#e12454]"
+
         
         // Different size for "Submit Selection"
 
