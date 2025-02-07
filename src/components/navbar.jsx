@@ -209,7 +209,7 @@ const Navbar = () => {
             className="block py-2 text-gray-700 hover:text-dark-pink"
           >
             News
-          </Link>
+          </Link> 
           <Link
             to="/"
             className="block py-2 text-gray-700 hover:text-dark-pink"
