@@ -187,16 +187,16 @@ const Navbar = () => {
             Surgery types
           </Link>
           <Link
-            to="/"
+            to="/surgery" onClick={() => window.scrollTo(0, 0)}
             className="block py-1 text-gray-800 bg-gray-200 text-[14px] pl-3 hover:text-dark-pink"
           >
-            Services
+            Our Services
           </Link>
           <Link
-            to="/"
+            to="/services" onClick={() => window.scrollTo(0, 0)}
             className="block py-1 text-gray-800 text-[14px] pl-3 bg-gray-200 hover:text-dark-pink"
           >
-            Details
+            Services Details
           </Link>
           <Link
             to="/"
