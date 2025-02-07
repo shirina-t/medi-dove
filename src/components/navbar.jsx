@@ -65,10 +65,10 @@ const Navbar = () => {
               {/*Dropdown*/}
               {isSurgeryDropdownOpen && (
                 <div className="absolute left-0 top-full w-[250px] h-[150px] bg-white p-[30px] border-t-[5px] border-dark-pink shadow-md z-10 flex flex-col justify-around">
-                  <Link to="/surgery" className="hover:text-dark-pink">
+                  <Link to="/surgery" onClick={() => window.scrollTo(0, 0)} className="hover:text-dark-pink">
                     Our Services
                   </Link>
-                  <Link to="/services" className="hover:text-dark-pink">
+                  <Link to="/services" onClick={() => window.scrollTo(0, 0)} className="hover:text-dark-pink">
                     Services Details
                   </Link>
                 </div>

@@ -3,12 +3,13 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { Button } from "@/ui/btn";
+import showcase1 from "/src/img/showcase1.png";
 
 const Error = () => {
   return (
 <div>
 <div className="w-[100%] bg-cover bg-no-repeat md:flex justify-between xl:px-32 lg:px-20 sm:px-2 items-center py-[200px] bg-center h-full mb-[30px]"
-style={{ backgroundImage: "url('../src/assets/img/showcase1.png')" }}>
+style={{ backgroundImage: `url(${showcase1})` }}>
 <div className="flex flex-col gap-10 sm:ml-10 md:ml-0 ml-10 ">
 <h3 className="font-bold text-xl opacity-50">We are here for your care </h3>
 <h1 className="text-6xl font-bold text-[#223545]">Page not Found</h1>

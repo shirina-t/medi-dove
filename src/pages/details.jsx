@@ -2,6 +2,26 @@
 import { Bar, BarChart, CartesianGrid, Tooltip, XAxis } from "recharts";
 import { ChartContainer, ChartTooltipContent } from "@/ui/chart";
 
+import details from "/src/img/details.png";
+import back from "/src/img/back_icon.png";
+import brain from "/src/img/brain.png";
+import doc from "/src/img/doc.png";
+import last from "/src/img/last.png";
+import lesgo from "/src/img/lesgo.jpg";
+import pdf from "/src/img/pdf.png";
+import quato from "/src/img/quato.png";
+import service1 from "/src/img/service1.png";
+import service2 from "/src/img/service2.png";
+import service3 from "/src/img/service3.png";
+import service4 from "/src/img/service4.png";
+import service5 from "/src/img/service5.png";
+import service6 from "/src/img/service6.png";
+import teeth from "/src/img/teeth.png";
+import three1 from "/src/img/three1.png";
+import zip from "/src/img/zip.png";
+import showcase1 from "/src/img/showcase1.png";
+
+
 import {TextComponent} from "@/ui/hover-card"
 import { Link } from 'react-router-dom';
 import { Check } from "lucide-react"
@@ -48,7 +68,7 @@ function Details() {
 <div className="w-[100%]">
 
 <div className="w-[100%] sm:w-[100%] md:w-[100%] lg:w-[100%] bg-cover bg-no-repeat md:flex justify-between xl:px-32 lg:px-20 sm:px-2 items-center py-[200px] bg-center h-full mb-[30px]"
-style={{ backgroundImage: "url('../src/assets/img/showcase1.png')" }}>
+style={{ backgroundImage: `url(${showcase1})` }}>
 <div className="flex flex-col gap-10 sm:ml-10 md:ml-0 ml-10 ">
 <h3 className="font-bold text-xl opacity-50">We are here for your care </h3>
 <h1 className="text-6xl font-bold text-[#223545]">Our Services</h1>
@@ -61,17 +81,17 @@ style={{ backgroundImage: "url('../src/assets/img/showcase1.png')" }}>
 </div>
 </div>
 
-
 <div className="flex flex-col sm:flex-row w-[100%] sm:w-[100%]  md:w-[100%] lg:w-[88%] sm:gap-5 md:gap-5 h-[100%] justify-center mx-auto px-10">
   
   {/* Left Section (Image + Heading + Lines) */}
 <div className="relative flex flex-col w-[100%] sm:w-[100%]  md:w-[100%] lg:w-[59%]  h-[100%] mx-auto text-start">
     
 <div className=" mt-[100px] mb-[50px]">
-<img src="../src/assets/img/details.png" alt="Example" className="cursor-pointer object-cover w-full h-full transition-transform duration-300 hover:scale-105" /></div>
+<img src={details}  alt="Example" className="cursor-pointer object-cover w-full h-full transition-transform duration-300 hover:scale-105" /></div>
 
 
-<img className="w-28 sm:w-36 lg:w-44 mx-auto ml-[10px] " src="../src/assets/img/back_icon.png" alt="Back Icon" />
+
+<img className="w-28 sm:w-36 lg:w-44 mx-auto ml-[10px] "src={back} alt="Back Icon" />
 <div className="relative inset-0 flex flex-col justify-center items-start text-white mt-[-150px]">
 <p className="text-lg sm:text-xl lg:text-xl font-bold text-[#8fb569]">DENTAL CARE</p>
 
@@ -115,7 +135,7 @@ sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
 <div className="w-[95%] flex flex-col mt-10 justify-between text-gray-500 md:mb-[30px] md:flex-row sm:flex-col gap-10 cursor-pointer">
   <div className="flex flex-row gap-5 text-sm">
   <div className="">
-  <img className="w-8 sm:w-8 lg:w-12 mx-auto ml-[10px] " src="../src/assets/img/teeth.png" alt="teeth" /></div>
+  <img className="w-8 sm:w-8 lg:w-12 mx-auto ml-[10px] " src={teeth} alt="teeth" /></div>
   <div className="flex flex-col gap-3 ">
     <p className="text-lg font-semibold text-black  hover:underline">PERSONAL CARE</p>
     <p className="flex flex-row gap-1 hover:underline"><Check className="text-green-600"/>Cillum dolore eu fugiat nulla.</p>
@@ -127,7 +147,7 @@ sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
 
   <div className="flex flex-row gap-5 text-sm">
   <div className="">
-  <img className="w-8 sm:w-8 lg:w-12 mx-auto ml-[10px]" src="../src/assets/img/brain.png" alt="Back Icon" /></div>
+  <img className="w-8 sm:w-8 lg:w-12 mx-auto ml-[10px]" src={brain} alt="Back Icon" /></div>
   <div className="flex flex-col gap-3">
     <p className="text-lg font-semibold text-black hover:underline">LIFESTYLE SUPPORT</p>
     <p className="flex flex-row gap-1 hover:underline"><Check className="text-green-600"/>Didunt ut labore et dolore magna.</p>
@@ -146,7 +166,7 @@ sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
 <Bar dataKey="mobile" fill="#ffdd9e" radius={4} />
 </BarChart>
 </ChartContainer>
-<img className="object-cover w-full h-full mb-10 mt-10 transition-transform duration-300 hover:scale-105 cursor-pointer" src="../src/assets/img/three1.png" alt="three"  />
+<img className="object-cover w-full h-full mb-10 mt-10 transition-transform duration-300 hover:scale-105 cursor-pointer" src={three1} alt="three"  />
 
 <div><div className="  flex flex-col justify-center items-start text-white mt-[50px] mb-10 ">
 <p className="text-lg sm:text-xl lg:text-xl font-bold text-[#8fb569]">DOWNLOAD</p>
@@ -163,21 +183,21 @@ sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
 
 <div className="flex flex-col gap-8 mb-20">
   <div className="border-2 border-[#e0e9ff] h-20 flex flex-row justify-center items-center gap-2 hover:opacity-105 hover:bg-gray-100">
-    <img className="w-6 sm:w-6 lg:w-10 mx-auto ml-[50px]" src="../src/assets/img/pdf.png" alt="pdf" />
+    <img className="w-6 sm:w-6 lg:w-10 mx-auto ml-[50px]" src={pdf} alt="pdf" />
     <a href="/public/img/ddd.pdf" download className="hover:text-[#e12454] cursor-pointer font-semibold mr-auto ">
       The Balanced Care Method Flyer.pdf</a>
     <p className="mr-10">58KB</p>
   </div>
 
   <div className="border-2 border-[#e0e9ff] h-20 flex flex-row justify-center items-center gap-2 hover:opacity-105 hover:bg-gray-100">
-    <img className="w-6 sm:w-6 lg:w-10 mx-auto ml-[50px]" src="../src/assets/img/doc.png" alt="pdf" />
+    <img className="w-6 sm:w-6 lg:w-10 mx-auto ml-[50px]" src={doc} alt="pdf" />
     <a href="/public/img/ddd.pdf" download className="hover:text-[#e12454] cursor-pointer font-semibold mr-auto ">
       Information sheet 2 2016-17.doc </a>
     <p className="mr-10">112KB</p>
   </div>
 
   <div className="border-2 border-[#e0e9ff] h-20 flex flex-row justify-center items-center gap-2 hover:opacity-105 hover:bg-gray-100">
-    <img className="w-6 sm:w-6 lg:w-10 mx-auto ml-[50px]" src="../src/assets/img/zip.png" alt="pdf" />
+    <img className="w-6 sm:w-6 lg:w-10 mx-auto ml-[50px]" src={zip} alt="pdf" />
     <a href="/public/img/ddd.pdf" download className="hover:text-[#e12454] cursor-pointer font-semibold mr-auto ">
       What_is_home_care_manual.zip</a>
     <p className="mr-10">87KB</p>
@@ -186,7 +206,7 @@ sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
 </div>
 
 <div className="bg-[#e12454] rounded-full w-[85px] h-[85px] flex flex-col justify-center items-center text-center mx-auto" style={{ boxShadow: '0 4px 8px rgba(255, 20, 147, 0.5), 0 0 15px rgba(30, 144, 255, 0.5)' }}>
-  <img className="w-6 sm:w-6 lg:w-8 mx-auto ml-[50px] mr-12" src="../src/assets/img/quato.png" alt="1uat" />
+  <img className="w-6 sm:w-6 lg:w-8 mx-auto ml-[50px] mr-12" src={quato} alt="1uat" />
 </div>
 
 
@@ -195,7 +215,7 @@ sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
 <p className="bg-[#e12454] w-[2px] h-[80px] mx-auto my-5"></p>
 <p className="mx-auto text-2xl font-bold sm:mx-auto md:mx-auto lg:mx-auto text-[#223545]">ROSALINA D. WILLIAMSON</p>
 <p className="mx-auto text-[#8fb569] my-3 sm:mx-auto md:mx-auto lg:mx-auto">FOUNDER. UETHEMES</p>
-<img className="w-22 sm:w-22 lg:w-26 mx-auto mb-[100px] cursor-pointer" src="../src/assets/img/last.png" alt="last" />
+<img className="w-22 sm:w-22 lg:w-26 mx-auto mb-[100px] cursor-pointer" src={last} alt="last" />
 </div>
 
 {/* Right Section (More Services) */}
@@ -206,28 +226,28 @@ sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
 <ul className="flex flex-col gap-6 cursor-pointer font-semibold">
 
 <Link to="/surgery"  onClick={() => window.scrollTo(0, 0)} className="flex flex-row items-center gap-3 hover:text-[#e12454]">
-  <img src="../src/assets/img/service1.png" alt="Body Surgery" />BODY SURGERY</Link>
+  <img src={service1} alt="Body Surgery" />BODY SURGERY</Link>
 <span className="w-100 h-[2px] bg-[#f2edff]"></span>
 
 
 <Link to="/surgery"  onClick={() => window.scrollTo(0, 0)} className="flex flex-row items-center gap-3 hover:text-[#e12454]">
-<img src="../src/assets/img/service2.png" alt="Dental Care" /> DENTAL CARE</Link>
+<img src={service2} alt="Dental Care" /> DENTAL CARE</Link>
 <span className="w-100 h-[2px] bg-[#f2edff]"></span>
 
 <Link to="/surgery"  onClick={() => window.scrollTo(0, 0)} className="flex flex-row items-center gap-3 hover:text-[#e12454]">
-<img src="../src/assets/img/service3.png" alt="Eye Care" /> EYE CARE</Link>
+<img src={service3} alt="Eye Care" /> EYE CARE</Link>
 <span className="w-100 h-[2px] bg-[#f2edff]"></span>
 
 <Link to="/surgery"  onClick={() => window.scrollTo(0, 0)} className="flex flex-row items-center gap-3 hover:text-[#e12454]">
-<img src="../src/assets/img/service4.png" alt="Blood Cancer" /> BLOOD CANCER</Link>
+<img src={service4} alt="Blood Cancer" /> BLOOD CANCER</Link>
 <span className="w-100 h-[2px] bg-[#f2edff]"></span>
 
 <Link to="/surgery"  onClick={() => window.scrollTo(0, 0)} className="flex flex-row items-center gap-3 hover:text-[#e12454]">
-  <img src="../src/assets/img/service5.png" alt="Neurology Surgery" /> NEUROLOGY SURGERY</Link>
+  <img src={service5} alt="Neurology Surgery" /> NEUROLOGY SURGERY</Link>
 <span className="w-100 h-[2px] bg-[#f2edff]"></span>
 
 <Link to="/surgery"  onClick={() => window.scrollTo(0, 0)} className="flex flex-row items-center gap-3 ml-1 hover:text-[#e12454]">
-<img src="../src/assets/img/service6.png" alt="Allergic Issue" /> ALLERGIC ISSUE</Link>
+<img src={service6} alt="Allergic Issue" /> ALLERGIC ISSUE</Link>
 </ul>
 
 </div>
@@ -263,7 +283,7 @@ sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
 </div>
 
 <div className="relative w-full h-auto mb-10 mt-10">
-<img  className="object-cover w-full h-auto transition-transform duration-300 hover:scale-105 cursor-pointer" src="../src/assets/img/lesgo.jpg" alt="contact" />
+<img  className="object-cover w-full h-auto transition-transform duration-300 hover:scale-105 cursor-pointer" src={lesgo} alt="contact" />
  
 <div className="absolute inset-0 flex justify-center py-[250px] pointer-events-none sm:py-[260px] md:py-[345px] lg:py-[343px]">
   <Link to="/contact" onClick={() => window.scrollTo(0, 0)}  className="pointer-events-auto">
