@@ -12,6 +12,7 @@ import doc1 from "/src/img/doc1.png";
 import doc2 from "/src/img/doc2.jpg";
 import showcase1 from "/src/img/showcase1.png";
 import showcase2 from "/src/img/showcase2.png";
+import back from "/src/img/back_icon.png";
 
 import { useState } from "react"
 import { Button } from "@/ui/btn"
@@ -61,7 +62,7 @@ function Surgery() {
 <div className="relative flex flex-col w-[100%] sm:w-1/2 lg:w-2./5 text-end justify-center">
   
 <div className="flex justify-end">
-<img className="w-32 sm:w-40 lg:w-48" src="../src/assets/img/back_icon.png" alt="back" />
+<img className="w-32 sm:w-40 lg:w-48" src={back} alt="back" />
 </div>
 
 <div className="absolute inset-0">
