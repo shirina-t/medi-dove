@@ -2,18 +2,23 @@ import React, { useState } from "react";
 import mediDoveLogo from "../assets/medi_dove_logo.png";
 import langImg from "../assets/lang.png";
 import { Link } from "react-router-dom";
-import { Phone, Mail, Facebook, Youtube, Linkedin } from "lucide-react";
+import { Phone, Mail, Facebook, Youtube, Linkedin, Menu, X} from "lucide-react";
 
 const Navbar = () => {
   const [isSurgeryDropdownOpen, setIsSurgeryDropdownOpen] = useState(false);
   const [isMemberDropdownOpen, setIsMemberDropdownOpen] = useState(false);
   const [isLangDropdownOpen, setIsLangDropdownOpen] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
 
   return (
     <>
-      <div className="flex items-center justify-between bg-light-blue h-[60px] pl-[150px]">
-        <div className="flex gap-5 text-gray-600 text-[15px]">
-          <p className="flex items-center gap-1">
+      <div className="flex items-center justify-between bg-light-blue md:pl-[50px] lg:pl-[150px] flex-col md:flex-row">
+        <div className="flex gap-5 text-gray-600 text-[15px] mt-[20px] md:0">
+          <p className="flex items-center gap-1 tracking-tighter">
             <Phone className="w-[18px] h-[18px]" /> +1 800 833 9780
           </p>
           <p className="flex items-center gap-2">
@@ -22,24 +27,27 @@ const Navbar = () => {
         </div>
         <Link
           to="/"
-          className="bg-dark-pink text-white text-[15px] font-semibold h-full w-[250px] mr-[30px] hover:bg-dirty-green flex items-center justify-center"
+          className="bg-dark-pink text-white text-[15px] font-semibold h-[60px] w-full md:w-[250px] mt-[20px] md:mt-[0px] mr-[0px] md:mr-[30px]  hover:bg-dirty-green flex items-center justify-center"
         >
           MAKE APPOINTMENT
         </Link>
       </div>
-      <nav className="sticky left-0 top-0">
+      <nav className="sticky left-0 top-0 z-50">
         <div
           id="wrapper"
           className="relative w-full h-[120px] bg-white flex items-center z-4"
         >
-          <Link to="/" className="absolute left-[30px] top--1/2 z-5">
-            <img src={mediDoveLogo} alt="Logo" />
+          <Link
+            to="/"
+            className="absolute left-[0px] md:left-[35px] top-1/2 transform -translate-y-1/2 z-5"
+          >
+            <img src={mediDoveLogo} alt="Logo" className="h-full" />
           </Link>
           <div
             id="circle"
-            className="w-[150px] h-[150px] rounded-full bg-inherit flex items-center justify-center p-6"
+            className="w-[150px] h-[150px] rounded-full bg-inherit items-center justify-center p-6 hidden md:hidden lg:flex"
           ></div>
-          <div className="text-[14px] text-gray-500 font-semibold flex gap-5 items-center ml-[300px]">
+          <div className="hidden lg:flex text-[14px] text-gray-500 font-semibold gap-5 items-center ml-0 md:ml-[300px]">
             <Link to="/" className="hover:text-gray-800">
               <p>Home +</p>
             </Link>
@@ -92,9 +100,9 @@ const Navbar = () => {
                 </div>
               )}
             </div>
-            <p className="flex gap-3">
+            <p className="gap-3 hidden md:flex">
               <Link to="/" className="hover:text-gray-800">
-                <Facebook /> {/*redirect to contact page*/}
+                <Facebook /> {/*contact page link*/}
               </Link>
               <Link to="/" className="hover:text-gray-800">
                 <Youtube />
@@ -134,8 +142,95 @@ const Navbar = () => {
               )}
             </div>
           </div>
+          {/* Mobile Menu Button */}
+          <div className="lg:hidden absolute right-4 top-1/2 transform -translate-y-1/2 z-50">
+            <button
+              onClick={toggleSidebar}
+              className="text-gray-500 hover:text-gray-800"
+            >
+              {isSidebarOpen ? (
+                <X className="h-8 w-8" />
+              ) : (
+                <Menu className="h-8 w-8" />
+              )}
+            </button>
+          </div>
         </div>
       </nav>
+      {/* Sidebar */}
+      <div
+        className={`fixed top-0 left-0 h-full w-3/4 bg-white z-50 transition-transform duration-300 ${
+          isSidebarOpen ? "translate-x-0" : "-translate-x-full"
+        } lg:hidden`}
+      >
+        <div className="p-6">
+          <Link to="/" className="block text-2xl font-bold mb-4">
+            <img src={mediDoveLogo} alt="Logo" className="w-24" />
+          </Link>
+
+          <Link
+            to="/"
+            className="block py-2 text-gray-700 hover:text-dark-pink"
+          >
+            Home
+          </Link>
+          <Link
+            to="/"
+            className="block py-2 text-gray-700 hover:text-dark-pink"
+          >
+            About
+          </Link>
+          <Link
+            to="/"
+            className="block py-2 text-gray-700 hover:text-dark-pink"
+          >
+            Surgery types
+          </Link>
+          <Link
+            to="/"
+            className="block py-1 text-gray-800 bg-gray-200 text-[14px] pl-3 hover:text-dark-pink"
+          >
+            Services
+          </Link>
+          <Link
+            to="/"
+            className="block py-1 text-gray-800 text-[14px] pl-3 bg-gray-200 hover:text-dark-pink"
+          >
+            Details
+          </Link>
+          <Link
+            to="/"
+            className="block py-2 text-gray-700 hover:text-dark-pink"
+          >
+            Blog
+          </Link>
+          <Link
+            to="/"
+            className="block py-2 text-gray-700 hover:text-dark-pink"
+          >
+            News
+          </Link>
+          <Link
+            to="/"
+            className="block py-2 text-gray-700 hover:text-dark-pink"
+          >
+            Become a member
+          </Link>
+          <Link
+            to="/"
+            className="block py-1 text-gray-800 bg-gray-200 text-[14px] pl-3 hover:text-dark-pink"
+          >
+            Appointment
+          </Link>
+          <Link
+            to="/"
+            className="block py-1 text-gray-800 text-[14px] pl-3 bg-gray-200 hover:text-dark-pink"
+          >
+            Contact
+          </Link>
+          {/* ... other nav links ... */}
+        </div>
+      </div>
     </>
   );
 };
@@ -144,12 +239,9 @@ export default Navbar;
 
 {
   /*
+ Links to pages!
  Space in dropmenu
  Lang img -> drop down menu-> change lang
- Responsive
 */
 }
 
-{
-  /*Links to pages!*/
-}
