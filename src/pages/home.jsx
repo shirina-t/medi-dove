@@ -281,37 +281,37 @@ export const HomePage_Profiles = () => {
       <div className="flex flex-wrap xl:gap-30 lg:gap-20 gap-10 items-center justify-center xl:px-40 lg:px-30 px-15 mt-24 mb-24">
         <div className="relative">
           <img src={member1} alt="" className="relative" />
-          <Link to="/details"><span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-2 pb-2 absolute bottom-15 right-5 hover:bg-rose-600 duration-700">+</span></Link>
+          <Link to="/details"><span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-2 pb-2 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">+</span></Link>
           <h3 className="text-2xl font-semibold text-slate-800 text-center">Rosalina D. Williamson</h3>
           <h4 className="text-center text-rose-600 font-semibold text-base uppercase">Founder</h4>
         </div>
         <div className="relative">
           <img src={member2} alt="" />
-          <Link to="/details"><span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-2 pb-2 absolute bottom-15 right-5 hover:bg-rose-600 duration-700">+</span></Link>
+          <Link to="/details"><span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-2 pb-2 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">+</span></Link>
           <h3 className="text-2xl font-semibold text-slate-800 text-center">Diconda PIran Will</h3>
           <h4 className="text-center text-rose-600 font-semibold text-base uppercase">dentist</h4>
         </div>
         <div className="relative">
           <img src={member3} alt="" />
-          <Link to="/details"><span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-2 pb-2 absolute bottom-15 right-5 hover:bg-rose-600 duration-700">+</span></Link>
+          <Link to="/details"><span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-2 pb-2 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">+</span></Link>
           <h3 className="text-2xl font-semibold text-slate-800 text-center">Hulk M. Kenbon</h3>
           <h4 className="text-center text-rose-600 font-semibold text-base uppercase">neurologist</h4>
         </div>
         <div className="relative">
           <img src={member4} alt="" />
-          <Link to="/details"><span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-2 pb-2 absolute bottom-15 right-5 hover:bg-rose-600 duration-700">+</span></Link>
+          <Link to="/details"><span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-2 pb-2 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">+</span></Link>
           <h3 className="text-2xl font-semibold text-slate-800 text-center">Haliam Z. Dicolaz</h3>
           <h4 className="text-center text-rose-600 font-semibold text-base uppercase">Consultant</h4>
         </div>
         <div className="relative">
           <img src={member5} alt="" />
-          <Link to="/details"><span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-2 pb-2 absolute bottom-15 right-5 hover:bg-rose-600 duration-700">+</span></Link>
+          <Link to="/details"><span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-2 pb-2 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">+</span></Link>
           <h3 className="text-2xl font-semibold text-slate-800 text-center">Nicolas D. Case</h3>
           <h4 className="text-center text-rose-600 font-semibold text-base uppercase">dentist</h4>
         </div>
         <div className="relative">
           <img src={member6} alt="" />
-          <Link to="/details"><span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-2 pb-2 absolute bottom-15 right-5 hover:bg-rose-600 duration-700">+</span></Link>
+          <Link to="/details"><span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-2 pb-2 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">+</span></Link>
           <h3 className="text-2xl font-semibold text-slate-800 text-center">Phumdon H. Norman</h3>
           <h4 className="text-center text-rose-600 font-semibold text-base uppercase">neurologist</h4>
         </div>
