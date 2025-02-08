@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { Phone, Mail, Facebook, Youtube, Linkedin, Menu, X} from "lucide-react";
 
 const Navbar = () => {
+  const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
   const [isSurgeryDropdownOpen, setIsSurgeryDropdownOpen] = useState(false);
   const [isMemberDropdownOpen, setIsMemberDropdownOpen] = useState(false);
   const [isLangDropdownOpen, setIsLangDropdownOpen] = useState(false);
@@ -51,9 +52,41 @@ const Navbar = () => {
             <Link to="/" className="hover:text-gray-800">
               <p>Home +</p>
             </Link>
-            <Link to="/" className="hover:text-gray-800">
-              <p>About +</p>
-            </Link>
+            <div
+              className="relative"
+              onMouseEnter={() => setIsAboutDropdownOpen(true)}
+              onMouseLeave={() => setIsAboutDropdownOpen(false)}
+            >
+              <Link to="/" className="hover:text-gray-800">
+                <p>About +</p>
+              </Link>
+              {/* Dropdown with Transition */}
+              <div
+                className={`absolute left-0 top-full w-[250px] h-[250px] bg-white p-[30px] border-t-[5px] border-dark-pink shadow-md z-10 flex flex-col justify-around
+                    ${
+                      isAboutDropdownOpen
+                        ? "opacity-100 translate-y-0"
+                        : "opacity-0 translate-y-[1/2]"
+                    }
+                    transition-all duration-300 ease-in-out`}
+                style={{
+                  pointerEvents: isAboutDropdownOpen ? "auto" : "none",
+                }}
+              >
+                <Link to="/" className="block hover:text-dark-pink py-1">
+                  Story
+                </Link>
+                <Link to="/" className="block hover:text-dark-pink py-1">
+                  Approach
+                </Link>
+                <Link to="/" className="block hover:text-dark-pink py-1">
+                  Team
+                </Link>
+                <Link to="/" className="block hover:text-dark-pink py-1">
+                  Feedback
+                </Link>
+              </div>
+            </div>
             <div
               className="relative"
               onMouseEnter={() => setIsSurgeryDropdownOpen(true)}
@@ -207,10 +240,32 @@ const Navbar = () => {
             About
           </Link>
           <Link
-            to="/"
-            className="block py-2 text-gray-700 hover:text-dark-pink"
+            to="/surgery"
+            onClick={() => window.scrollTo(0, 0)}
+            className="block py-1 text-gray-800 bg-gray-200 text-[14px] pl-3 hover:text-dark-pink"
           >
-            Surgery types
+            Story
+          </Link>
+          <Link
+            to="/surgery"
+            onClick={() => window.scrollTo(0, 0)}
+            className="block py-1 text-gray-800 bg-gray-200 text-[14px] pl-3 hover:text-dark-pink"
+          >
+            Approach
+          </Link>
+          <Link
+            to="/surgery"
+            onClick={() => window.scrollTo(0, 0)}
+            className="block py-1 text-gray-800 bg-gray-200 text-[14px] pl-3 hover:text-dark-pink"
+          >
+            Team
+          </Link>
+          <Link
+            to="/surgery"
+            onClick={() => window.scrollTo(0, 0)}
+            className="block py-1 text-gray-800 bg-gray-200 text-[14px] pl-3 hover:text-dark-pink"
+          >
+            Feedback
           </Link>
           <Link
             to="/surgery"

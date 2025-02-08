@@ -5,8 +5,8 @@ import { Button } from "@/ui/btn";
 
 const Error = () => {
   return (
-    <>
-      <div className="flex flex-col justify-center text-center bg-red-300">
+    <div className="w-full h-[680px] flex">
+      <div className="flex flex-col justify-center text-center w-full">
         <p className="text-[#223545] text-9xl font-bold">404</p>
         <p className="text-[#223545] text-5xl font-semibold ">Page not found</p>
         <p className="my-6 text-[#647489] text-sm">
@@ -23,7 +23,7 @@ const Error = () => {
           </Button>
         </Link>
       </div>
-    </>
+    </div>
   );
 };
 

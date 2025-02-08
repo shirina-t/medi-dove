@@ -7,6 +7,7 @@ import Details from "./pages/details";
 import Error from "./pages/error";
 import { Home } from "./pages/home"
 import Contact from "./pages/contact";
+import Blog from "./pages/blog";
 // import Appointment from "./pages/appointment";
 
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/services" element={<Details />} />
           <Route path="/surgery" element={<Surgery />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/blog" element={<Blog />} />
           {/*<Route path="/appointment" element={<Appointment />} /> */}
         </Route>
           <Route path="*" element={<Error />} />
