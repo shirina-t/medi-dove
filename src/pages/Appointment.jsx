@@ -28,7 +28,8 @@ const Appointment = () => {
             <h3 className="font-bold text-xl opacity-50">
               We are here for your care
             </h3>
-            <Abouth1>About Us</Abouth1>
+            <Abouth1>Appointment
+            </Abouth1>
           </div>
           <div className="flex gap-1 font-semibold">
             <Link to={"/"} className="opacity-50 text-gray-900 no-underline">
