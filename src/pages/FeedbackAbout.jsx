@@ -11,7 +11,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 const FeedbackAbout = () => {
   return (
-    <div className="w-screen h-full flex flex-col gap-32">
+    <div className="w-screen h-full flex flex-col gap-0">
       <AboutShowcase />
 
       <div className="w-full bg-[#13232f] sm:px-2 xl:px-32 lg:px-20 py-20">

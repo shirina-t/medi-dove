@@ -13,8 +13,6 @@ import Approach from "./pages/Approach";
 import FeedbackAbout from "./pages/FeedbackAbout";
 import TeamAbout from "./pages/TeamAbout";
 import Appointment from "./pages/Appointment";
-// import Appointment from "./pages/appointment";
-
 
 function App() {
   return (
@@ -31,7 +29,6 @@ function App() {
           <Route path="/feedback" element={<FeedbackAbout />} />
           <Route path="/team" element={<TeamAbout />} />
           <Route path="/appointment" element={<Appointment />} />
-          {/*<Route path="/appointment" element={<Appointment />} /> */}
         </Route>
           <Route path="*" element={<Error />} />
       </Routes>

@@ -35,7 +35,7 @@ const Navbar = () => {
           </p>
         </div>
         <Link
-          to="/"
+          to="/contact"
           className="bg-dark-pink text-white text-[15px] font-semibold h-[60px] w-full md:w-[250px] mt-[20px] md:mt-[0px] mr-[0px] md:mr-[30px]  hover:bg-dirty-green flex items-center justify-center"
         >
           MAKE APPOINTMENT
@@ -65,7 +65,7 @@ const Navbar = () => {
               onMouseEnter={() => setIsAboutDropdownOpen(true)}
               onMouseLeave={() => setIsAboutDropdownOpen(false)}
             >
-              <Link to="/" className="hover:text-gray-800">
+              <Link to="/about" className="hover:text-gray-800">
                 <p>About +</p>
               </Link>
               {/* Dropdown with Transition */}
@@ -81,16 +81,16 @@ const Navbar = () => {
                   pointerEvents: isAboutDropdownOpen ? "auto" : "none",
                 }}
               >
-                <Link to="/" className="block hover:text-dark-pink py-1">
+                <Link to="/story" className="block hover:text-dark-pink py-1">
                   Story
                 </Link>
-                <Link to="/" className="block hover:text-dark-pink py-1">
+                <Link to="/approach" className="block hover:text-dark-pink py-1">
                   Approach
                 </Link>
-                <Link to="/" className="block hover:text-dark-pink py-1">
+                <Link to="/team" className="block hover:text-dark-pink py-1">
                   Team
                 </Link>
-                <Link to="/" className="block hover:text-dark-pink py-1">
+                <Link to="/feedback" className="block hover:text-dark-pink py-1">
                   Feedback
                 </Link>
               </div>
@@ -100,7 +100,7 @@ const Navbar = () => {
               onMouseEnter={() => setIsSurgeryDropdownOpen(true)}
               onMouseLeave={() => setIsSurgeryDropdownOpen(false)}
             >
-              <Link to="/" className="hover:text-gray-800">
+              <Link to="/surgery" className="hover:text-gray-800">
                 <p>Surgery types +</p>
               </Link>
               {/* Dropdown with Transition */}
@@ -132,7 +132,7 @@ const Navbar = () => {
                 </Link>
               </div>
             </div>
-            <Link to="/" className="hover:text-gray-800">
+            <Link to="/blog" className="hover:text-gray-800">
               <p>Blog +</p>
             </Link>
             <Link to="/" className="hover:text-gray-800">
@@ -143,7 +143,7 @@ const Navbar = () => {
               onMouseEnter={() => setIsMemberDropdownOpen(true)}
               onMouseLeave={() => setIsMemberDropdownOpen(false)}
             >
-              <Link to="/" className="hover:text-gray-800">
+              <Link to="/contact" className="hover:text-gray-800">
                 <p>Become a member +</p>
               </Link>
               {/* Dropdown with Transition */}
@@ -159,10 +159,10 @@ const Navbar = () => {
                   pointerEvents: isMemberDropdownOpen ? "auto" : "none",
                 }}
               >
-                <Link to="/" className="block hover:text-dark-pink py-1">
+                <Link to="/appointment" className="block hover:text-dark-pink py-1">
                   Appointment
                 </Link>
-                <Link to="/" className="block hover:text-dark-pink py-1">
+                <Link to="/contact" className="block hover:text-dark-pink py-1">
                   Contact
                 </Link>
               </div>

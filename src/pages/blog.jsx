@@ -13,7 +13,7 @@ const Blog = () => {
           <h3 className="font-bold text-xl opacity-50">
             We are here for your care
           </h3>
-          <h1 className="text-6xl font-bold text-[#223545]">Blog page</h1>
+          <h1 className="text-6xl font-bold text-[#223545]">Our Blog</h1>
         </div>
 
         <div className="flex gap-1 font-semibold sm:ml-10 md:ml-0 ml-10 sm:mt-10 md:mt-0 mt-10 ">
@@ -21,7 +21,7 @@ const Blog = () => {
             Home
           </Link>
           <p>|</p>
-          <Link to="/contact" className="text-red-600 no-underline">
+          <Link to="/blog" className="text-red-600 no-underline">
             Blog
           </Link>
         </div>

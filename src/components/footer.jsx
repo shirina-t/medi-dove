@@ -44,44 +44,44 @@ const Footer = () => {
           <div className="flex mt-6 md:mt-[30px] text-gray-400 text-xs md:text-[15px] font-semibold">
             <ul className="flex-1 flex flex-col gap-4 pr-4 md:pr-[20px]">
               <li>
-                <Link to="/" className="hover:text-dirty-green hover:underline">
+                <Link to="/surgery" className="hover:text-dirty-green hover:underline">
                   Surgery and Radiology
                 </Link>
               </li>
               <li>
-                <Link to="/" className="hover:text-dirty-green hover:underline">
+                <Link to="/services" className="hover:text-dirty-green hover:underline">
                   Family Medicine
                 </Link>
               </li>
               <li>
-                <Link to="/" className="hover:text-dirty-green hover:underline">
+                <Link to="/services" className="hover:text-dirty-green hover:underline">
                   Women’s Health
                 </Link>
               </li>
               <li>
-                <Link to="/" className="hover:text-dirty-green hover:underline">
+                <Link to="/services" className="hover:text-dirty-green hover:underline">
                   Optician
                 </Link>
               </li>
               <li>
-                <Link to="/" className="hover:text-dirty-green hover:underline">
+                <Link to="/services" className="hover:text-dirty-green hover:underline">
                   Pediatrics
                 </Link>
               </li>
               <li>
-                <Link to="/" className="hover:text-dirty-green hover:underline">
+                <Link to="/services" className="hover:text-dirty-green hover:underline">
                   Dermatology
                 </Link>
               </li>
             </ul>
             <ul className="flex-1 flex flex-col gap-4">
               <li>
-                <Link to="/" className="hover:text-dirty-green hover:underline">
+                <Link to="/services" className="hover:text-dirty-green hover:underline">
                   Departments
                 </Link>
               </li>
               <li>
-                <Link to="/" className="hover:text-dirty-green hover:underline">
+                <Link to="/team" className="hover:text-dirty-green hover:underline">
                   Our Doctors
                 </Link>
               </li>
@@ -91,17 +91,17 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/" className="hover:text-dirty-green hover:underline">
+                <Link to="/contact" className="hover:text-dirty-green hover:underline">
                   Shop
                 </Link>
               </li>
               <li>
-                <Link to="/" className="hover:text-dirty-green hover:underline">
+                <Link to="/contact" className="hover:text-dirty-green hover:underline">
                   Contact Us
                 </Link>
               </li>
               <li>
-                <Link to="/" className="hover:text-dirty-green hover:underline">
+                <Link to="/appointment" className="hover:text-dirty-green hover:underline">
                   Book an Appointment
                 </Link>
               </li>

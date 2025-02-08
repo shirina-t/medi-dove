@@ -66,7 +66,7 @@ export const Showcase = () => {
           </p>
           <br />
           <div className="showcase_buttons flex items-center gap-4 flex-wrap sm:justify-start justify-center">
-          <Link to="/contact">
+          <Link to="/appointment">
             <Button className="slider1_buttons" variant="destructive" size="lg">
               <span className="bg-white text-gray-800 rounded-full px-3 pb-2 text-4xl">
                 +
@@ -182,61 +182,126 @@ import service6 from "../assets/images/service6.png"
 
 
 export const HomePage_Cards = () => {
-  return(
+  return (
     <div className="HomePage_Cards bg-sky-100 w-full h-full">
-      <div className="mt-32 pt-20 bg-center flex flex-col items-center justify-center" style={{backgroundImage: `url(${Imgbackground})`, backgroundRepeat: "no-repeat"}}>
+      <div
+        className="mt-32 pt-20 bg-center flex flex-col items-center justify-center"
+        style={{
+          backgroundImage: `url(${Imgbackground})`,
+          backgroundRepeat: "no-repeat",
+        }}
+      >
         <h4 className="text-xl text-slate-500 font-bold">Departments</h4>
-        <h2 className="text-center font-semibold text-gray-700 xl:text-[55px] lg:text-[45px] md:text-[40px] text-[35px] mb-2">Managed Your <br /> Healthcare Services</h2>
-      <img src={Line} alt="" />
+        <h2 className="text-center font-semibold text-gray-700 xl:text-[55px] lg:text-[45px] md:text-[40px] text-[35px] mb-2">
+          Managed Your <br /> Healthcare Services
+        </h2>
+        <img src={Line} alt="" />
       </div>
 
+      <div className="flex flex-row flex-wrap xl:gap-28 lg:gap-18 md:gap-16 gap-10 bg-sky-100 items-center justify-center w-auto h-auto  pb-20">
+        <div className="HomePage_Card sm:w-80 w-9/12 sm:h-96 h-full bg-white flex flex-col items-center justify-center mt-20 sm:p-12 p-6 gap-2 rounded-xl hover:shadow-2xl shadow-gray-700">
+          <img src={service1} alt="" />
+          <h3 className="text-2xl font-bold text-slate-700 hover:text-lime-600 duration-700">
+            <Link to="/services">Body Surgery</Link>
+          </h3>
+          <p className="text-center text-slate-700">
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo.
+          </p>
+          <Link
+            to="/services"
+            className="font-semibold text-slate-700 hover:text-lime-600 duration-700"
+          >
+            Read More
+          </Link>
+        </div>
 
-<div className="flex flex-row flex-wrap xl:gap-28 lg:gap-18 md:gap-16 gap-10 bg-sky-100 items-center justify-center w-auto h-auto  pb-20">
+        <div className="HomePage_Card sm:w-80 w-9/12 h-96 bg-white flex flex-col items-center justify-center mt-20 p-12 gap-2  rounded-xl hover:shadow-2xl ">
+          <img src={service2} alt="" />
+          <h3 className="text-2xl font-bold text-slate-700 hover:text-lime-600 duration-700">
+            <Link to="/services">Dental Care</Link>
+          </h3>
+          <p className="text-center text-slate-700">
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo.
+          </p>
+          <Link
+            to="/services"
+            className="font-semibold text-slate-700 hover:text-lime-600 duration-700"
+          >
+            Read More
+          </Link>
+        </div>
+        <div className="HomePage_Card sm:w-80 w-9/12 h-96 bg-white flex flex-col items-center justify-center mt-20 p-12 gap-2  rounded-xl hover:shadow-2xl ">
+          <img src={service3} alt="" />
+          <h3 className="text-2xl font-bold text-slate-700 hover:text-lime-600 duration-700">
+            <Link to="/services">Service-content</Link>
+          </h3>
+          <p className="text-center text-slate-700">
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo.
+          </p>
+          <Link
+            to="/services"
+            className="font-semibold text-slate-700 hover:text-lime-600 duration-700"
+          >
+            Read More
+          </Link>
+        </div>
 
-      <div className="HomePage_Card sm:w-80 w-9/12 sm:h-96 h-full bg-white flex flex-col items-center justify-center mt-20 sm:p-12 p-6 gap-2 rounded-xl hover:shadow-2xl shadow-gray-700">
-        <img src={service1} alt="" />
-        <h3 className="text-2xl font-bold text-slate-700 hover:text-lime-600 duration-700"><Link to="/OurServices">Body Surgery</Link></h3>
-        <p className="text-center text-slate-700">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-        <Link to="Our Services" className="font-semibold text-slate-700 hover:text-lime-600 duration-700">Read More</Link>
-      </div>
+        <div className="HomePage_Card sm:w-80 w-9/12 h-96 bg-white flex flex-col items-center justify-center mt-20 p-12 gap-2  rounded-xl hover:shadow-2xl ">
+          <img src={service4} alt="" />
+          <h3 className="text-2xl font-bold text-slate-700 hover:text-lime-600 duration-700">
+            <Link to="/services">Blood-Cancer</Link>
+          </h3>
+          <p className="text-center text-slate-700">
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo.
+          </p>
+          <Link
+            to="/services"
+            className="font-semibold text-slate-700 hover:text-lime-600 duration-700"
+          >
+            Read More
+          </Link>
+        </div>
 
-      <div className="HomePage_Card sm:w-80 w-9/12 h-96 bg-white flex flex-col items-center justify-center mt-20 p-12 gap-2  rounded-xl hover:shadow-2xl ">
-        <img src={service2} alt="" />
-        <h3 className="text-2xl font-bold text-slate-700 hover:text-lime-600 duration-700"><Link to="/OurServices">Dental Care</Link></h3>
-        <p className="text-center text-slate-700">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-        <Link to="Our Services" className="font-semibold text-slate-700 hover:text-lime-600 duration-700">Read More</Link>
-      </div>
-      <div className="HomePage_Card sm:w-80 w-9/12 h-96 bg-white flex flex-col items-center justify-center mt-20 p-12 gap-2  rounded-xl hover:shadow-2xl ">
-        <img src={service3} alt="" />
-        <h3 className="text-2xl font-bold text-slate-700 hover:text-lime-600 duration-700"><Link to="/OurServices">Service-content</Link></h3>
-        <p className="text-center text-slate-700">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-        <Link to="Our Services" className="font-semibold text-slate-700 hover:text-lime-600 duration-700">Read More</Link>
-      </div>
+        <div className="HomePage_Card sm:w-80 w-9/12 h-96 bg-white flex flex-col items-center justify-center mt-20 p-12 gap-2  rounded-xl hover:shadow-2xl ">
+          <img src={service5} alt="" />
+          <h3 className="text-2xl font-bold text-slate-700 hover:text-lime-600 duration-700">
+            <Link to="/services">Neurology Sargery</Link>
+          </h3>
+          <p className="text-center text-slate-700">
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo.
+          </p>
+          <Link
+            to="/services"
+            className="font-semibold text-slate-700 hover:text-lime-600 duration-700"
+          >
+            Read More
+          </Link>
+        </div>
 
-      <div className="HomePage_Card sm:w-80 w-9/12 h-96 bg-white flex flex-col items-center justify-center mt-20 p-12 gap-2  rounded-xl hover:shadow-2xl ">
-        <img src={service4} alt="" />
-        <h3 className="text-2xl font-bold text-slate-700 hover:text-lime-600 duration-700"><Link to="/OurServices">Blood-Cancer</Link></h3>
-        <p className="text-center text-slate-700">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-        <Link to="Our Services" className="font-semibold text-slate-700 hover:text-lime-600 duration-700">Read More</Link>
+        <div className="HomePage_Card sm:w-80 w-9/12 h-96 bg-white flex flex-col items-center justify-center mt-20 p-12 gap-2  rounded-xl hover:shadow-2xl ">
+          <img src={service6} alt="" />
+          <h3 className="text-2xl font-bold text-slate-700 hover:text-lime-600 duration-700">
+            <Link to="/services">Allergic Issue</Link>
+          </h3>
+          <p className="text-center text-slate-700">
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo.
+          </p>
+          <Link
+            to="/services"
+            className="font-semibold text-slate-700 hover:text-lime-600 duration-700"
+          >
+            Read More
+          </Link>
+        </div>
       </div>
-
-      <div className="HomePage_Card sm:w-80 w-9/12 h-96 bg-white flex flex-col items-center justify-center mt-20 p-12 gap-2  rounded-xl hover:shadow-2xl ">
-        <img src={service5} alt="" />
-        <h3 className="text-2xl font-bold text-slate-700 hover:text-lime-600 duration-700"><Link to="/OurServices">Neurology Sargery</Link></h3>
-        <p className="text-center text-slate-700">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-        <Link to="Our Services" className="font-semibold text-slate-700 hover:text-lime-600 duration-700">Read More</Link>
-      </div>
-
-      <div className="HomePage_Card sm:w-80 w-9/12 h-96 bg-white flex flex-col items-center justify-center mt-20 p-12 gap-2  rounded-xl hover:shadow-2xl ">
-        <img src={service6} alt="" />
-        <h3 className="text-2xl font-bold text-slate-700 hover:text-lime-600 duration-700"><Link to="/OurServices">Allergic Issue</Link></h3>
-        <p className="text-center text-slate-700">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-        <Link to="Our Services" className="font-semibold text-slate-700 hover:text-lime-600 duration-700">Read More</Link>
-      </div>
-      </div>
-
     </div>
-  )
+  );
 }
 
 
@@ -267,7 +332,7 @@ export const HomePage_Profiles = () => {
           <img src={Line} className="my-3" alt="" />
         </div>
         <div className="lg:flex hidden">
-            <Link to="/contact">
+            <Link to="/appointment">
           <Button variant="destructive" size="lg">
           <span className="bg-white text-gray-800 rounded-full px-3 pb-2 text-4xl">+</span>
             <h2>Make Appointment</h2>
@@ -279,37 +344,37 @@ export const HomePage_Profiles = () => {
       <div className="flex flex-wrap xl:gap-30 lg:gap-20 gap-10 items-center justify-center xl:px-40 lg:px-30 px-15 mt-24 mb-24">
         <div className="relative">
           <img src={member1} alt="" className="relative" />
-          <Link to="/details"><span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-1 pb-3 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">+</span></Link>
+          <Link to="/services"><span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-1 pb-3 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">+</span></Link>
           <h3 className="text-2xl font-semibold text-slate-800 text-center">Rosalina D. Williamson</h3>
           <h4 className="text-center text-rose-600 font-semibold text-base uppercase">Founder</h4>
         </div>
         <div className="relative">
           <img src={member2} alt="" />
-          <Link to="/details"><span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-1 pb-3 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">+</span></Link>
+          <Link to="/services"><span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-1 pb-3 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">+</span></Link>
           <h3 className="text-2xl font-semibold text-slate-800 text-center">Diconda PIran Will</h3>
           <h4 className="text-center text-rose-600 font-semibold text-base uppercase">dentist</h4>
         </div>
         <div className="relative">
           <img src={member3} alt="" />
-          <Link to="/details"><span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-1 pb-3 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">+</span></Link>
+          <Link to="/services"><span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-1 pb-3 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">+</span></Link>
           <h3 className="text-2xl font-semibold text-slate-800 text-center">Hulk M. Kenbon</h3>
           <h4 className="text-center text-rose-600 font-semibold text-base uppercase">neurologist</h4>
         </div>
         <div className="relative">
           <img src={member4} alt="" />
-          <Link to="/details"><span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-1 pb-3 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">+</span></Link>
+          <Link to="/services"><span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-1 pb-3 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">+</span></Link>
           <h3 className="text-2xl font-semibold text-slate-800 text-center">Haliam Z. Dicolaz</h3>
           <h4 className="text-center text-rose-600 font-semibold text-base uppercase">Consultant</h4>
         </div>
         <div className="relative">
           <img src={member5} alt="" />
-          <Link to="/details"><span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-1 pb-3 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">+</span></Link>
+          <Link to="/services"><span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-1 pb-3 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">+</span></Link>
           <h3 className="text-2xl font-semibold text-slate-800 text-center">Nicolas D. Case</h3>
           <h4 className="text-center text-rose-600 font-semibold text-base uppercase">dentist</h4>
         </div>
         <div className="relative">
           <img src={member6} alt="" />
-          <Link to="/details"><span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-1 pb-3 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">+</span></Link>
+          <Link to="/services"><span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-1 pb-3 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">+</span></Link>
           <h3 className="text-2xl font-semibold text-slate-800 text-center">Phumdon H. Norman</h3>
           <h4 className="text-center text-rose-600 font-semibold text-base uppercase">neurologist</h4>
         </div>
@@ -331,7 +396,7 @@ export const Accessible = () => {
       <div className="flex flex-col gap-5 lg:w-[80%] md:w-[50%] w-full">
         <h4 className="text-gray-600 text-xl font-bold">We are available 24/7</h4>
         <h2 className="xl:text-6xl sm:text-5xl text-3xl">We Always Ready <br /> For A Challenge.</h2>
-          <Link to="/contact">
+          <Link to="/appointment">
         <Button className="sm:w-72 w-auto border-none" variant="destructive" size="lg">
           <span className="bg-white text-gray-800 rounded-full px-3 pb-2 text-4xl">+</span>
           <h2>Make Appointment</h2>
@@ -427,21 +492,21 @@ export const HomePage_News = () => {
         <div className="flex flex-col gap-2 px-8 pt-7">
           <Link to="/blogdetails"><p className="text-2xl font-semibold text-slate-800 hover:text-rose-600 hover:cursor-pointer">Lorem ipsum dolor sit amet consectetur adipisicing.</p></Link>
           <div className="flex gap-4 border-b-2 border-violet-200 pb-5 sm:flex-nowrap flex-wrap">
-            <h3 className="flex font-semibold"><Calendar />23rd Jan 2022</h3>
+            <h3 className="flex font-semibold gap-2"><Calendar />23rd Jan 2022</h3>
             <Link to="/blogdetails"><h3 className="flex font-semibold"><MessageCircle />33 Comments</h3></Link>
           </div>
         </div>
         <div className="flex flex-col gap-2 px-8">
           <Link to="/blogdetails"><p className="text-2xl font-semibold text-slate-800 hover:text-rose-600 hover:cursor-pointer">Lorem ipsum dolor sit amet consectetur adipisicing.</p></Link>
           <div className="flex gap-4 border-b-2 border-violet-200 pb-5 sm:flex-nowrap flex-wrap">
-          <h3 className="flex font-semibold"><Calendar />23rd Jan 2022</h3>
+          <h3 className="flex font-semibold gap-2"><Calendar />23rd Jan 2022</h3>
           <Link to="/blogdetails"><h3 className="flex font-semibold"><MessageCircle />33 Comments</h3></Link>
           </div>
         </div>
         <div className="flex flex-col gap-2 px-8 pb-7">
           <Link to="/blogdetails"><p className="text-2xl font-semibold text-slate-800 hover:text-rose-600 hover:cursor-pointer">Lorem ipsum dolor sit amet consectetur adipisicing.</p></Link>
           <div className="flex gap-4 sm:flex-nowrap flex-wrap">
-          <h3 className="flex font-semibold"><Calendar />23rd Jan 2022</h3>
+          <h3 className="flex font-semibold gap-2"><Calendar />23rd Jan 2022</h3>
           <Link to="/blogdetails"><h3 className="flex font-semibold"><MessageCircle />33 Comments</h3></Link>
           </div>
         </div>
