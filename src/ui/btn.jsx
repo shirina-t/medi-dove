@@ -52,7 +52,7 @@ const Button = React.forwardRef(({ className, variant, size, asChild = false, ch
       {...props}>
       
       {showPlus && (
-        <span className="flex items-center justify-center w-14 h-14 rounded-full bg-white text-[#0a0a0a] text-2xl ml-[-48px] mr-5">+</span>
+        <span className="flex items-center justify-center pb-1 w-14 h-14 rounded-full bg-white text-[#0a0a0a] text-2xl ml-[-48px] mr-5">+</span>
       )}
       
       {children}

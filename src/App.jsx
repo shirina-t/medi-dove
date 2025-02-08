@@ -7,6 +7,7 @@ import Details from "./pages/details";
 import Error from "./pages/error";
 import { Home } from "./pages/home"
 import Contact from "./pages/contact";
+import Blog from "./pages/blog";
 import About from "./pages/About";
 import Approach from "./pages/Approach";
 import FeedbackAbout from "./pages/FeedbackAbout";
@@ -24,6 +25,7 @@ function App() {
           <Route path="/services" element={<Details />} />
           <Route path="/surgery" element={<Surgery />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="/about" element={<About />} />
           <Route path="/approach" element={<Approach />} />
           <Route path="/feedback" element={<FeedbackAbout />} />
