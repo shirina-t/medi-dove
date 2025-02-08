@@ -47,7 +47,7 @@ const Navbar = () => {
             id="circle"
             className="w-[150px] h-[150px] rounded-full bg-inherit items-center justify-center p-6 hidden md:hidden lg:flex"
           ></div>
-          <div className="hidden lg:flex text-[14px] text-gray-500 font-semibold gap-5 items-center ml-0 md:ml-[300px]">
+          <div className="hidden lg:flex text-[14px] text-gray-500 font-semibold gap-5 items-center pl-0 lg:pl-[400px]">
             <Link to="/" className="hover:text-gray-800">
               <p>Home +</p>
             </Link>
@@ -62,17 +62,34 @@ const Navbar = () => {
               <Link to="/" className="hover:text-gray-800">
                 <p>Surgery types +</p>
               </Link>
-              {/*Dropdown*/}
-              {isSurgeryDropdownOpen && (
-                <div className="absolute left-0 top-full w-[250px] h-[150px] bg-white p-[30px] border-t-[5px] border-dark-pink shadow-md z-10 flex flex-col justify-around">
-                  <Link to="/surgery" onClick={() => window.scrollTo(0, 0)} className="hover:text-dark-pink">
-                    Our Services
-                  </Link>
-                  <Link to="/services" onClick={() => window.scrollTo(0, 0)} className="hover:text-dark-pink">
-                    Services Details
-                  </Link>
-                </div>
-              )}
+              {/* Dropdown with Transition */}
+              <div
+                className={`absolute left-0 top-full w-[250px] h-[150px] bg-white p-[30px] border-t-[5px] border-dark-pink shadow-md z-10 flex flex-col justify-around 
+                    ${
+                      isSurgeryDropdownOpen
+                        ? "opacity-100 translate-y-0"
+                        : "opacity-0 translate-y-[1/2]"
+                    }
+                    transition-all duration-300 ease-in-out`}
+                style={{
+                  pointerEvents: isSurgeryDropdownOpen ? "auto" : "none",
+                }}
+              >
+                <Link
+                  to="/surgery"
+                  onClick={() => window.scrollTo(0, 0)}
+                  className="hover:text-dark-pink"
+                >
+                  Our Services
+                </Link>
+                <Link
+                  to="/services"
+                  onClick={() => window.scrollTo(0, 0)}
+                  className="hover:text-dark-pink"
+                >
+                  Services Details
+                </Link>
+              </div>
             </div>
             <Link to="/" className="hover:text-gray-800">
               <p>Blog +</p>
@@ -88,17 +105,26 @@ const Navbar = () => {
               <Link to="/" className="hover:text-gray-800">
                 <p>Become a member +</p>
               </Link>
-              {isMemberDropdownOpen && (
-                <div className="absolute left-0 top-full w-[250px] h-[150px] bg-white p-[30px] border-t-[5px] border-dark-pink shadow-md z-10 flex flex-col justify-around">
-                  {/* Dropdown */}
-                  <Link to="/" className="block hover:text-dark-pink py-1">
-                    Appointment
-                  </Link>
-                  <Link to="/" className="block hover:text-dark-pink py-1">
-                    Contact
-                  </Link>
-                </div>
-              )}
+              {/* Dropdown with Transition */}
+              <div
+                className={`absolute left-0 top-full w-[250px] h-[150px] bg-white p-[30px] border-t-[5px] border-dark-pink shadow-md z-10 flex flex-col justify-around
+                    ${
+                      isMemberDropdownOpen
+                        ? "opacity-100 translate-y-0"
+                        : "opacity-0 translate-y-[1/2]"
+                    }
+                    transition-all duration-300 ease-in-out`}
+                style={{
+                  pointerEvents: isMemberDropdownOpen ? "auto" : "none",
+                }}
+              >
+                <Link to="/" className="block hover:text-dark-pink py-1">
+                  Appointment
+                </Link>
+                <Link to="/" className="block hover:text-dark-pink py-1">
+                  Contact
+                </Link>
+              </div>
             </div>
             <p className="gap-3 hidden md:flex">
               <Link to="/" className="hover:text-gray-800">
@@ -187,13 +213,15 @@ const Navbar = () => {
             Surgery types
           </Link>
           <Link
-            to="/surgery" onClick={() => window.scrollTo(0, 0)}
+            to="/surgery"
+            onClick={() => window.scrollTo(0, 0)}
             className="block py-1 text-gray-800 bg-gray-200 text-[14px] pl-3 hover:text-dark-pink"
           >
             Our Services
           </Link>
           <Link
-            to="/services" onClick={() => window.scrollTo(0, 0)}
+            to="/services"
+            onClick={() => window.scrollTo(0, 0)}
             className="block py-1 text-gray-800 text-[14px] pl-3 bg-gray-200 hover:text-dark-pink"
           >
             Services Details
@@ -209,7 +237,7 @@ const Navbar = () => {
             className="block py-2 text-gray-700 hover:text-dark-pink"
           >
             News
-          </Link> 
+          </Link>
           <Link
             to="/"
             className="block py-2 text-gray-700 hover:text-dark-pink"
