@@ -290,7 +290,7 @@ const Navbar = () => {
             Services Details
           </Link>
           <Link
-            to="/"
+            to="/blog"
             className="block py-2 text-gray-700 hover:text-dark-pink"
           >
             Blog
