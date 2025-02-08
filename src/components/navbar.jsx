@@ -84,13 +84,19 @@ const Navbar = () => {
                 <Link to="/about" className="block hover:text-dark-pink py-1">
                   Story
                 </Link>
-                <Link to="/approach" className="block hover:text-dark-pink py-1">
+                <Link
+                  to="/approach"
+                  className="block hover:text-dark-pink py-1"
+                >
                   Approach
                 </Link>
                 <Link to="/team" className="block hover:text-dark-pink py-1">
                   Team
                 </Link>
-                <Link to="/feedback" className="block hover:text-dark-pink py-1">
+                <Link
+                  to="/feedback"
+                  className="block hover:text-dark-pink py-1"
+                >
                   Feedback
                 </Link>
               </div>
@@ -159,7 +165,10 @@ const Navbar = () => {
                   pointerEvents: isMemberDropdownOpen ? "auto" : "none",
                 }}
               >
-                <Link to="/appointment" className="block hover:text-dark-pink py-1">
+                <Link
+                  to="/appointment"
+                  className="block hover:text-dark-pink py-1"
+                >
                   Appointment
                 </Link>
                 <Link to="/contact" className="block hover:text-dark-pink py-1">
@@ -242,38 +251,44 @@ const Navbar = () => {
             Home
           </Link>
           <Link
-            to="/"
+            to="/about"
             className="block py-2 text-gray-700 hover:text-dark-pink"
           >
             About
           </Link>
           <Link
-            to="/surgery"
+            to="/about"
             onClick={() => window.scrollTo(0, 0)}
             className="block py-1 text-gray-800 bg-gray-200 text-[14px] pl-3 hover:text-dark-pink"
           >
             Story
           </Link>
           <Link
-            to="/surgery"
+            to="/approach"
             onClick={() => window.scrollTo(0, 0)}
             className="block py-1 text-gray-800 bg-gray-200 text-[14px] pl-3 hover:text-dark-pink"
           >
             Approach
           </Link>
           <Link
-            to="/surgery"
+            to="/team"
             onClick={() => window.scrollTo(0, 0)}
             className="block py-1 text-gray-800 bg-gray-200 text-[14px] pl-3 hover:text-dark-pink"
           >
             Team
           </Link>
           <Link
-            to="/surgery"
+            to="/feedback"
             onClick={() => window.scrollTo(0, 0)}
             className="block py-1 text-gray-800 bg-gray-200 text-[14px] pl-3 hover:text-dark-pink"
           >
             Feedback
+          </Link>
+          <Link
+            to="/surgery"
+            className="block py-2 text-gray-700 hover:text-dark-pink"
+          >
+            Surgery Types
           </Link>
           <Link
             to="/surgery"
@@ -302,19 +317,19 @@ const Navbar = () => {
             News
           </Link>
           <Link
-            to="/"
+            to="/contact"
             className="block py-2 text-gray-700 hover:text-dark-pink"
           >
             Become a member
           </Link>
           <Link
-            to="/"
+            to="/appointment"
             className="block py-1 text-gray-800 bg-gray-200 text-[14px] pl-3 hover:text-dark-pink"
           >
             Appointment
           </Link>
           <Link
-            to="/"
+            to="/contact"
             className="block py-1 text-gray-800 text-[14px] pl-3 bg-gray-200 hover:text-dark-pink"
           >
             Contact
