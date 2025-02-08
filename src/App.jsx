@@ -13,6 +13,7 @@ import TeamAbout from "./pages/TeamAbout";
 import Appointment from "./pages/Appointment";
 import Contact from "./pages/contact";
 import Error from "./pages/error";
+import News from "./pages/News";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/team" element={<TeamAbout />} />
           <Route path="/appointment" element={<Appointment />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/news" element={<News />} />
         </Route>
           <Route path="*" element={<Error />} />
       </Routes>
