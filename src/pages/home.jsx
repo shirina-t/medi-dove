@@ -42,7 +42,7 @@ export const Showcase = () => {
       className="homePage_showcase relative flex items-center overflow-hidden"
       onMouseEnter={() => setArrows(true)}
       onMouseLeave={() => setArrows(false)}>
-      <div className="absolute w-full lg:flex hidden justify-between px-20 top-1/2 -translate-y-1/2 transition-opacity duration-500" style={{ opacity: Arrows ? 1 : 0 }}>
+      <div className="absolute w-full lg:flex hidden justify-between xl:px-18 lg:px-6 top-1/2 -translate-y-1/2 transition-opacity duration-500" style={{ opacity: Arrows ? 1 : 0 }}>
         <button onClick={nextSlide} className="showcase_arrowLeft bg-white shadow-xl p-6 rounded-full hover:bg-rose-500 hover:text-white duration-500">
           <ArrowLeft />
         </button>
@@ -68,7 +68,7 @@ export const Showcase = () => {
           <div className="showcase_buttons flex items-center gap-4 flex-wrap sm:justify-start justify-center">
           <Link to="/contact">
             <Button className="slider1_buttons" variant="destructive" size="lg">
-              <span className="bg-white text-gray-800 rounded-full px-3 py-1 text-4xl">
+              <span className="bg-white text-gray-800 rounded-full px-3 pb-2 text-4xl">
                 +
               </span>
               <h2>Make Appointment</h2>
@@ -99,13 +99,11 @@ export const Showcase = () => {
           </p>
           <br />
           <div className="showcase_buttons flex items-center gap-4 flex-wrap sm:justify-start justify-center">
-            <Button className="slider1_buttons" variant="destructive" size="lg">
-              <Link to="/">
+          <Button className="slider2_buttons" variant="destructive" size="lg">
               <span className="bg-white text-gray-800 rounded-full px-3 pb-2 text-4xl">
                 +
               </span>
               <h2>Make Appointment</h2>
-              </Link>
             </Button>
             <Button
               variant="outline"
@@ -271,7 +269,7 @@ export const HomePage_Profiles = () => {
         <div className="lg:flex hidden">
             <Link to="/contact">
           <Button variant="destructive" size="lg">
-          <span className="bg-white text-gray-800 rounded-full px-3 py-1 text-4xl">+</span>
+          <span className="bg-white text-gray-800 rounded-full px-3 pb-2 text-4xl">+</span>
             <h2>Make Appointment</h2>
           </Button>
           </Link>
@@ -281,37 +279,37 @@ export const HomePage_Profiles = () => {
       <div className="flex flex-wrap xl:gap-30 lg:gap-20 gap-10 items-center justify-center xl:px-40 lg:px-30 px-15 mt-24 mb-24">
         <div className="relative">
           <img src={member1} alt="" className="relative" />
-          <Link to="/details"><span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-2 pb-2 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">+</span></Link>
+          <Link to="/details"><span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-1 pb-3 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">+</span></Link>
           <h3 className="text-2xl font-semibold text-slate-800 text-center">Rosalina D. Williamson</h3>
           <h4 className="text-center text-rose-600 font-semibold text-base uppercase">Founder</h4>
         </div>
         <div className="relative">
           <img src={member2} alt="" />
-          <Link to="/details"><span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-2 pb-2 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">+</span></Link>
+          <Link to="/details"><span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-1 pb-3 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">+</span></Link>
           <h3 className="text-2xl font-semibold text-slate-800 text-center">Diconda PIran Will</h3>
           <h4 className="text-center text-rose-600 font-semibold text-base uppercase">dentist</h4>
         </div>
         <div className="relative">
           <img src={member3} alt="" />
-          <Link to="/details"><span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-2 pb-2 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">+</span></Link>
+          <Link to="/details"><span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-1 pb-3 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">+</span></Link>
           <h3 className="text-2xl font-semibold text-slate-800 text-center">Hulk M. Kenbon</h3>
           <h4 className="text-center text-rose-600 font-semibold text-base uppercase">neurologist</h4>
         </div>
         <div className="relative">
           <img src={member4} alt="" />
-          <Link to="/details"><span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-2 pb-2 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">+</span></Link>
+          <Link to="/details"><span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-1 pb-3 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">+</span></Link>
           <h3 className="text-2xl font-semibold text-slate-800 text-center">Haliam Z. Dicolaz</h3>
           <h4 className="text-center text-rose-600 font-semibold text-base uppercase">Consultant</h4>
         </div>
         <div className="relative">
           <img src={member5} alt="" />
-          <Link to="/details"><span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-2 pb-2 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">+</span></Link>
+          <Link to="/details"><span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-1 pb-3 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">+</span></Link>
           <h3 className="text-2xl font-semibold text-slate-800 text-center">Nicolas D. Case</h3>
           <h4 className="text-center text-rose-600 font-semibold text-base uppercase">dentist</h4>
         </div>
         <div className="relative">
           <img src={member6} alt="" />
-          <Link to="/details"><span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-2 pb-2 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">+</span></Link>
+          <Link to="/details"><span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-1 pb-3 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">+</span></Link>
           <h3 className="text-2xl font-semibold text-slate-800 text-center">Phumdon H. Norman</h3>
           <h4 className="text-center text-rose-600 font-semibold text-base uppercase">neurologist</h4>
         </div>
@@ -335,7 +333,7 @@ export const Accessible = () => {
         <h2 className="xl:text-6xl sm:text-5xl text-3xl">We Always Ready <br /> For A Challenge.</h2>
           <Link to="/contact">
         <Button className="sm:w-72 w-auto border-none" variant="destructive" size="lg">
-          <span className="bg-white text-gray-800 rounded-full px-3 py-1 text-4xl">+</span>
+          <span className="bg-white text-gray-800 rounded-full px-3 pb-2 text-4xl">+</span>
           <h2>Make Appointment</h2>
         </Button>
           </Link>
@@ -372,7 +370,7 @@ export const Consultant = () => {
       <p className="text-white xl:text-6xl lg:text-5xl text-4xl w-4/6 text-center">Trust Us To Be There To Help All & Make Things Well Again.</p>
       <Link to="/">
       <Button variant="outline" size="lg">
-      <span className="bg-white text-gray-800 rounded-full px-3 py-1 text-4xl">+</span>
+      <span className="bg-white text-gray-800 rounded-full px-3 pb-2 text-4xl">+</span>
         <h2>Get a Consultant</h2>
       </Button>
       </Link>
@@ -393,7 +391,7 @@ export const HomePage_Blog = () => {
       </div>
       <Link to="/">
       <Button variant="destructive" size="lg" className="lg:flex hidden">
-          <span className="bg-white text-gray-800 rounded-full px-3 py-1 text-4xl">+</span>
+          <span className="bg-white text-gray-800 rounded-full px-3 pb-2 text-4xl">+</span>
             <h2>Make Appointment</h2>
           </Button>
       </Link>
