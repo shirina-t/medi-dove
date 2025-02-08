@@ -17,16 +17,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          {/* <Route path="content" element={<Content />} /> */}
           <Route path="/services" element={<Details />} />
           <Route path="/surgery" element={<Surgery />} />
-
           {/* <Route path="/contact" element={<Contact />} />
           <Route path="/appointment" element={<Appointment />} /> */}
-
-          <Route path="*" element={<Error />} />
-
         </Route>
+          <Route path="*" element={<Error />} />
       </Routes>
     </>
   );

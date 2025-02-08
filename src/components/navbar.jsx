@@ -228,7 +228,6 @@ const Navbar = () => {
           >
             Contact
           </Link>
-          {/* ... other nav links ... */}
         </div>
       </div>
     </>
@@ -242,6 +241,8 @@ export default Navbar;
  Links to pages!
  Space in dropmenu
  Lang img -> drop down menu-> change lang
+ To the right on 100%
+ transition-opacity duration-300 ${isMemberDropdownOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}
 */
 }
 
