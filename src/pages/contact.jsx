@@ -1,6 +1,7 @@
 import React from 'react'
-import { Link } from "react-router-dom";
 import showcase1 from "/src/img/showcase1.png";
+import { Link } from "react-router-dom";
+import { Mail } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -26,7 +27,35 @@ const Contact = () => {
           </Link>
         </div>
       </div>
-      
+      <div className='flex justify-around gap-10 mx-[80px]'>
+        <div className="mailbox border-2 rounded-sm p-10 flex flex-col gap-5 justify-center items-center">
+          <div className="w-[150px] h-[150px] rounded-full bg-dirty-green text-white flex justify-center items-center">
+            <Mail className="w-10 h-10" />
+          </div>
+          <div>
+            <p className='text-[30px] font-semibold'>Mail Here</p>
+            <p className='text-gray-600'>Admin@BasicTheme.com Info@Themepur.com</p>
+          </div>
+        </div>
+        <div className="locationbox border-2 rounded-sm p-10 flex flex-col gap-5 justify-center items-center">
+          <div className="w-[150px] h-[150px] rounded-full bg-dirty-green text-white flex justify-center items-center">
+            <Mail className="w-10 h-10" />
+          </div>
+          <div>
+            <p className='text-[30px] font-semibold'>Mail Here</p>
+            <p className='text-gray-600'>Admin@BasicTheme.com Info@Themepur.com</p>
+          </div>
+        </div>
+        <div className="callbox border-2 rounded-sm p-10 flex flex-col gap-5 justify-center items-center">
+          <div className="w-[150px] h-[150px] rounded-full bg-dirty-green text-white flex justify-center items-center">
+            <Mail className="w-10 h-10" />
+          </div>
+          <div>
+            <p className='text-[30px] font-semibold'>Mail Here</p>
+            <p className='text-gray-600'>Admin@BasicTheme.com Info@Themepur.com</p>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
