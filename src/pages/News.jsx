@@ -22,6 +22,7 @@ import { Showcase } from '../components/Showcase'
 import { Button } from "@/ui/btn";
 import lesgo from "/src/img/lesgo.jpg";
 import { Link } from 'react-router-dom'
+import showcase1 from "/src/img/showcase1.png";
 
 
 
@@ -31,6 +32,19 @@ function News() {
   ]
   return (
     <>
+    <div className="w-[100%] bg-cover bg-no-repeat md:flex justify-between xl:px-32 lg:px-20 sm:px-2 items-center py-[200px] bg-center h-full mb-[30px]"
+style={{ backgroundImage: `url(${showcase1})` }}>
+<div className="flex flex-col gap-10 sm:ml-10 md:ml-0 ml-10 ">
+<h3 className="font-bold text-xl opacity-50">We are here for your care </h3>
+<h1 className="text-6xl font-bold text-[#223545]">News</h1>
+</div>
+
+<div className="flex gap-1 font-semibold sm:ml-10 md:ml-0 ml-10 sm:mt-10 md:mt-0 mt-10 ">
+<Link to="/" className="opacity-50 text-gray-900 no-underline">Home</Link>
+<p>|</p>
+<Link to="/services" className="text-red-600 no-underline">News</Link>
+</div>
+</div>
       <div className="max-[1000px]:block py-[100px] px-[50px] flex gap-[20px] max-[1000px]:px-0">
         <div className="w-[70%] flex flex-col gap-[30px] max-[1000px]:w-[700px]  max-[1000px]:my-0 max-[1000px]:mx-auto max-[790px]:w-[560px] max-[600px]:w-[100%] max-[600px]:px-[15px] ">
           <div>
