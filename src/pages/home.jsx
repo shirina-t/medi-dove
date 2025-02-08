@@ -433,7 +433,7 @@ export const Consultant = () => {
     <div className="bg-slate-900 w-full h-full mb-20 flex flex-col items-center justify-center py-20 gap-8">
       <h4 className="text-gray-600 font-bold">Stay healthy & strong to enjoy life</h4>
       <p className="text-white xl:text-6xl lg:text-5xl text-4xl w-4/6 text-center">Trust Us To Be There To Help All & Make Things Well Again.</p>
-      <Link to="/">
+      <Link to="/appointment">
       <Button variant="outline" size="lg">
       <span className="bg-white text-gray-800 rounded-full px-3 pb-2 text-4xl">+</span>
         <h2>Get a Consultant</h2>
@@ -454,7 +454,7 @@ export const HomePage_Blog = () => {
         <h2 className="lg:text-start text-center font-semibold text-gray-700 xl:text-[55px] lg:text-[45px] md:text-[40px] text-[35px] mb-2">Get Every Single <br/> Updates Here.</h2>
       <img src={Line} alt="" className="mt-5" />
       </div>
-      <Link to="/">
+      <Link to="/appointment">
       <Button variant="destructive" size="lg" className="lg:flex hidden">
           <span className="bg-white text-gray-800 rounded-full px-3 pb-2 text-4xl">+</span>
             <h2>Make Appointment</h2>
@@ -476,38 +476,38 @@ export const HomePage_News = () => {
     <div className="HomePage_News flex items-center justify-center gap-10 mb-20 flex-wrap">
       <div className="NewsCard1 xl:w-1/4 md:w-[40%] w-9/12">
         <img src={News1} alt="" className="w-full h-full" />
-        <Link to="/blogdetails" className="flex gap-5 text-rose-600 font-semibold py-1 uppercase"><h4>Medical,</h4><h4>Medicine</h4></Link>
-        <Link to="/blogdetails"><h2 className="text-2xl font-bold text-slate-800 hover:text-rose-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2></Link>
+        <Link to="/blog" className="flex gap-5 text-rose-600 font-semibold py-1 uppercase"><h4>Medical,</h4><h4>Medicine</h4></Link>
+        <Link to="/blog"><h2 className="text-2xl font-bold text-slate-800 hover:text-rose-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2></Link>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident itaque perspiciatis magni hic cumque  illum quibusdam blanditiis nesciunt.</p>
       </div>
 
       <div className="NewsCard2 xl:w-1/4 md:w-[40%] w-9/12">
       <img src={News2} alt="" className="w-full h-full" />
-      <Link to="/blogdetails" className="flex gap-5 text-rose-600 font-semibold py-1 uppercase"><h4>Medical,</h4><h4>Medicine</h4></Link>
-        <Link to="/blogdetails"><h2 className="text-2xl font-bold text-slate-800 hover:text-rose-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2></Link>
+      <Link to="/blog" className="flex gap-5 text-rose-600 font-semibold py-1 uppercase"><h4>Medical,</h4><h4>Medicine</h4></Link>
+        <Link to="/blog"><h2 className="text-2xl font-bold text-slate-800 hover:text-rose-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2></Link>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci tenetur totam ad recusandae ipsa amet, officiis voluptatum. Fuga, a neque?</p>
       </div>
 
       <div className="NewsCard3 xl:w-1/4 w-9/12 border-2 flex flex-col gap-4 border-violet-200">
         <div className="flex flex-col gap-2 px-8 pt-7">
-          <Link to="/blogdetails"><p className="text-2xl font-semibold text-slate-800 hover:text-rose-600 hover:cursor-pointer">Lorem ipsum dolor sit amet consectetur adipisicing.</p></Link>
+          <Link to="/blog"><p className="text-2xl font-semibold text-slate-800 hover:text-rose-600 hover:cursor-pointer">Lorem ipsum dolor sit amet consectetur adipisicing.</p></Link>
           <div className="flex gap-4 border-b-2 border-violet-200 pb-5 sm:flex-nowrap flex-wrap">
             <h3 className="flex font-semibold gap-2"><Calendar />23rd Jan 2022</h3>
-            <Link to="/blogdetails"><h3 className="flex font-semibold"><MessageCircle />33 Comments</h3></Link>
+            <Link to="/blog"><h3 className="flex font-semibold"><MessageCircle />33 Comments</h3></Link>
           </div>
         </div>
         <div className="flex flex-col gap-2 px-8">
-          <Link to="/blogdetails"><p className="text-2xl font-semibold text-slate-800 hover:text-rose-600 hover:cursor-pointer">Lorem ipsum dolor sit amet consectetur adipisicing.</p></Link>
+          <Link to="/blog"><p className="text-2xl font-semibold text-slate-800 hover:text-rose-600 hover:cursor-pointer">Lorem ipsum dolor sit amet consectetur adipisicing.</p></Link>
           <div className="flex gap-4 border-b-2 border-violet-200 pb-5 sm:flex-nowrap flex-wrap">
           <h3 className="flex font-semibold gap-2"><Calendar />23rd Jan 2022</h3>
-          <Link to="/blogdetails"><h3 className="flex font-semibold"><MessageCircle />33 Comments</h3></Link>
+          <Link to="/blog"><h3 className="flex font-semibold"><MessageCircle />33 Comments</h3></Link>
           </div>
         </div>
         <div className="flex flex-col gap-2 px-8 pb-7">
-          <Link to="/blogdetails"><p className="text-2xl font-semibold text-slate-800 hover:text-rose-600 hover:cursor-pointer">Lorem ipsum dolor sit amet consectetur adipisicing.</p></Link>
+          <Link to="/blog"><p className="text-2xl font-semibold text-slate-800 hover:text-rose-600 hover:cursor-pointer">Lorem ipsum dolor sit amet consectetur adipisicing.</p></Link>
           <div className="flex gap-4 sm:flex-nowrap flex-wrap">
           <h3 className="flex font-semibold gap-2"><Calendar />23rd Jan 2022</h3>
-          <Link to="/blogdetails"><h3 className="flex font-semibold"><MessageCircle />33 Comments</h3></Link>
+          <Link to="/blog"><h3 className="flex font-semibold"><MessageCircle />33 Comments</h3></Link>
           </div>
         </div>
       </div>
@@ -523,9 +523,9 @@ export const Last_Button = () => {
   return(
     <div className="mb-48">
     <div className="md:absolute flex items-center justify-center md:right-[15%]">
-      <Link to="/">
+      <Link to="/contact">
       <Button variant="outline" size="lg" className="py-7">
-        <span className="bg-white text-gray-800 rounded-full px-4 py-4 text-4xl"><Phone fill="black"/></span>
+        <span className="bg-white text-gray-800 rounded-full px-3 py-3 text-4xl"><Phone fill="black"/></span>
         <h2>Make Call</h2>
       </Button>
       </Link>
