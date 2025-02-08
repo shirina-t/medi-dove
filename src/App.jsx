@@ -7,6 +7,11 @@ import Details from "./pages/details";
 import Error from "./pages/error";
 import { Home } from "./pages/home"
 import Contact from "./pages/contact";
+import About from "./pages/About";
+import Approach from "./pages/Approach";
+import FeedbackAbout from "./pages/FeedbackAbout";
+import TeamAbout from "./pages/TeamAbout";
+import Appointment from "./pages/Appointment";
 // import Appointment from "./pages/appointment";
 
 
@@ -19,6 +24,11 @@ function App() {
           <Route path="/services" element={<Details />} />
           <Route path="/surgery" element={<Surgery />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/approach" element={<Approach />} />
+          <Route path="/feedback" element={<FeedbackAbout />} />
+          <Route path="/team" element={<TeamAbout />} />
+          <Route path="/appointment" element={<Appointment />} />
           {/*<Route path="/appointment" element={<Appointment />} /> */}
         </Route>
           <Route path="*" element={<Error />} />
