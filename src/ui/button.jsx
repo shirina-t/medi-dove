@@ -12,7 +12,7 @@ const buttonVariants = cva(
         default:
           "bg-violet-600 text-white border-2 border-violet-600 hover:bg-white hover:text-violet-600 duration-500",
         destructive:
-          "bg-rose-500 text-white border-2 hover:bg-green-600 duration-700 border-none",
+          "bg-rose-500 text-white border-2 hover:bg-dirty-green duration-700 border-none",
         outline:
           "bg-dirty-green text-white hover:bg-white hover:bg-rose-500 duration-500 rounded-full",
         secondary:
