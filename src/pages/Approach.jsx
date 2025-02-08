@@ -8,7 +8,7 @@ import Aboutp from "../components/Aboutp";
 
 const Approach = () => {
   return (
-    <div className="w-screen h-full flex flex-col gap-32">
+    <div className="w-[100%] h-full flex flex-col gap-32">
       <AboutShowcase />
 
       <div className="bg-[url(/media/bg2.jpg)] bg-cover bg-top bg-no-repeat py-36">
@@ -49,7 +49,7 @@ const Approach = () => {
                 </Aboutp>
               </li>
             </ul></div>
-            <Link to={"/appointment"} className="no-underline text-white bg-[#e12454] text-center py-6 text-[14px] font-[500] font-rubik tracking-wide transition-all duration-300 hover:bg-[#8fb569]">MAKE APPOINTMENT</Link>
+            <Link to="/appointment" className="no-underline text-white bg-[#e12454] text-center py-6 text-[14px] font-[500] font-rubik tracking-wide transition-all duration-300 hover:bg-[#8fb569]">MAKE APPOINTMENT</Link>
           </div>
         </div>
       </div>

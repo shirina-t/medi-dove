@@ -11,10 +11,10 @@ import { Link, useNavigate } from "react-router-dom";
 
 const FeedbackAbout = () => {
   return (
-    <div className="w-screen h-full flex flex-col gap-0">
+    <div className="w-[100%] h-full flex flex-col gap-0">
       <AboutShowcase />
 
-      <div className="w-full bg-[#13232f] sm:px-2 xl:px-32 lg:px-20 py-20">
+      <div className="w-full bg-[#13232f] sm:px-2 xl:px-32 lg:px-20 py-20 mb-32">
         <div className="w-full font-rubik text-[#647589]">
           <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-3">
             <div className="partleft flex flex-col gap-5">
@@ -23,7 +23,7 @@ const FeedbackAbout = () => {
                 We Always Ready For A Challenge.
               </Abouth1>
               <div className="hidden md:block">
-                <Link to="/" className="no-underline">
+                <Link to="/appointment" className="no-underline">
                   <Button
                     variant="secondary"
                     size="btns"

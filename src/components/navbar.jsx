@@ -81,7 +81,7 @@ const Navbar = () => {
                   pointerEvents: isAboutDropdownOpen ? "auto" : "none",
                 }}
               >
-                <Link to="/story" className="block hover:text-dark-pink py-1">
+                <Link to="/about" className="block hover:text-dark-pink py-1">
                   Story
                 </Link>
                 <Link to="/approach" className="block hover:text-dark-pink py-1">

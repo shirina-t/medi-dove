@@ -15,7 +15,7 @@ const About = () => {
     };
 
   return (
-    <div className="w-screen h-full flex flex-col gap-32 overflow-y-auto">
+    <div className="w-[100%] h-full flex flex-col gap-32 overflow-y-auto">
       <AboutShowcase />
 
       <div className="shortstory w-full grid grid-cols-1 md:grid-cols-2 gap-10 sm:px-2 xl:px-32 lg:px-20">

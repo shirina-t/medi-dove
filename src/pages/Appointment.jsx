@@ -21,7 +21,7 @@ const Appointment = () => {
   };
 
   return (
-    <div className="w-screen h-full flex flex-col gap-32">
+    <div className="w-[100%] h-full flex flex-col gap-32">
       <div className="w-screen h-full">
         <div className="showc w-full bg-[url(/media/shwc.jpg)] bg-cover bg-opacity-0 md:flex justify-between xl:px-32 lg:px-20 sm:px-2 items-center py-32 bg-[50%] bg-no-repeat">
           <div className="flex flex-col gap-10">
@@ -190,7 +190,7 @@ const Appointment = () => {
             </div>
           </div>
           <div className="hidden md:block">
-            <Link to="/appointment" className="no-underline">
+            <Link to="/blog" className="no-underline">
               <Button
                 variant="secondary"
                 size="btns"

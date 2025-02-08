@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const TeamAbout = () => {
   return (
-    <div className="w-screen h-full flex flex-col gap-32 px-2">
+    <div className="w-[100%] h-full flex flex-col gap-32 px-2">
       <AboutShowcase />
 
       <div className="w-full flex flex-col items-start gap-16 xl:px-32 lg:px-20 sm:px-2 py-10">
