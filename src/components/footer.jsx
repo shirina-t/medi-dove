@@ -86,7 +86,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/" className="hover:text-dirty-green hover:underline">
+                <Link to="/news" className="hover:text-dirty-green hover:underline">
                   News
                 </Link>
               </li>
@@ -112,7 +112,7 @@ const Footer = () => {
           <p className="text-xl md:text-[27px] font-bold">News Feeds</p>
           <div className="flex flex-col gap-5 mt-6 md:mt-[30px]">
             <div className="top">
-              <Link to="/" className="flex items-center gap-3">
+              <Link to="/news" className="flex items-center gap-3">
                 <img
                   src={feedThumb1}
                   alt="News 1"
@@ -129,7 +129,7 @@ const Footer = () => {
               </Link>
             </div>
             <div className="mid">
-              <Link to="/" className="flex items-center gap-3">
+              <Link to="/news" className="flex items-center gap-3">
                 <img
                   src={feedThumb2}
                   alt="News 2"
@@ -146,7 +146,7 @@ const Footer = () => {
               </Link>
             </div>
             <div className="bot">
-              <Link to="/" className="flex items-center gap-3">
+              <Link to="/news" className="flex items-center gap-3">
                 <img
                   src={feedThumb3}
                   alt="News 3"

@@ -135,7 +135,7 @@ const Navbar = () => {
             <Link to="/blog" className="hover:text-gray-800">
               <p>Blog +</p>
             </Link>
-            <Link to="/" className="hover:text-gray-800">
+            <Link to="/news" className="hover:text-gray-800">
               <p>News +</p>
             </Link>
             <div
@@ -296,7 +296,7 @@ const Navbar = () => {
             Blog
           </Link>
           <Link
-            to="/"
+            to="/news"
             className="block py-2 text-gray-700 hover:text-dark-pink"
           >
             News
