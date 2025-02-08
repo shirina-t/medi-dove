@@ -17,7 +17,8 @@ const buttonVariants = cva(
           "bg-green-700 text-white hover:bg-white hover:bg-rose-500 duration-500 rounded-full",
         secondary:
           "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
-        ghost: "bg-gray-600 text-white border-2 border-gray-600 hover:bg-white hover:text-gray-600 duration-500",
+        ghost:
+          "bg-gray-600 text-white border-2 border-gray-600 hover:bg-white hover:text-gray-600 duration-500",
         link: "bg-orange-600 text-white border-2 border-orange-600 hover:bg-white hover:text-orange-600 duration-500",
       },
       size: {
@@ -25,14 +26,14 @@ const buttonVariants = cva(
         sm: "text-5xl",
         lg: "h-10 W-auto rounded-full pr-10 pl-2 py-8 text-xl",
         icon: "text-2xl px-2 py-2 bg-white text-black",
-      }, 
+      },
     },
     defaultVariants: {
       variant: "default",
       size: "default",
     },
   }
-)
+);
 
 const Button = React.forwardRef(({ className, variant, size, asChild = false, ...props }, ref) => {
   const Comp = asChild ? Slot : "button"

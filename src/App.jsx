@@ -6,8 +6,7 @@ import Surgery from './pages/surgery'
 import Details from "./pages/details";
 import Error from "./pages/error";
 import { Home } from "./pages/home"
-
-// import Contact from "./pages/contact";
+import Contact from "./pages/contact";
 // import Appointment from "./pages/appointment";
 
 
@@ -19,8 +18,8 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/services" element={<Details />} />
           <Route path="/surgery" element={<Surgery />} />
-          {/* <Route path="/contact" element={<Contact />} />
-          <Route path="/appointment" element={<Appointment />} /> */}
+          <Route path="/contact" element={<Contact />} />
+          {/*<Route path="/appointment" element={<Appointment />} /> */}
         </Route>
           <Route path="*" element={<Error />} />
       </Routes>
