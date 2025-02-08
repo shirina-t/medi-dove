@@ -2,7 +2,15 @@ import React, { useState } from "react";
 import mediDoveLogo from "../assets/medi_dove_logo.png";
 import langImg from "../assets/lang.png";
 import { Link } from "react-router-dom";
-import { Phone, Mail, Facebook, Youtube, Linkedin, Menu, X} from "lucide-react";
+import {
+  Phone,
+  Mail,
+  Facebook,
+  Youtube,
+  Linkedin,
+  Menu,
+  X,
+} from "lucide-react";
 
 const Navbar = () => {
   const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
@@ -18,7 +26,7 @@ const Navbar = () => {
   return (
     <>
       <div className="flex items-center justify-between bg-light-blue md:pl-[50px] lg:pl-[150px] flex-col md:flex-row">
-        <div className="flex gap-5 text-gray-600 text-[15px] mt-[20px] md:0 ">
+        <div className="flex gap-5 text-gray-600 text-[15px] md:mt-0 mt-[20px]">
           <p className="flex items-center gap-1 tracking-tighter">
             <Phone className="w-[18px] h-[18px]" /> +1 800 833 9780
           </p>
@@ -326,4 +334,3 @@ export default Navbar;
  Lang img -> drop down menu-> change lang
 */
 }
-
