@@ -47,10 +47,9 @@ const TeamAbout = () => {
               <img src="/media/member1.png" />
               <Link
                 to={"/"}
-                className="absolute right-28 sm:right-44 md:right-16 lg:right-4 xl:right-12 bottom-10 bg-[#8fb569] text-white p-3 rounded-full hover:bg-[#e12454] font-bold font-rubik transition-all duration-300"
+                className="absolute right-[150px] sm:right-50 md:right-16 lg:right-4 xl:right-12 bottom-0 bg-[#8fb569] text-white p-3 rounded-full hover:bg-[#e12454] font-bold font-rubik transition-all duration-300"
               >
-                {" "}
-                <Plus />{" "}
+                <Plus />
               </Link>
             </div>
             <div className="w-full flex flex-col items-center">
@@ -67,10 +66,9 @@ const TeamAbout = () => {
               <img src="/media/member2.png" />
               <Link
                 to={"/"}
-                className="absolute right-28 sm:right-44 md:right-16 lg:right-4 xl:right-12 bottom-10 bg-[#8fb569] text-white p-3 rounded-full hover:bg-[#e12454] font-bold font-rubik transition-all duration-300"
+                className="absolute right-[150px] sm:right-50 md:right-16 lg:right-4 xl:right-12 bottom-0 bg-[#8fb569] text-white p-3 rounded-full hover:bg-[#e12454] font-bold font-rubik transition-all duration-300"
               >
-                {" "}
-                <Plus />{" "}
+                <Plus />
               </Link>
             </div>
             <div className="w-full flex flex-col items-center">
@@ -87,10 +85,9 @@ const TeamAbout = () => {
               <img src="/media/member3.png" />
               <Link
                 to={"/"}
-                className="absolute right-28 sm:right-44 md:right-16 lg:right-4 xl:right-12 bottom-10 bg-[#8fb569] text-white p-3 rounded-full hover:bg-[#e12454] font-bold font-rubik transition-all duration-300"
+                className="absolute right-[150px] sm:right-50 md:right-16 lg:right-4 xl:right-12 bottom-0 bg-[#8fb569] text-white p-3 rounded-full hover:bg-[#e12454] font-bold font-rubik transition-all duration-300"
               >
-                {" "}
-                <Plus />{" "}
+                <Plus />
               </Link>
             </div>
             <div className="w-full flex flex-col items-center">
@@ -107,10 +104,9 @@ const TeamAbout = () => {
               <img src="/media/member4.png" />
               <Link
                 to={"/"}
-                className="absolute right-28 sm:right-44 md:right-16 lg:right-4 xl:right-12 bottom-10 bg-[#8fb569] text-white p-3 rounded-full hover:bg-[#e12454] font-bold font-rubik transition-all duration-300"
+                className="absolute right-[150px] sm:right-50 md:right-16 lg:right-4 xl:right-12 bottom-0 bg-[#8fb569] text-white p-3 rounded-full hover:bg-[#e12454] font-bold font-rubik transition-all duration-300"
               >
-                {" "}
-                <Plus />{" "}
+                <Plus />
               </Link>
             </div>
             <div className="w-full flex flex-col items-center">
@@ -127,10 +123,9 @@ const TeamAbout = () => {
               <img src="/media/member5.png" />
               <Link
                 to={"/"}
-                className="absolute right-28 sm:right-44 md:right-16 lg:right-4 xl:right-12 bottom-10 bg-[#8fb569] text-white p-3 rounded-full hover:bg-[#e12454] font-bold font-rubik transition-all duration-300"
+                className="absolute right-[150px] sm:right-50 md:right-16 lg:right-4 xl:right-12 bottom-0 bg-[#8fb569] text-white p-3 rounded-full hover:bg-[#e12454] font-bold font-rubik transition-all duration-300"
               >
-                {" "}
-                <Plus />{" "}
+                <Plus />
               </Link>
             </div>
             <div className="w-full flex flex-col items-center">
@@ -147,10 +142,9 @@ const TeamAbout = () => {
               <img src="/media/member6.png" />
               <Link
                 to={"/"}
-                className="absolute right-28 sm:right-44 md:right-16 lg:right-4 xl:right-12 bottom-10 bg-[#8fb569] text-white p-3 rounded-full hover:bg-[#e12454] font-bold font-rubik transition-all duration-300"
+                className="absolute right-[150px] sm:right-50 md:right-16 lg:right-4 xl:right-12 bottom-0 bg-[#8fb569] text-red-500 p-3 rounded-full hover:bg-[#e12454] font-bold font-rubik transition-all duration-300"
               >
-                {" "}
-                <Plus />{" "}
+                <Plus />
               </Link>
             </div>
             <div className="w-full flex flex-col items-center">
