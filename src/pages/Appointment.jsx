@@ -63,7 +63,7 @@ const Appointment = () => {
                 title="YouTube video"
                 allow="autoplay; encrypted-media"
                 allowFullScreen
-                className="w-full h-full lg:h-[500px]"
+                className="w-full h-[250px] lg:h-[500px]"
               ></iframe>
             </div>
           )}
