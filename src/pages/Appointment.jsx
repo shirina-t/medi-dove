@@ -44,10 +44,10 @@ const Appointment = () => {
       </div>
 
       <div className="shortstory w-[100%] items-center grid grid-cols-1 md:grid-cols-2 gap-10 sm:px-2 xl:px-32 lg:px-20">
-        <div className="w-[100%] relative">
+        <div className="relative w-[100%]">
           {!isPlaying ? (
             <div
-              className="w-[100%] py-[50%] bg-center bg-cover relative flex justify-center items-center "
+              className="py-[50%] bg-center bg-cover relative flex justify-center items-center "
               style={{
                 backgroundImage: "url('/media/about-img-3.jpg')",
               }}
@@ -63,13 +63,13 @@ const Appointment = () => {
                 title="YouTube video"
                 allow="autoplay; encrypted-media"
                 allowFullScreen
-                className="w-[100%] h-full"
+                className="w-full h-full lg:h-[500px]"
               ></iframe>
             </div>
           )}
           <img
             src="/media/brand12.png"
-            className="absolute top-[32%] left-[80%]"
+            className="lg:absolute hidden top-[32%] left-[80%]"
           />
         </div>
 

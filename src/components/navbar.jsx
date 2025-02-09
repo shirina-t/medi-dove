@@ -50,7 +50,7 @@ const Navbar = () => {
             to="/"
             className="absolute left-[0px] md:left-[35px] top-1/2 transform -translate-y-1/2 z-5 "
           >
-            <img src={mediDoveLogo} alt="Logo" className="h-full" />
+            <img src={mediDoveLogo} alt="Logo" className="lg:h-full lg:w-full lg:pl-0 h-[50%] w-[50%] pl-2" />
           </Link>
           <div
             id="circle"
