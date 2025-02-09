@@ -63,7 +63,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="formblue w-[100%] bg-[#F4F9FC] py-[100px]">
+      <div className="formblue w-[100%] bg-red-600 py-[100px]">
         <div className="flex flex-col lg:flex-row items-center justify-between pb-10 px-[80px]">
           <div>
             <p className="text-gray-600">Anything On your Mind</p>
