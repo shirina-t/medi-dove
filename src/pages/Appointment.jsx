@@ -23,7 +23,7 @@ const Appointment = () => {
   return (
     <div className="w-[100%] h-full flex flex-col gap-32">
       <div className="w-[100%] h-full">
-        <div className="showc w-full bg-[url(/media/shwc.jpg)] bg-cover bg-opacity-0 md:flex justify-between xl:px-32 lg:px-20 sm:px-2 items-center py-32 bg-[50%] bg-no-repeat">
+        <div className="showc w-[100%] bg-[url(/media/shwc.jpg)] bg-cover bg-opacity-0 md:flex justify-between xl:px-32 lg:px-20 sm:px-2 items-center py-32 bg-[50%] bg-no-repeat">
           <div className="flex flex-col gap-10">
             <h3 className="font-bold text-xl opacity-50">
               We are here for your care
@@ -43,11 +43,11 @@ const Appointment = () => {
         </div>
       </div>
 
-      <div className="shortstory w-full items-center grid grid-cols-1 md:grid-cols-2 gap-10 sm:px-2 xl:px-32 lg:px-20">
-        <div className="w-full relative">
+      <div className="shortstory w-[100%] items-center grid grid-cols-1 md:grid-cols-2 gap-10 sm:px-2 xl:px-32 lg:px-20">
+        <div className="w-[100%] relative">
           {!isPlaying ? (
             <div
-              className="w-full py-[50%] bg-center bg-cover relative flex justify-center items-center "
+              className="w-[100%] py-[50%] bg-center bg-cover relative flex justify-center items-center "
               style={{
                 backgroundImage: "url('/media/about-img-3.jpg')",
               }}
@@ -63,7 +63,7 @@ const Appointment = () => {
                 title="YouTube video"
                 allow="autoplay; encrypted-media"
                 allowFullScreen
-                className="w-full h-full"
+                className="w-[100%] h-full"
               ></iframe>
             </div>
           )}
@@ -124,7 +124,7 @@ const Appointment = () => {
                 <select
                   value={selected}
                   onChange={handleChange}
-                  className="w-full border-[2px] border-[#d3e2f0] p-2 h-[70px]"
+                  className="w-[100%] border-[2px] border-[#d3e2f0] p-2 h-[70px]"
                 >
                   <option value="">Department</option>
                   <option value="apple">Surgery and Radiology</option>
@@ -133,7 +133,7 @@ const Appointment = () => {
                 <select
                   value={selected}
                   onChange={handleChange}
-                  className="w-full border-[2px] border-[#d3e2f0] p-2 h-[70px]"
+                  className="w-[100%] border-[2px] border-[#d3e2f0] p-2 h-[70px]"
                 >
                   <option value="">Doctor</option>
                   <option value="apple">Doctor Name</option>
@@ -142,31 +142,31 @@ const Appointment = () => {
               </div>
               <div className="px-16 grid grid-cols-1 md:grid-cols-2 gap-5 text-[#647589]">
                 <input
-                  className="w-full border-[2px] border-[#d3e2f0] p-2 h-[70px]"
+                  className="w-[100%] border-[2px] border-[#d3e2f0] p-2 h-[70px]"
                   type="text"
                   placeholder="Your Name"
                 />
                 <input
-                  className="w-full border-[2px] border-[#d3e2f0] p-2 h-[70px]"
+                  className="w-[100%] border-[2px] border-[#d3e2f0] p-2 h-[70px]"
                   type="number"
                   placeholder="Your Phone number"
                 />
               </div>
               <div className="px-16 grid grid-cols-1 md:grid-cols-2 gap-5 text-[#647589]">
                 <input
-                  className="w-full border-[2px] border-[#d3e2f0] p-2 h-[70px]"
+                  className="w-[100%] border-[2px] border-[#d3e2f0] p-2 h-[70px]"
                   type="date"
                   placeholder="Select date"
                 />
                 <input
-                  className="w-full border-[2px] border-[#d3e2f0] p-2 h-[70px]"
+                  className="w-[100%] border-[2px] border-[#d3e2f0] p-2 h-[70px]"
                   type="text"
                   placeholder="Add time"
                 />
               </div>
               <div className="px-16 text-[#647589]">
                 <textarea
-                  className="w-full border-[2px] border-[#d3e2f0] p-2 h-[70px]"
+                  className="w-[100%] border-[2px] border-[#d3e2f0] p-2 h-[70px]"
                   placeholder="Special request"
                 />
               </div>
@@ -178,8 +178,8 @@ const Appointment = () => {
         </div>
       </div>
 
-      <div className="w-full flex flex-col items-start gap-20 xl:px-32 lg:px-20 sm:px-2 py-16">
-        <div className="w-full flex flex-col md:flex-row md:justify-between items-center">
+      <div className="w-[100%] flex flex-col items-start gap-20 xl:px-32 lg:px-20 sm:px-2 py-16">
+        <div className="w-[100%] flex flex-col md:flex-row md:justify-between items-center">
           <div className="relative w-[50%]">
             <img src="/media/ic6.png" className="-z-10 absolute" />
             <div className="relative py-5 flex flex-col gap-3 items-start">
@@ -208,7 +208,7 @@ const Appointment = () => {
           </div>
         </div>
 
-        <div className="w-full grid grid-cols-1 xl:grid-cols-3 md:grid-cols-2 gap-4">
+        <div className="w-[100%] grid grid-cols-1 xl:grid-cols-3 md:grid-cols-2 gap-4">
           <div className="flex flex-col gap-3">
             <img
               src="/media/apn1.jpg"
@@ -301,7 +301,7 @@ const Appointment = () => {
 
         </div>
 
-        <div className="w-full flex justify-end">
+        <div className="w-[100%] flex justify-end">
         <Link to="/contact" className="no-underline">
               <Button
                 variant="link"

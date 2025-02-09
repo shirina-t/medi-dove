@@ -378,7 +378,7 @@ export const HomePage_Profiles = () => {
         <div className="relative">
           <img src={member1} alt="" className="relative" />
           <Link to="/services" onClick={() => window.scrollTo(0, 0)}>
-            <span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-1 pb-0 lg:pb-3 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">
+            <span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-1 pb-3 lg:pb-3 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">
               +
             </span>
           </Link>
@@ -392,7 +392,7 @@ export const HomePage_Profiles = () => {
         <div className="relative">
           <img src={member2} alt="" />
           <Link to="/services" onClick={() => window.scrollTo(0, 0)}>
-            <span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-1 pb-0 lg:pb-3 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">
+            <span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-1 pb-3 lg:pb-3 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">
               +
             </span>
           </Link>
@@ -406,7 +406,7 @@ export const HomePage_Profiles = () => {
         <div className="relative">
           <img src={member3} alt="" />
           <Link to="/services" onClick={() => window.scrollTo(0, 0)}>
-            <span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-1 pb-0 lg:pb-3 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">
+            <span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-1 pb-3 lg:pb-3 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">
               +
             </span>
           </Link>
@@ -420,7 +420,7 @@ export const HomePage_Profiles = () => {
         <div className="relative">
           <img src={member4} alt="" />
           <Link to="/services" onClick={() => window.scrollTo(0, 0)}>
-            <span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-1 pb-0 lg:pb-3 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">
+            <span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-1 pb-3 lg:pb-3 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">
               +
             </span>
           </Link>
@@ -434,7 +434,7 @@ export const HomePage_Profiles = () => {
         <div className="relative">
           <img src={member5} alt="" />
           <Link to="/services" onClick={() => window.scrollTo(0, 0)}>
-            <span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-1 pb-0 lg:pb-3 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">
+            <span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-1 pb-3 lg:pb-3 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">
               +
             </span>
           </Link>
@@ -448,7 +448,7 @@ export const HomePage_Profiles = () => {
         <div className="relative">
           <img src={member6} alt="" />
           <Link to="/services" onClick={() => window.scrollTo(0, 0)}>
-            <span className="bg-green-600 text-white rounded-full text-4xl px-4 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">
+            <span className="bg-red-600 text-white rounded-full text-4xl px-4 pt-1 pb-3 lg:pb-3 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">
               +
             </span>
           </Link>
