@@ -28,7 +28,7 @@ const Contact = () => {
           </Link>
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row justify-around gap-10 w-[100%] px-[80px] my-[150px]">
+      <div className="flex flex-col lg:flex-row justify-around gap-10 w-[100%] px-[80px] lg:my-[150px] my-0">
         <div className="mailbox w-[350px] border-2 p-[70px] flex flex-col gap-5 justify-center items-center">
           <div className="w-[150px] h-[150px] rounded-full bg-dirty-green text-white flex justify-center items-center">
             <Mail className="w-10 h-10" />
