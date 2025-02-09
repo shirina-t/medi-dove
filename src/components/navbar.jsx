@@ -35,7 +35,7 @@ const Navbar = () => {
           </p>
         </div>
         <Link
-          to="/contact"
+          to="/appointment"
           className="bg-dark-pink text-white text-[15px] font-semibold h-[60px] w-full md:w-[250px] mt-[20px] md:mt-[0px] mr-[0px] md:mr-[30px]  hover:bg-dirty-green flex items-center justify-center"
         >
           MAKE APPOINTMENT

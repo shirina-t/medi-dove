@@ -41,17 +41,32 @@ export const Showcase = () => {
     <div
       className="homePage_showcase relative flex items-center overflow-hidden"
       onMouseEnter={() => setArrows(true)}
-      onMouseLeave={() => setArrows(false)}>
-      <div className="absolute w-full lg:flex hidden justify-between xl:px-18 lg:px-6 top-1/2 -translate-y-1/2 transition-opacity duration-500" style={{ opacity: Arrows ? 1 : 0 }}>
-        <button onClick={nextSlide} className="showcase_arrowLeft bg-white shadow-xl p-6 rounded-full hover:bg-rose-500 hover:text-white duration-500">
+      onMouseLeave={() => setArrows(false)}
+    >
+      <div
+        className="absolute w-full lg:flex hidden justify-between xl:px-18 lg:px-6 top-1/2 -translate-y-1/2 transition-opacity duration-500"
+        style={{ opacity: Arrows ? 1 : 0 }}
+      >
+        <button
+          onClick={nextSlide}
+          className="showcase_arrowLeft bg-white shadow-xl p-6 rounded-full hover:bg-rose-500 hover:text-white duration-500"
+        >
           <ArrowLeft />
         </button>
-        <button onClick={nextSlide} className="showcase_arrowRight bg-white shadow-xl p-6 rounded-full hover:bg-rose-500 hover:text-white duration-500">
+        <button
+          onClick={nextSlide}
+          className="showcase_arrowRight bg-white shadow-xl p-6 rounded-full hover:bg-rose-500 hover:text-white duration-500"
+        >
           <ArrowRight />
         </button>
       </div>
 
-      <div className={`homePage_showcase_slider1 w-full h-screen flex items-center bg-cover bg-center bg-no-repeat ${  activeSlide === 1 ? "opacity-100" : "opacity-0 hidden"}`} style={{ backgroundImage: `url(${slider1})` }}>
+      <div
+        className={`homePage_showcase_slider1 w-full h-screen flex items-center bg-cover bg-center bg-no-repeat ${
+          activeSlide === 1 ? "opacity-100" : "opacity-0 hidden"
+        }`}
+        style={{ backgroundImage: `url(${slider1})` }}
+      >
         <div className="slider_text xl:w-2/6 lg:w-2/4 md:w-9/12 absolute sm:top-[20%] sm:left-[10%] flex gap-2 flex-col sm:items-start items-center sm:justify-start px-1">
           <h4 className="text-gray-600 font-semibold text-xl">
             We are here for your care.
@@ -61,30 +76,40 @@ export const Showcase = () => {
           </h2>
           <p className="text-lg">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit,
-            praesentium necessitatibus? Illum atque minima suscipit ipsum impedit
-            vero voluptate?
+            praesentium necessitatibus? Illum atque minima suscipit ipsum
+            impedit vero voluptate?
           </p>
           <br />
           <div className="showcase_buttons flex items-center gap-4 flex-wrap sm:justify-start justify-center">
-          <Link to="/appointment" >
-            <Button className="slider1_buttons" variant="destructive" size="lg">
-              <span className="bg-white text-gray-800 rounded-full px-3 pb-2 text-4xl">
-                +
-              </span>
-              <h2>Make Appointment</h2>
-            </Button>
+            <Link to="/appointment">
+              <Button
+                className="slider1_buttons"
+                variant="destructive"
+                size="lg"
+              >
+                <span className="bg-white text-gray-800 rounded-full px-3 pb-0 lg:pb-2 text-4xl">
+                  +
+                </span>
+                <h2>Make Appointment</h2>
+              </Button>
             </Link>
             <Button
               variant="outline"
               className="w-auto h-auto py-6 px-6"
-              onClick={() => setModalOpen(true)}>
+              onClick={() => setModalOpen(true)}
+            >
               <Play fill="white" />
             </Button>
           </div>
         </div>
       </div>
 
-      <div className={`homePage_showcase_slider2 w-full h-screen flex items-center bg-cover bg-center bg-no-repeat  ${ activeSlide === 2 ? "opacity-100" : "opacity-0 hidden" }`} style={{ backgroundImage: `url(${slider2})` }}>
+      <div
+        className={`homePage_showcase_slider2 w-full h-screen flex items-center bg-cover bg-center bg-no-repeat  ${
+          activeSlide === 2 ? "opacity-100" : "opacity-0 hidden"
+        }`}
+        style={{ backgroundImage: `url(${slider2})` }}
+      >
         <div className="slider_text xl:w-2/6 lg:w-2/4 md:w-9/12 absolute sm:top-[20%] sm:left-[10%] flex gap-2 flex-col sm:items-start items-center sm:justify-start px-1">
           <h4 className="text-gray-600 font-semibold text-xl">
             We are here for your care.
@@ -94,13 +119,13 @@ export const Showcase = () => {
           </h2>
           <p className="text-lg">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit,
-            praesentium necessitatibus? Illum atque minima suscipit ipsum impedit
-            vero voluptate?
+            praesentium necessitatibus? Illum atque minima suscipit ipsum
+            impedit vero voluptate?
           </p>
           <br />
           <div className="showcase_buttons flex items-center gap-4 flex-wrap sm:justify-start justify-center">
-          <Button className="slider2_buttons" variant="destructive" size="lg">
-              <span className="bg-white text-gray-800 rounded-full px-3 pb-2 text-4xl">
+            <Button className="slider2_buttons" variant="destructive" size="lg">
+              <span className="bg-white text-gray-800 rounded-full px-3 pb-0 lg:pb-2 text-4xl">
                 +
               </span>
               <h2>Make Appointment</h2>
@@ -108,7 +133,8 @@ export const Showcase = () => {
             <Button
               variant="outline"
               className="w-auto h-auto py-6 px-6"
-              onClick={() => setModalOpen(true)}>
+              onClick={() => setModalOpen(true)}
+            >
               <Play fill="white" />
             </Button>
           </div>
@@ -323,20 +349,27 @@ import member6 from "../assets/images/member6.png"
 
 
 export const HomePage_Profiles = () => {
-  return(
+  return (
     <div className="w-full h-full mt-40">
       <div className="flex items-center lg:justify-between justify-center w-full h-full xl:px-32 lg:px-20 px-10 flex-wrap md:flex-nowrap">
-        <div className="profile_title flex flex-col lg:items-start  items-center lg:justify-start justify-center lg:bg-left bg-center bg-no-repeat" style={{backgroundImage: `url(${Imgbackground})`}}>
+        <div
+          className="profile_title flex flex-col lg:items-start  items-center lg:justify-start justify-center lg:bg-left bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${Imgbackground})` }}
+        >
           <h4 className="text-slate-700 font-bold">Our Team</h4>
-          <h2 className="xl:text-[50px] md:text-[40px] text-[30px] font-semibold text-slate-800 w-[70%] lg:text-start text-center">A Professional & Care Provider</h2>
+          <h2 className="xl:text-[50px] md:text-[40px] text-[30px] font-semibold text-slate-800 w-[70%] lg:text-start text-center">
+            A Professional & Care Provider
+          </h2>
           <img src={Line} className="my-3" alt="" />
         </div>
         <div className="lg:flex hidden">
-            <Link to="/appointment" onClick={() => window.scrollTo(0, 0)}>
-          <Button variant="destructive" size="lg">
-          <span className="bg-white text-gray-800 rounded-full px-3 pb-2 text-4xl">+</span>
-            <h2>Make Appointment</h2>
-          </Button>
+          <Link to="/appointment" onClick={() => window.scrollTo(0, 0)}>
+            <Button variant="destructive" size="lg">
+              <span className="bg-white text-gray-800 rounded-full px-3 pb-0 lg:pb-2 text-4xl">
+                +
+              </span>
+              <h2>Make Appointment</h2>
+            </Button>
           </Link>
         </div>
       </div>
@@ -344,44 +377,91 @@ export const HomePage_Profiles = () => {
       <div className="flex flex-wrap xl:gap-30 lg:gap-20 gap-10 items-center justify-center xl:px-40 lg:px-30 px-15 mt-24 mb-24">
         <div className="relative">
           <img src={member1} alt="" className="relative" />
-          <Link to="/services" onClick={() => window.scrollTo(0, 0)}><span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-1 pb-3 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">+</span></Link>
-          <h3 className="text-2xl font-semibold text-slate-800 text-center">Rosalina D. Williamson</h3>
-          <h4 className="text-center text-rose-600 font-semibold text-base uppercase">Founder</h4>
+          <Link to="/services" onClick={() => window.scrollTo(0, 0)}>
+            <span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-1 pb-0 lg:pb-3 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">
+              +
+            </span>
+          </Link>
+          <h3 className="text-2xl font-semibold text-slate-800 text-center">
+            Rosalina D. Williamson
+          </h3>
+          <h4 className="text-center text-rose-600 font-semibold text-base uppercase">
+            Founder
+          </h4>
         </div>
         <div className="relative">
           <img src={member2} alt="" />
-          <Link to="/services" onClick={() => window.scrollTo(0, 0)}><span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-1 pb-3 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">+</span></Link>
-          <h3 className="text-2xl font-semibold text-slate-800 text-center">Diconda PIran Will</h3>
-          <h4 className="text-center text-rose-600 font-semibold text-base uppercase">dentist</h4>
+          <Link to="/services" onClick={() => window.scrollTo(0, 0)}>
+            <span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-1 pb-0 lg:pb-3 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">
+              +
+            </span>
+          </Link>
+          <h3 className="text-2xl font-semibold text-slate-800 text-center">
+            Diconda PIran Will
+          </h3>
+          <h4 className="text-center text-rose-600 font-semibold text-base uppercase">
+            dentist
+          </h4>
         </div>
         <div className="relative">
           <img src={member3} alt="" />
-          <Link to="/services" onClick={() => window.scrollTo(0, 0)}><span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-1 pb-3 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">+</span></Link>
-          <h3 className="text-2xl font-semibold text-slate-800 text-center">Hulk M. Kenbon</h3>
-          <h4 className="text-center text-rose-600 font-semibold text-base uppercase">neurologist</h4>
+          <Link to="/services" onClick={() => window.scrollTo(0, 0)}>
+            <span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-1 pb-0 lg:pb-3 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">
+              +
+            </span>
+          </Link>
+          <h3 className="text-2xl font-semibold text-slate-800 text-center">
+            Hulk M. Kenbon
+          </h3>
+          <h4 className="text-center text-rose-600 font-semibold text-base uppercase">
+            neurologist
+          </h4>
         </div>
         <div className="relative">
           <img src={member4} alt="" />
-          <Link to="/services" onClick={() => window.scrollTo(0, 0)}><span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-1 pb-3 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">+</span></Link>
-          <h3 className="text-2xl font-semibold text-slate-800 text-center">Haliam Z. Dicolaz</h3>
-          <h4 className="text-center text-rose-600 font-semibold text-base uppercase">Consultant</h4>
+          <Link to="/services" onClick={() => window.scrollTo(0, 0)}>
+            <span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-1 pb-0 lg:pb-3 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">
+              +
+            </span>
+          </Link>
+          <h3 className="text-2xl font-semibold text-slate-800 text-center">
+            Haliam Z. Dicolaz
+          </h3>
+          <h4 className="text-center text-rose-600 font-semibold text-base uppercase">
+            Consultant
+          </h4>
         </div>
         <div className="relative">
           <img src={member5} alt="" />
-          <Link to="/services" onClick={() => window.scrollTo(0, 0)}><span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-1 pb-3 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">+</span></Link>
-          <h3 className="text-2xl font-semibold text-slate-800 text-center">Nicolas D. Case</h3>
-          <h4 className="text-center text-rose-600 font-semibold text-base uppercase">dentist</h4>
+          <Link to="/services" onClick={() => window.scrollTo(0, 0)}>
+            <span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-1 pb-0 lg:pb-3 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">
+              +
+            </span>
+          </Link>
+          <h3 className="text-2xl font-semibold text-slate-800 text-center">
+            Nicolas D. Case
+          </h3>
+          <h4 className="text-center text-rose-600 font-semibold text-base uppercase">
+            dentist
+          </h4>
         </div>
         <div className="relative">
           <img src={member6} alt="" />
-          <Link to="/services" onClick={() => window.scrollTo(0, 0)}><span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-1 pb-3 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">+</span></Link>
-          <h3 className="text-2xl font-semibold text-slate-800 text-center">Phumdon H. Norman</h3>
-          <h4 className="text-center text-rose-600 font-semibold text-base uppercase">neurologist</h4>
+          <Link to="/services" onClick={() => window.scrollTo(0, 0)}>
+            <span className="bg-green-600 text-white rounded-full text-4xl px-4 pt-1 pb-0 lg:pb-3 absolute bottom-16 right-5 hover:bg-rose-600 duration-700">
+              +
+            </span>
+          </Link>
+          <h3 className="text-2xl font-semibold text-slate-800 text-center">
+            Phumdon H. Norman
+          </h3>
+          <h4 className="text-center text-rose-600 font-semibold text-base uppercase">
+            neurologist
+          </h4>
         </div>
       </div>
-
     </div>
-  )
+  );
 }
 
 
@@ -391,77 +471,118 @@ import background from "../assets/images/background.png"
 
 
 export const Accessible = () => {
-  return(
-    <div className="bg-slate-900 text-white w-full h-full py-20  xl:px-12 px-5 mb-12 flex justify-between items-center lg:flex-nowrap flex-wrap xl:gap-15 gap-10" style={{backgroundImage: `url(${background})`}}>
+  return (
+    <div
+      className="bg-slate-900 text-white w-full h-full py-20  xl:px-12 px-5 mb-12 flex justify-between items-center lg:flex-nowrap flex-wrap xl:gap-15 gap-10"
+      style={{ backgroundImage: `url(${background})` }}
+    >
       <div className="flex flex-col gap-5 lg:w-[80%] md:w-[50%] w-full">
-        <h4 className="text-gray-600 text-xl font-bold">We are available 24/7</h4>
-        <h2 className="xl:text-6xl sm:text-5xl text-3xl">We Always Ready <br /> For A Challenge.</h2>
-          <Link to="/appointment" onClick={() => window.scrollTo(0, 0)}>
-        <Button className="sm:w-72 w-auto border-none" variant="destructive" size="lg">
-          <span className="bg-white text-gray-800 rounded-full px-3 pb-2 text-4xl">+</span>
-          <h2>Make Appointment</h2>
-        </Button>
-          </Link>
+        <h4 className="text-gray-600 text-xl font-bold">
+          We are available 24/7
+        </h4>
+        <h2 className="xl:text-6xl sm:text-5xl text-3xl">
+          We Always Ready <br /> For A Challenge.
+        </h2>
+        <Link to="/appointment" onClick={() => window.scrollTo(0, 0)}>
+          <Button
+            className="sm:w-72 w-auto border-none"
+            variant="destructive"
+            size="lg"
+          >
+            <span className="bg-white text-gray-800 rounded-full px-3 pb-0 lg:pb-2 text-4xl">
+              +
+            </span>
+            <h2>Make Appointment</h2>
+          </Button>
+        </Link>
       </div>
 
       <div className="flex flex-col gap-10">
         <div className="flex gap-5 sm:flex-nowrap flex-wrap">
           <h3 className="lg:text-7xl text-6xl text-green-600">1M+</h3>
           <div className="xl:w-1/2 w-auto">
-            <h3 className="flex gap-2 items-center text-xl font-semibold"><UserRound />Satisfied Patients</h3>
-            <p className="text-gray-600 font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sed, officia aut similique saepe laboriosam dolore minima amet alias?</p>
+            <h3 className="flex gap-2 items-center text-xl font-semibold">
+              <UserRound />
+              Satisfied Patients
+            </h3>
+            <p className="text-gray-600 font-bold">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sed,
+              officia aut similique saepe laboriosam dolore minima amet alias?
+            </p>
           </div>
         </div>
 
         <div className="flex gap-5 sm:flex-nowrap flex-wrap">
           <h3 className="lg:text-7xl text-6xl text-green-600">100+</h3>
           <div className="xl:w-1/2 w-auto flex flex-col gap-2">
-            <h3 className="flex gap-2 items-center text-xl font-semibold"><ThumbsUp />Wolrd Awards</h3>
-            <p className="text-gray-600 font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea natus facilis voluptatibus totam harum voluptates ipsa dicta quam autem?</p>
+            <h3 className="flex gap-2 items-center text-xl font-semibold">
+              <ThumbsUp />
+              Wolrd Awards
+            </h3>
+            <p className="text-gray-600 font-bold">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea natus
+              facilis voluptatibus totam harum voluptates ipsa dicta quam autem?
+            </p>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 
 
 
 export const Consultant = () => {
-  return(
+  return (
     <div className="bg-slate-900 w-full h-full mb-20 flex flex-col items-center justify-center py-20 gap-8">
-      <h4 className="text-gray-600 font-bold">Stay healthy & strong to enjoy life</h4>
-      <p className="text-white xl:text-6xl lg:text-5xl text-4xl w-4/6 text-center">Trust Us To Be There To Help All & Make Things Well Again.</p>
+      <h4 className="text-gray-600 font-bold">
+        Stay healthy & strong to enjoy life
+      </h4>
+      <p className="text-white xl:text-6xl lg:text-5xl text-4xl w-4/6 text-center">
+        Trust Us To Be There To Help All & Make Things Well Again.
+      </p>
       <Link to="/appointment" onClick={() => window.scrollTo(0, 0)}>
-      <Button variant="outline" size="lg">
-      <span className="bg-white text-gray-800 rounded-full px-3 pb-2 text-4xl">+</span>
-        <h2>Get a Consultant</h2>
-      </Button>
+        <Button variant="outline" size="lg">
+          <span className="bg-white text-gray-800 rounded-full px-3 pb-0 lg:pb-2 text-4xl">
+            +
+          </span>
+          <h2>Get a Consultant</h2>
+        </Button>
       </Link>
     </div>
-  )
+  );
 }
   
 
 
 
 export const HomePage_Blog = () => {
-  return(
+  return (
     <div className="HomePage_Blog flex items-center lg:justify-between justify-center px-20 mb-20">
-        <div className="lg:bg-left bg-center flex flex-col lg:items-start items-center justify-center" style={{backgroundImage: `url(${Imgbackground})`, backgroundRepeat: "no-repeat"}}>
+      <div
+        className="lg:bg-left bg-center flex flex-col lg:items-start items-center justify-center"
+        style={{
+          backgroundImage: `url(${Imgbackground})`,
+          backgroundRepeat: "no-repeat",
+        }}
+      >
         <h4 className="text-xl text-slate-500 font-bold">News</h4>
-        <h2 className="lg:text-start text-center font-semibold text-gray-700 xl:text-[55px] lg:text-[45px] md:text-[40px] text-[35px] mb-2">Get Every Single <br/> Updates Here.</h2>
-      <img src={Line} alt="" className="mt-5" />
+        <h2 className="lg:text-start text-center font-semibold text-gray-700 xl:text-[55px] lg:text-[45px] md:text-[40px] text-[35px] mb-2">
+          Get Every Single <br /> Updates Here.
+        </h2>
+        <img src={Line} alt="" className="mt-5" />
       </div>
       <Link to="/appointment" onClick={() => window.scrollTo(0, 0)}>
-      <Button variant="destructive" size="lg" className="lg:flex hidden">
-          <span className="bg-white text-gray-800 rounded-full px-3 pb-2 text-4xl">+</span>
-            <h2>Make Appointment</h2>
-          </Button>
+        <Button variant="destructive" size="lg" className="lg:flex hidden">
+          <span className="bg-white text-gray-800 rounded-full px-3 pb-0 lg:pb-2 text-4xl">
+            +
+          </span>
+          <h2>Make Appointment</h2>
+        </Button>
       </Link>
     </div>
-  )
+  );
 }
 
 

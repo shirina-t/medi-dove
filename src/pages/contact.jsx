@@ -72,7 +72,7 @@ const Contact = () => {
           <div className="flex items-center">
             <Link to="/appointment">
               <Button variant="destructive" size="lg" className="">
-                <span className="bg-white text-gray-800 rounded-full px-3 pb-2 text-4xl">
+                <span className="bg-white text-gray-800 rounded-full px-3 pb-0 lg:pb-2 text-4xl">
                   +
                 </span>
                 <h2>Make Appointment</h2>
@@ -115,7 +115,7 @@ const Contact = () => {
             className="tracking-wider p-8 h-[300px] w-[100%] placeholder-gray-600 placeholder:text-[14px] placeholder:font-semibold outline-none"
           ></textarea>
           <Button variant="destructive" size="lg" className="w-[200px]">
-            <span className="bg-white text-gray-800 rounded-full px-3 pb-2 text-4xl">
+            <span className="bg-white text-gray-800 rounded-full px-3 pb-0 lg:pb-2 text-4xl">
               +
             </span>
             <h2>Get Action</h2>
