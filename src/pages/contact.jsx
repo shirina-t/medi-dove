@@ -28,8 +28,8 @@ const Contact = () => {
           </Link>
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row justify-around gap-10 w-[100%] px-3 lg:px-[80px] my-[150px]">
-        <div className="mailbox w-[350px] border-2 p-[70px] flex flex-col gap-5 justify-center items-center">
+      <div className="flex flex-col lg:flex-row justify-around items-center gap-10 w-[100%] px-3 lg:px-[80px] my-[100px] lg:my-[150px]">
+        <div className="mailbox w-[350px] border-2 p-[70px] h-[450px] flex flex-col gap-5 justify-center items-center">
           <div className="w-[150px] h-[150px] rounded-full bg-dirty-green text-white flex justify-center items-center">
             <Mail className="w-10 h-10" />
           </div>
@@ -40,7 +40,7 @@ const Contact = () => {
             </p>
           </div>
         </div>
-        <div className="locationbox w-[350px] border-2 p-[70px] flex flex-col gap-5 justify-center items-center">
+        <div className="locationbox w-[350px] border-2 p-[70px] h-[450px] flex flex-col gap-5 justify-center items-center">
           <div className="w-[150px] h-[150px] rounded-full bg-dirty-green text-white flex justify-center items-center">
             <Map className="w-10 h-10" />
           </div>
@@ -51,7 +51,7 @@ const Contact = () => {
             </p>
           </div>
         </div>
-        <div className="callbox w-[350px] border-2 p-[70px] flex flex-col gap-5 justify-center items-center">
+        <div className="callbox w-[350px] border-2 p-[70px] h-[450px] flex flex-col gap-5 justify-center items-center">
           <div className="w-[150px] h-[150px] rounded-full bg-dirty-green text-white flex justify-center items-center">
             <Phone className="w-10 h-10" />
           </div>
@@ -63,7 +63,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="formblue w-[100%] bg-red-600 py-[100px]">
+      <div className="formblue w-[100%] bg-[#F4F9FC] py-[100px]">
         <div className="flex flex-col lg:flex-row items-center justify-between pb-10 px-[80px]">
           <div>
             <p className="text-gray-600">Anything On your Mind</p>
@@ -82,7 +82,7 @@ const Contact = () => {
         </div>
         <form
           action="#"
-          className="flex flex-col gap-5 px-[80px] w-[100%] items-center"
+          className="flex flex-col gap-5 px-[40px] lg:px-[80px] w-[100%] items-center"
         >
           <span className="flex flex-col md:flex-row gap-5 w-[100%]">
             <input
