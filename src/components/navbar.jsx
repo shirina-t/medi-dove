@@ -22,6 +22,9 @@ const Navbar = () => {
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
+  const closeSidebar = () => {
+    setIsSidebarOpen(false);
+  };
 
   return (
     <>
@@ -177,13 +180,13 @@ const Navbar = () => {
               </div>
             </div>
             <p className="gap-3 hidden md:flex">
-              <Link to="/" className="hover:text-gray-800">
-                <Facebook /> {/*contact page link*/}
+              <Link to="/contact" className="hover:text-gray-800">
+                <Facebook />
               </Link>
-              <Link to="/" className="hover:text-gray-800">
+              <Link to="/contact" className="hover:text-gray-800">
                 <Youtube />
               </Link>
-              <Link to="/" className="hover:text-gray-800">
+              <Link to="/contact" className="hover:text-gray-800">
                 <Linkedin />
               </Link>
             </p>
@@ -335,7 +338,14 @@ const Navbar = () => {
             Contact
           </Link>
         </div>
-      </div>
+      </div> 
+      {/* Overlay */}
+      {isSidebarOpen && (
+        <div
+          className="fixed top-0 left-0 w-full h-full bg-black opacity-50 z-40 lg:hidden" // z-40 to be below the sidebar (z-50)
+          onClick={closeSidebar} // Close sidebar when clicking the overlay
+        ></div>
+      )}
     </>
   );
 };

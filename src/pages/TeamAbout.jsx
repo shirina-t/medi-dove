@@ -47,7 +47,7 @@ const TeamAbout = () => {
               <img src="/media/member1.png" />
               <Link
                 to={"/"}
-                className="absolute right-[100px] sm:right-50 md:right-16 lg:right-4 xl:right-12 bottom-0 bg-[#8fb569] text-white p-3 rounded-full hover:bg-[#e12454] font-bold font-rubik transition-all duration-300"
+                className="absolute right-[100px] sm:right-50 md:right-16 lg:right-4 xl:right-12 bottom-0 bg-green-600 text-white p-3 rounded-full hover:bg-[#e12454] font-bold font-rubik transition-all duration-300"
               >
                 <Plus />
               </Link>
@@ -66,7 +66,7 @@ const TeamAbout = () => {
               <img src="/media/member2.png" />
               <Link
                 to={"/"}
-                className="absolute right-[100px] sm:right-50 md:right-16 lg:right-4 xl:right-12 bottom-0 bg-[#8fb569] text-white p-3 rounded-full hover:bg-[#e12454] font-bold font-rubik transition-all duration-300"
+                className="absolute right-[100px] sm:right-50 md:right-16 lg:right-4 xl:right-12 bottom-0 bg-green-600 text-white p-3 rounded-full hover:bg-[#e12454] font-bold font-rubik transition-all duration-300"
               >
                 <Plus />
               </Link>
@@ -85,7 +85,7 @@ const TeamAbout = () => {
               <img src="/media/member3.png" />
               <Link
                 to={"/"}
-                className="absolute right-[100px] sm:right-50 md:right-16 lg:right-4 xl:right-12 bottom-0 bg-[#8fb569] text-white p-3 rounded-full hover:bg-[#e12454] font-bold font-rubik transition-all duration-300"
+                className="absolute right-[100px] sm:right-50 md:right-16 lg:right-4 xl:right-12 bottom-0 bg-green-600 text-white p-3 rounded-full hover:bg-[#e12454] font-bold font-rubik transition-all duration-300"
               >
                 <Plus />
               </Link>
@@ -104,7 +104,7 @@ const TeamAbout = () => {
               <img src="/media/member4.png" />
               <Link
                 to={"/"}
-                className="absolute right-[100px] sm:right-50 md:right-16 lg:right-4 xl:right-12 bottom-0 bg-[#8fb569] text-white p-3 rounded-full hover:bg-[#e12454] font-bold font-rubik transition-all duration-300"
+                className="absolute right-[100px] sm:right-50 md:right-16 lg:right-4 xl:right-12 bottom-0 bg-green-600 text-white p-3 rounded-full hover:bg-[#e12454] font-bold font-rubik transition-all duration-300"
               >
                 <Plus />
               </Link>
@@ -123,7 +123,7 @@ const TeamAbout = () => {
               <img src="/media/member5.png" />
               <Link
                 to={"/"}
-                className="absolute right-[100px] sm:right-50 md:right-16 lg:right-4 xl:right-12 bottom-0 bg-[#8fb569] text-white p-3 rounded-full hover:bg-[#e12454] font-bold font-rubik transition-all duration-300"
+                className="absolute right-[100px] sm:right-50 md:right-16 lg:right-4 xl:right-12 bottom-0 bg-green-600 text-white p-3 rounded-full hover:bg-[#e12454] font-bold font-rubik transition-all duration-300"
               >
                 <Plus />
               </Link>
@@ -142,7 +142,7 @@ const TeamAbout = () => {
               <img src="/media/member6.png" />
               <Link
                 to={"/"}
-                className="absolute right-[100px] sm:right-50 md:right-16 lg:right-4 xl:right-12 bottom-0 bg-[#8fb569] text-white p-3 rounded-full hover:bg-[#e12454] font-bold font-rubik transition-all duration-300"
+                className="absolute right-[100px] sm:right-50 md:right-16 lg:right-4 xl:right-12 bottom-0 bg-green-600 text-white p-3 rounded-full hover:bg-[#e12454] font-bold font-rubik transition-all duration-300"
               >
                 <Plus />
               </Link>
