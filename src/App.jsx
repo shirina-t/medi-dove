@@ -1,5 +1,4 @@
 import "./App.css";
-// import { useTranslation } from "react-i18next";
 import { Route, Routes } from "react-router-dom";
 import { Home } from "./pages/home"
 import Layout from "./components/layout";

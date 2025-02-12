@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import mediDoveLogo from "../assets/medi_dove_logo.png";
 import langImg from "../assets/lang.png";
 import { Link } from "react-router-dom";
@@ -13,6 +14,7 @@ import {
 } from "lucide-react";
 
 const Navbar = () => {
+  const { t } = useTranslation();
   const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
   const [isSurgeryDropdownOpen, setIsSurgeryDropdownOpen] = useState(false);
   const [isMemberDropdownOpen, setIsMemberDropdownOpen] = useState(false);
@@ -61,7 +63,7 @@ const Navbar = () => {
           ></div>
           <div className="hidden lg:flex text-[14px] text-gray-500 font-semibold gap-5 items-center pl-0 lg:pl-[400px]">
             <Link to="/" className="hover:text-gray-800">
-              <p>Home +</p>
+              <div>{t("homeText")}</div>
             </Link>
             <div
               className="relative"
