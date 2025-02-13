@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 
 const Navbar = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
   const [isSurgeryDropdownOpen, setIsSurgeryDropdownOpen] = useState(false);
   const [isMemberDropdownOpen, setIsMemberDropdownOpen] = useState(false);
@@ -27,6 +27,11 @@ const Navbar = () => {
   const closeSidebar = () => {
     setIsSidebarOpen(false);
   };
+
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+  };
+
 
   return (
     <>
@@ -207,18 +212,23 @@ const Navbar = () => {
               {/*Dropdown*/}
               {isLangDropdownOpen && (
                 <div className="absolute left-0 top-full w-[65px] h-[150px] bg-white p-[15px] border-t-[5px] border-gray-600 shadow-md z-10 flex flex-col justify-around text-[13px]">
+                  <button onClick={() => changeLanguage("en")}>
                   <Link to="/" className="hover:text-dark-pink">
-                    USA
+                    EN
                   </Link>
+                  </button>
+
+                  <button onClick={() => changeLanguage("ru")}>
                   <Link to="/" className="hover:text-dark-pink">
-                    UK
+                    RU
                   </Link>
+                  </button>
+
+                  <button onClick={() => changeLanguage("uz")}>
                   <Link to="/" className="hover:text-dark-pink">
-                    CA
+                    UZ
                   </Link>
-                  <Link to="/" className="hover:text-dark-pink">
-                    AU
-                  </Link>
+                  </button>
                 </div>
               )}
             </div>

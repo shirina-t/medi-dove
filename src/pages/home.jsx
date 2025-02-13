@@ -1,3 +1,8 @@
+
+
+import { useTranslation } from "react-i18next";
+
+
 import { useState } from "react";
 import { ArrowLeft, ArrowRight, Play } from "lucide-react";
 import slider1 from "../assets/images/slider1.jpg";
@@ -7,6 +12,7 @@ import { Link } from "react-router-dom";
 
 export const Model = ({ isOpen, onClose }) => {
   if (!isOpen) return null; 
+
 
   return (
     <div className="Showcase_model fixed z-40 top-0 left-0 right-0 bottom-0 flex items-center justify-center">
@@ -32,6 +38,8 @@ export const Showcase = () => {
   const [activeSlide, setActiveSlide] = useState(1);
   const [Arrows, setArrows] = useState(false);
   const [ModalOpen, setModalOpen] = useState(false);
+
+  const { t } = useTranslation();
 
   const nextSlide = () => {
     setActiveSlide((prev) => (prev === 1 ? 2 : 1));
@@ -67,17 +75,15 @@ export const Showcase = () => {
         }`}
         style={{ backgroundImage: `url(${slider1})` }}
       >
-        <div className="slider_text xl:w-2/6 lg:w-2/4 md:w-9/12 absolute sm:top-[20%] sm:left-[10%] flex gap-2 flex-col sm:items-start items-center sm:justify-start px-1">
+        <div className="slider_text xl:w-2/5 lg:w-2/4 md:w-9/12 absolute sm:top-[20%] sm:left-[10%] flex gap-2 flex-col sm:items-start items-center sm:justify-start px-1">
           <h4 className="text-gray-600 font-semibold text-xl">
-            We are here for your care.
+          {t("SliderText1")}
           </h4>
-          <h2 className="2xl:text-[80px] xl:text-[60px] lg:text-[50px] text-[35px] font-semibold text-gray-800 flex md:text-start text-center">
-            Best Care & Better Doctor.
+          <h2 className="xl:text-[60px] lg:text-[45px] text-[35px] font-semibold text-gray-800 flex md:text-start text-center">
+          {t("SliderText")}
           </h2>
           <p className="text-lg">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit,
-            praesentium necessitatibus? Illum atque minima suscipit ipsum
-            impedit vero voluptate?
+          {t("SliderParagraph")}
           </p>
           <br />
           <div className="showcase_buttons flex items-center gap-4 flex-wrap sm:justify-start justify-center">
@@ -90,7 +96,7 @@ export const Showcase = () => {
                 <span className="bg-white text-gray-800 rounded-full px-3 pb-0 lg:pb-2 text-4xl">
                   +
                 </span>
-                <h2>Make Appointment</h2>
+                <h2>{t("ButtonText")}</h2>
               </Button>
             </Link>
             <Button
@@ -110,17 +116,15 @@ export const Showcase = () => {
         }`}
         style={{ backgroundImage: `url(${slider2})` }}
       >
-        <div className="slider_text xl:w-2/6 lg:w-2/4 md:w-9/12 absolute sm:top-[20%] sm:left-[10%] flex gap-2 flex-col sm:items-start items-center sm:justify-start px-1">
+        <div className="slider_text xl:w-2/5 lg:w-2/4 md:w-9/12 absolute sm:top-[20%] sm:left-[10%] flex gap-2 flex-col sm:items-start items-center sm:justify-start px-1">
           <h4 className="text-gray-600 font-semibold text-xl">
-            We are here for your care.
+          {t("SliderText1")}
           </h4>
-          <h2 className="2xl:text-[80px] xl:text-[60px] lg:text-[50px] text-[35px] font-semibold text-gray-800 flex md:text-start text-center">
-            Best Care & Better Doctor.
+          <h2 className="xl:text-[60px] lg:text-[45px] text-[35px] font-semibold text-gray-800 flex md:text-start text-center">
+          {t("SliderText")}
           </h2>
           <p className="text-lg">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit,
-            praesentium necessitatibus? Illum atque minima suscipit ipsum
-            impedit vero voluptate?
+          {t("SliderParagraph")}
           </p>
           <br />
           <div className="showcase_buttons flex items-center gap-4 flex-wrap sm:justify-start justify-center">
@@ -128,7 +132,7 @@ export const Showcase = () => {
               <span className="bg-white text-gray-800 rounded-full px-3 pb-0 lg:pb-2 text-4xl">
                 +
               </span>
-              <h2>Make Appointment</h2>
+              <h2>{t("ButtonText")}</h2>
             </Button>
             <Button
               variant="outline"
@@ -158,8 +162,12 @@ import ImgSign from "../assets/images/ImgSign.png";
 import ProfileImg from "../assets/images/ProfileImg.png";
 
 export const Homepage_Section1 = () => {
+
+  const { t } = useTranslation();
+
+
   return (
-    <div className="HomePage_section1 lg:w-auto flex flex-col lg:flex-row relative gap-15 items-center justify-center mt-40 px-5">
+    <div className="HomePage_section1 lg:w-auto flex flex-col lg:flex-row relative gap-16 items-center justify-center mt-40 px-5">
       <div className="Section1_Img1 relative w-full lg:w-1/2 flex justify-center">
         <div className="relative md:max-w-full">
           <img src={ImgShape} className="absolute -bottom-10 -left-10 z-0" alt=""/>
@@ -168,16 +176,16 @@ export const Homepage_Section1 = () => {
         </div>
       </div>
 
-      <div className="Section1_text w-9/12 lg:w-1/2 text-center md:text-left flex flex-col gap-2">
-        <h4 className="text-lg font-semibold text-gray-700">About Us</h4>
-        <h2 className="text-4xl xl:text-6xl lg:text-5xl md:text-6xl text-slate-800 font-bold mt-2">
-          Short Story About MediDove Clinic.
+      <div className="Section1_text w-9/12 lg:w-1/2 text-center md:text-left flex lg:items-start items-center flex-col gap-2">
+        <h4 className="text-lg font-semibold text-gray-700">{t("Section1_text")}</h4>
+        <h2 className="text-4xl xl:text-6xl xl:w-10/12 lg:text-5xl md:text-6xl text-slate-800 font-bold mt-2 lg:text-start text-center">
+          {t("ShortStoryTitle")}
         </h2>
-        <p className="mt-4 text-gray-600 px-2 md:px-0">
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.
+        <p className="mt-4 text-gray-600 px-2 md:px-0 lg:text-start text-center">
+        {t("ShortStoryParagraph1")}
         </p>
-        <p className="mt-2 text-gray-600 px-2 md:px-0">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        <p className="mt-2 text-gray-600 px-2 md:px-0 lg:text-start text-center">
+        {t("ShortStoryParagraph2")}
         </p>
 
 
@@ -185,7 +193,7 @@ export const Homepage_Section1 = () => {
           <img src={ProfileImg} alt="Profile" className="w-16 h-16 rounded-full" />
           <div className="Section1_Img text-center md:text-left">
             <h3 className="text-lg text-slate-900 font-semibold">Rosalina D. Williamson</h3>
-            <h4 className="text-rose-700 text-base font-semibold">Founder</h4>
+            <h4 className="text-rose-700 text-base font-semibold">{t("ShortStory_founder")}</h4>
           </div>
         </div>
       </div>
@@ -208,6 +216,10 @@ import service6 from "../assets/images/service6.png"
 
 
 export const HomePage_Cards = () => {
+
+  const { t } = useTranslation();
+
+
   return (
     <div className="HomePage_Cards bg-[#f4f9fc] w-full h-full">
       <div
@@ -217,7 +229,7 @@ export const HomePage_Cards = () => {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <h4 className="text-xl text-slate-500 font-bold">Departments</h4>
+        <h4 className="text-xl text-slate-500 font-bold">{t("ShortStory_departments")}</h4>
         <h2 className="text-center font-semibold text-gray-700 xl:text-[55px] lg:text-[45px] md:text-[40px] text-[35px] mb-2">
           Managed Your <br /> Healthcare Services
         </h2>
@@ -349,6 +361,10 @@ import member6 from "../assets/images/member6.png"
 
 
 export const HomePage_Profiles = () => {
+
+  const { t } = useTranslation();
+
+
   return (
     <div className="w-full h-full mt-40">
       <div className="flex items-center lg:justify-between justify-center w-full h-full xl:px-32 lg:px-20 px-10 flex-wrap md:flex-nowrap">
@@ -368,7 +384,7 @@ export const HomePage_Profiles = () => {
               <span className="bg-white text-gray-800 rounded-full px-3 pb-0 lg:pb-2 text-4xl">
                 +
               </span>
-              <h2>Make Appointment</h2>
+              <h2>{t("ButtonText")}</h2>
             </Button>
           </Link>
         </div>
@@ -471,6 +487,10 @@ import background from "../assets/images/background.png"
 
 
 export const Accessible = () => {
+
+  const { t } = useTranslation();
+
+
   return (
     <div
       className="bg-slate-900 text-white w-full h-full py-20  xl:px-12 px-5 mb-12 flex justify-between items-center lg:flex-nowrap flex-wrap xl:gap-15 gap-10"
@@ -492,7 +512,7 @@ export const Accessible = () => {
             <span className="bg-white text-gray-800 rounded-full px-3 pb-0 lg:pb-2 text-4xl">
               +
             </span>
-            <h2>Make Appointment</h2>
+            <h2>{t("ButtonText")}</h2>
           </Button>
         </Link>
       </div>
@@ -534,6 +554,10 @@ export const Accessible = () => {
 
 
 export const Consultant = () => {
+
+  const { t } = useTranslation();
+
+
   return (
     <div className="bg-slate-900 w-full h-full mb-20 flex flex-col items-center justify-center py-20 gap-8">
       <h4 className="text-gray-600 font-bold">
@@ -558,6 +582,10 @@ export const Consultant = () => {
 
 
 export const HomePage_Blog = () => {
+
+  const { t } = useTranslation();
+
+
   return (
     <div className="HomePage_Blog flex items-center lg:justify-between justify-center px-20 mb-20">
       <div
@@ -578,7 +606,7 @@ export const HomePage_Blog = () => {
           <span className="bg-white text-gray-800 rounded-full px-3 pb-0 lg:pb-2 text-4xl">
             +
           </span>
-          <h2>Make Appointment</h2>
+          <h2>{t("ButtonText")}</h2>
         </Button>
       </Link>
     </div>
@@ -593,6 +621,10 @@ import { Calendar,MessageCircle } from "lucide-react"
 
 
 export const HomePage_News = () => {
+
+  const { t } = useTranslation();
+
+
   return(
     <div className="HomePage_News flex items-center justify-center gap-10 mb-20 flex-wrap">
       <div className="NewsCard1 xl:w-1/4 md:w-[40%] w-9/12">
@@ -638,9 +670,14 @@ export const HomePage_News = () => {
 
 
 import { Phone } from "lucide-react";
+import { changeLanguage } from "i18next";
 
 
 export const Last_Button = () => {
+
+  const { t } = useTranslation();
+
+
   return(
     <div className="mb-48">
     <div className="md:absolute flex items-center justify-center md:right-[15%]">
