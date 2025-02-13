@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import mediDoveFooter from "../assets/footer_logo.png";
 import feedThumb1 from "../assets/feeds-thumb-1.jpg";
 import feedThumb2 from "../assets/feeds-thumb-2.jpg";
@@ -7,6 +8,8 @@ import { Link } from "react-router-dom";
 import { Copy, Flag, Mail } from "lucide-react";
 
 const Footer = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <footer className="w-full">
       <div className="bg-footer-blue text-white py-12 px-6 md:py-[100px] md:px-[50px] flex flex-col md:flex-row gap-8 md:gap-[40px]">
@@ -40,76 +43,116 @@ const Footer = () => {
           </div>
         </div>
         <div className="midcol flex-1">
-          <p className="text-xl md:text-[27px] font-bold">Departments</p>
+          <div className="text-xl md:text-[27px] font-bold">
+            {t("departmentsText")}
+          </div>
           <div className="flex mt-6 md:mt-[30px] text-gray-400 text-xs md:text-[15px] font-semibold">
             <ul className="flex-1 flex flex-col gap-4 pr-4 md:pr-[20px]">
               <li>
-                <Link to="/surgery" className="hover:text-dirty-green hover:underline">
-                  Surgery and Radiology
+                <Link
+                  to="/surgery"
+                  className="hover:text-dirty-green hover:underline"
+                >
+                  <div>{t("surgeryAndRadiologyText")}</div>
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="hover:text-dirty-green hover:underline">
-                  Family Medicine
+                <Link
+                  to="/services"
+                  className="hover:text-dirty-green hover:underline"
+                >
+                  <div>{t("familyMedicineText")}</div>
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="hover:text-dirty-green hover:underline">
-                  Women’s Health
+                <Link
+                  to="/services"
+                  className="hover:text-dirty-green hover:underline"
+                >
+                  <div>{t("womensHealthText")}</div>
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="hover:text-dirty-green hover:underline">
-                  Optician
+                <Link
+                  to="/services"
+                  className="hover:text-dirty-green hover:underline"
+                >
+                  <div>{t("opticianText")}</div>
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="hover:text-dirty-green hover:underline">
-                  Pediatrics
+                <Link
+                  to="/services"
+                  className="hover:text-dirty-green hover:underline"
+                >
+                  <div>{t("pediatricsText")}</div>
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="hover:text-dirty-green hover:underline">
-                  Dermatology
+                <Link
+                  to="/services"
+                  className="hover:text-dirty-green hover:underline"
+                >
+                  <div>{t("dermatologyText")}</div>
                 </Link>
               </li>
             </ul>
             <ul className="flex-1 flex flex-col gap-4">
               <li>
-                <Link to="/services" className="hover:text-dirty-green hover:underline">
-                  Departments
+                <Link
+                  to="/services"
+                  className="hover:text-dirty-green hover:underline"
+                >
+                  <div>{t("departmentsText")}</div>
                 </Link>
               </li>
               <li>
-                <Link to="/team" className="hover:text-dirty-green hover:underline">
-                  Our Doctors
+                <Link
+                  to="/team"
+                  className="hover:text-dirty-green hover:underline"
+                >
+                  <div>{t("ourDoctorsText")}</div>
                 </Link>
               </li>
               <li>
-                <Link to="/news" className="hover:text-dirty-green hover:underline">
-                  News
+                <Link
+                  to="/news"
+                  className="hover:text-dirty-green hover:underline"
+                >
+                  <div>{t("newText")}</div>
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="hover:text-dirty-green hover:underline">
-                  Shop
+                <Link
+                  to="/contact"
+                  className="hover:text-dirty-green hover:underline"
+                >
+                  <div>{t("shopText")}</div>
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="hover:text-dirty-green hover:underline">
-                  Contact Us
+                <Link
+                  to="/contact"
+                  className="hover:text-dirty-green hover:underline"
+                >
+                  <div>{t("contactText")}</div>
                 </Link>
               </li>
               <li>
-                <Link to="/appointment" className="hover:text-dirty-green hover:underline">
-                  Book an Appointment
+                <Link
+                  to="/appointment"
+                  className="hover:text-dirty-green hover:underline"
+                >
+                  <div>{t("bookAnAppointmentText")}</div>
                 </Link>
               </li>
             </ul>
           </div>
         </div>
         <div className="rightcol flex-1">
-          <p className="text-xl md:text-[27px] font-bold">News Feeds</p>
+          <div className="text-xl md:text-[27px] font-bold">
+            {t("newsFeedText")}
+          </div>
           <div className="flex flex-col gap-5 mt-6 md:mt-[30px]">
             <div className="top">
               <Link to="/news" className="flex items-center gap-3">
@@ -173,5 +216,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-{/*Links to pages!*/}

@@ -48,7 +48,7 @@ const Navbar = () => {
           to="/appointment"
           className="bg-dark-pink text-white text-[15px] font-semibold h-[60px] w-full md:w-[250px] mt-[20px] md:mt-[0px] mr-[0px] md:mr-[30px]  hover:bg-dirty-green flex items-center justify-center"
         >
-          MAKE APPOINTMENT
+          <div>{t("makeAppointmentText")}</div>
         </Link>
       </div>
       <nav className="sticky left-0 top-0 z-50 ">
@@ -60,7 +60,11 @@ const Navbar = () => {
             to="/"
             className="absolute left-[0px] md:left-[35px] top-1/2 transform -translate-y-1/2 z-5 "
           >
-            <img src={mediDoveLogo} alt="Logo" className="lg:h-full lg:w-full lg:pl-0 h-[50%] w-[50%] pl-2" />
+            <img
+              src={mediDoveLogo}
+              alt="Logo"
+              className="lg:h-full lg:w-full lg:pl-0 h-[50%] w-[50%] pl-2"
+            />
           </Link>
           <div
             id="circle"
@@ -76,7 +80,7 @@ const Navbar = () => {
               onMouseLeave={() => setIsAboutDropdownOpen(false)}
             >
               <Link to="/about" className="hover:text-gray-800">
-                <p>About +</p>
+                <div>{t("aboutText")}</div>
               </Link>
               {/* Dropdown with Transition */}
               <div
@@ -92,22 +96,22 @@ const Navbar = () => {
                 }}
               >
                 <Link to="/about" className="block hover:text-dark-pink py-1">
-                  Story
+                  <div>{t("storyText")}</div>
                 </Link>
                 <Link
                   to="/approach"
                   className="block hover:text-dark-pink py-1"
                 >
-                  Approach
+                  <div>{t("approachText")}</div>
                 </Link>
                 <Link to="/team" className="block hover:text-dark-pink py-1">
-                  Team
+                  <div>{t("teamText")}</div>
                 </Link>
                 <Link
                   to="/feedback"
                   className="block hover:text-dark-pink py-1"
                 >
-                  Feedback
+                  <div>{t("feedbackText")}</div>
                 </Link>
               </div>
             </div>
@@ -117,7 +121,7 @@ const Navbar = () => {
               onMouseLeave={() => setIsSurgeryDropdownOpen(false)}
             >
               <Link to="/surgery" className="hover:text-gray-800">
-                <p>Surgery types +</p>
+                <div>{t("surgeryText")}</div>
               </Link>
               {/* Dropdown with Transition */}
               <div
@@ -137,22 +141,22 @@ const Navbar = () => {
                   onClick={() => window.scrollTo(0, 0)}
                   className="hover:text-dark-pink"
                 >
-                  Our Services
+                  <div>{t("servicesText")}</div>
                 </Link>
                 <Link
                   to="/services"
                   onClick={() => window.scrollTo(0, 0)}
                   className="hover:text-dark-pink"
                 >
-                  Services Details
+                  <div>{t("servicesDetailsText")}</div>
                 </Link>
               </div>
             </div>
             <Link to="/blog" className="hover:text-gray-800">
-              <p>Blog +</p>
+              <div>{t("blogText")}</div>
             </Link>
             <Link to="/news" className="hover:text-gray-800">
-              <p>News +</p>
+              <div>{t("newsText")}</div>
             </Link>
             <div
               className="relative"
@@ -160,7 +164,7 @@ const Navbar = () => {
               onMouseLeave={() => setIsMemberDropdownOpen(false)}
             >
               <Link to="/contact" className="hover:text-gray-800">
-                <p>Become a member +</p>
+                <div>{t("memberText")}</div>
               </Link>
               {/* Dropdown with Transition */}
               <div
@@ -179,10 +183,10 @@ const Navbar = () => {
                   to="/appointment"
                   className="block hover:text-dark-pink py-1"
                 >
-                  Appointment
+                  <div>{t("appointmentText")}</div>
                 </Link>
                 <Link to="/contact" className="block hover:text-dark-pink py-1">
-                  Contact
+                  <div>{t("contactText")}</div>
                 </Link>
               </div>
             </div>
@@ -213,21 +217,21 @@ const Navbar = () => {
               {isLangDropdownOpen && (
                 <div className="absolute left-0 top-full w-[65px] h-[150px] bg-white p-[15px] border-t-[5px] border-gray-600 shadow-md z-10 flex flex-col justify-around text-[13px]">
                   <button onClick={() => changeLanguage("en")}>
-                  <Link to="/" className="hover:text-dark-pink">
-                    EN
-                  </Link>
+                    <Link to="/" className="hover:text-dark-pink">
+                      EN
+                    </Link>
                   </button>
 
                   <button onClick={() => changeLanguage("ru")}>
-                  <Link to="/" className="hover:text-dark-pink">
-                    RU
-                  </Link>
+                    <Link to="/" className="hover:text-dark-pink">
+                      RU
+                    </Link>
                   </button>
 
                   <button onClick={() => changeLanguage("uz")}>
-                  <Link to="/" className="hover:text-dark-pink">
-                    UZ
-                  </Link>
+                    <Link to="/" className="hover:text-dark-pink">
+                      UZ
+                    </Link>
                   </button>
                 </div>
               )}
@@ -263,99 +267,99 @@ const Navbar = () => {
             to="/"
             className="block py-2 text-gray-700 hover:text-dark-pink"
           >
-            Home
+            <div>{t("homeText")}</div>
           </Link>
           <Link
             to="/about"
             className="block py-2 text-gray-700 hover:text-dark-pink"
           >
-            About
+            <div>{t("aboutText")}</div>
           </Link>
           <Link
             to="/about"
             onClick={() => window.scrollTo(0, 0)}
             className="block py-1 text-gray-800 bg-gray-200 text-[14px] pl-3 hover:text-dark-pink"
           >
-            Story
+            <div>{t("storyText")}</div>
           </Link>
           <Link
             to="/approach"
             onClick={() => window.scrollTo(0, 0)}
             className="block py-1 text-gray-800 bg-gray-200 text-[14px] pl-3 hover:text-dark-pink"
           >
-            Approach
+            <div>{t("approachText")}</div>
           </Link>
           <Link
             to="/team"
             onClick={() => window.scrollTo(0, 0)}
             className="block py-1 text-gray-800 bg-gray-200 text-[14px] pl-3 hover:text-dark-pink"
           >
-            Team
+            <div>{t("teamText")}</div>
           </Link>
           <Link
             to="/feedback"
             onClick={() => window.scrollTo(0, 0)}
             className="block py-1 text-gray-800 bg-gray-200 text-[14px] pl-3 hover:text-dark-pink"
           >
-            Feedback
+            <div>{t("feedbackText")}</div>
           </Link>
           <Link
             to="/surgery"
             className="block py-2 text-gray-700 hover:text-dark-pink"
           >
-            Surgery Types
+            <div>{t("surgeryText")}</div>
           </Link>
           <Link
             to="/surgery"
             onClick={() => window.scrollTo(0, 0)}
             className="block py-1 text-gray-800 bg-gray-200 text-[14px] pl-3 hover:text-dark-pink"
           >
-            Our Services
+            <div>{t("servicesText")}</div>
           </Link>
           <Link
             to="/services"
             onClick={() => window.scrollTo(0, 0)}
             className="block py-1 text-gray-800 text-[14px] pl-3 bg-gray-200 hover:text-dark-pink"
           >
-            Services Details
+            <div>{t("servicesDetailsText")}</div>
           </Link>
           <Link
             to="/blog"
             className="block py-2 text-gray-700 hover:text-dark-pink"
           >
-            Blog
+            <div>{t("blogText")}</div>
           </Link>
           <Link
             to="/news"
             className="block py-2 text-gray-700 hover:text-dark-pink"
           >
-            News
+            <div>{t("newsText")}</div>
           </Link>
           <Link
             to="/contact"
             className="block py-2 text-gray-700 hover:text-dark-pink"
           >
-            Become a member
+            <div>{t("memberText")}</div>
           </Link>
           <Link
             to="/appointment"
             className="block py-1 text-gray-800 bg-gray-200 text-[14px] pl-3 hover:text-dark-pink"
           >
-            Appointment
+            <div>{t("appointmentText")}</div>
           </Link>
           <Link
             to="/contact"
             className="block py-1 text-gray-800 text-[14px] pl-3 bg-gray-200 hover:text-dark-pink"
           >
-            Contact
+            <div>{t("contactText")}</div>
           </Link>
         </div>
-      </div> 
+      </div>
       {/* Overlay */}
       {isSidebarOpen && (
         <div
           className="fixed top-0 left-0 w-full h-full bg-black opacity-50 z-40 lg:hidden" // z-40 to be below the sidebar (z-50)
-          onClick={closeSidebar} // Close sidebar when clicking the overlay
+          onClick={closeSidebar}
         ></div>
       )}
     </>
@@ -364,10 +368,3 @@ const Navbar = () => {
 
 export default Navbar;
 
-{
-  /*
- Links to pages!
- Space in dropmenu
- Lang img -> drop down menu-> change lang
-*/
-}

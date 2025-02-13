@@ -1,9 +1,34 @@
 {
+    "makeAppointmentText": "MAKE APPOINTMENT",
     "homeText": "Home +",
-
-
+    "aboutText": "About +",
+    "surgeryText": "Surgery types +",
+    "blogText": "Blog +",
+    "newsText": "News +",
+    "memberText": "Become a member +",
+    "contactText": "Contact",
+    "servicesText": "Our services",
+    "appointmentText": "Appointment",
+    "storyText": "Story",
+    "approachText": "Approach",
+    "teamText": "Team",
+    "feedbackText": "Feedback",
+    "servicesDetailsText": "Service details",
     
-
+    "departmentsText": "Departments",
+    "surgeryAndRadiologyText": "Surgery and Radiology",
+    "familyMedicineText": "Family Medicine",
+    "womensHealthText": "Women's Health",
+    "opticianText": "Opticians",
+    "pediatricsText": "Pediatrics",
+    "dermatologyText": "Dermatology",
+    "ourDoctorsText": "Our Doctors",
+    "newText": "News",
+    "shopText": "Shop",
+    "bookAnAppointmentText": "Book an Appointment",
+    "newsFeedText": "News Feed",
+    
+    
 
 
     "SliderText": "Best Care & Better Doctor.",

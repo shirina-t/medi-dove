@@ -1,7 +1,32 @@
 {
+  "makeAppointmentText": "QABULGA YOZILING",
   "homeText": "Uy +",
+  "aboutText": "Biz xaqimizda +",
+  "surgeryText": "Jarrohlik turlari +",
+  "blogText": "Blog +",
+  "newsText": "Yangiliklar +",
+  "memberText": "Obuna boling +",
+  "contactText": "Aloqaga chiqish",
+  "servicesText": "Xizmatlarimiz",
+  "appointmentText": "Qabul",
+  "storyText": "Hikoyamiz",
+  "approachText": "Yondashuv",
+  "teamText": "Jamoa",
+  "feedbackText": "Sharhlar",
+  "servicesDetailsText": "Xizmatlar xaqida",
 
-
+  "departmentsText": "Bo'limlar",
+  "surgeryAndRadiologyText": "Jarrohlik va Radiologiya",
+  "familyMedicineText": "Oila Tibbiyoti",
+  "womensHealthText": "Ayollar Salomatligi",
+  "opticianText": "Optika",
+  "pediatricsText": "Pediatriya",
+  "dermatologyText": "Dermatologiya",
+  "ourDoctorsText": "Shifokorlarimiz",
+  "newText": "Yangiliklar",
+  "shopText": "Do'kon",
+  "bookAnAppointmentText": "Qabulga Yoziling",
+  "newsFeedText": "Yangiliklar Tasmasi",
 
 
 
@@ -12,8 +37,7 @@
   "Section1_text": "Biz haqimizda",
   "ShortStoryTitle": "MediDove klinikasi haqida qisqa hikoya.",
   "ShortStoryParagraph1": "MediDove klinikasi zamonaviy tibbiyot markazi bo'lib, yuqori sifatli tibbiy xizmatlarni taqdim etishga bag'ishlangan. Tajribali shifokorlar va ilg'or texnologiyalar yordamida biz bemorlarimizga eng yaxshi davolashni ta'minlaymiz. Bizning maqsadimiz nafaqat jismoniy, balki ruhiy farovonlikka ham e'tibor qaratgan holda mehribon parvarish ko'rsatishdir.",
-    "ShortStoryParagraph2": "MediDoveda biz bemorlarni birinchi o'ringa qo'yish tamoyiliga amal qilamiz. Oddiy tibbiy ko'riklardan tortib, maxsus muolajalargacha bo'lgan barcha xizmatlarimiz har bir insonning ehtiyojlariga moslashtirilgan. Bizning mukammallikka va innovatsiyaga bo'lgan intilishimiz, MediDove klinikasini ishonchli va samarali tibbiy yordam izlayotganlar uchun eng yaxshi tanlovga aylantiradi.",
-    "ShortStory_founder": "Asoschi",
-    "ShortStory_departments": "Bo'limlar"
-
+  "ShortStoryParagraph2": "MediDoveda biz bemorlarni birinchi o'ringa qo'yish tamoyiliga amal qilamiz. Oddiy tibbiy ko'riklardan tortib, maxsus muolajalargacha bo'lgan barcha xizmatlarimiz har bir insonning ehtiyojlariga moslashtirilgan. Bizning mukammallikka va innovatsiyaga bo'lgan intilishimiz, MediDove klinikasini ishonchli va samarali tibbiy yordam izlayotganlar uchun eng yaxshi tanlovga aylantiradi.",
+  "ShortStory_founder": "Asoschi",
+  "ShortStory_departments": "Bo'limlar"
 }

@@ -1,8 +1,32 @@
 {
+  "makeAppointmentText": "НАЗНАЧЬ ПРИЕМ",
   "homeText": "Дом +",
+  "aboutText": "О нас +",
+  "surgeryText": "Виды хирургии +",
+  "blogText": "Блог +",
+  "newsText": "Новости +",
+  "memberText": "Подпишись +",
+  "contactText": "Контакт",
+  "servicesText": "Наши услуги",
+  "appointmentText": "Прием",
+  "storyText": "История",
+  "approachText": "Подход",
+  "teamText": "Команда",
+  "feedbackText": "Отзыв",
+  "servicesDetailsText": "Детали услуг",
 
-
-
+  "departmentsText": "Отделы",
+  "surgeryAndRadiologyText": "Хирургия и Радиология",
+  "familyMedicineText": "Семейная Медицина",
+  "womensHealthText": "Женское Здоровье",
+  "opticianText": "Оптика",
+  "pediatricsText": "Педиатрия",
+  "dermatologyText": "Дерматология",
+  "ourDoctorsText": "Наши Доктора",
+  "newText": "Новости",
+  "shopText": "Магазин",
+  "bookAnAppointmentText": "Забронировать Прием",
+  "newsFeedText": "Новостная Лента",
 
 
 
