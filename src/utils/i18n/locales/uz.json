@@ -45,8 +45,33 @@
   "HomePage_Cards_Title1": "Sog'liqni saqlash",
   "HomePage_Cards_Title2": "xizmatlaringizni boshqarish",
   "HomePage_Card1_title": "Tana jarrohligi",
-"HomePage_Card1_paragraph": "Tana jarrohligi sog'liqni yaxshilash, funksiyani tiklash va farovonlikni oshirishga yordam beradi.",
-"HomePage_Card1_btn": "Batafsil"
+  "HomePage_Card1_paragraph": "Tana jarrohligi sog'liqni yaxshilash, funksiyani tiklash va    farovonlikni oshirishga yordam beradi.",
+  "HomePage_Card1_btn": "Batafsil",
+
+  "HomePage_Card2_title": "Tish parvarishi",
+  "HomePage_Card2_paragraph": "Tish parvarishi kasalliklarning oldini oladi, tishlarni mustahkamlaydi va sog'lom tabassumni ta'minlaydi.",
+  "HomePage_Card2_btn": "Batafsil o'qish",
+
+  "HomePage_Card3_title": "Xizmat tarkibi",
+  "HomePage_Card3_paragraph": "Xizmatlarimiz sifat, ishonchlilik va mijozlar qoniqishini ekspert yechimlar orqali ta'minlaydi.",
+  "HomePage_Card3_btn": "Batafsil",
+
+  "HomePage_Card4_title": "Qon saratoni",
+  "HomePage_Card4_paragraph": "Qon saratoni hujayralarga ta'sir qiladi, immunitetni zaiflashtiradi va erta davolashni talab qiladi.",
+  "HomePage_Card4_btn": "Batafsil",
+
+  "HomePage_Card5_title": "Nevrologik jarrohlik",
+  "HomePage_Card5_paragraph": "Nevrologik jarrohlik miya kasalliklarini davolaydi, funksiyani tiklaydi va bemor salomatligini yaxshilaydi.",
+  "HomePage_Card5_btn": "Batafsil",
+
+  "HomePage_Card6_title": "Allergik muammo",
+  "HomePage_Card6_paragraph": "Allergik muammolar reaksiyalarga sabab bo'ladi, nafas olishga ta'sir qiladi va to'g'ri tibbiy parvarishni talab qiladi.",
+  "HomePage_Card6_btn": "Batafsil",
+
+  "HomePage_ourTeam": "Bizning jamoa",
+  "HomePage_Section3_title": "Professional va g'amxo'r xizmat ko'rsatuvchi"
+
+
 
 
 }

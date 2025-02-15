@@ -256,84 +256,74 @@ export const HomePage_Cards = () => {
         <div className="HomePage_Card sm:w-80 w-9/12 h-96 bg-white flex flex-col items-center justify-center mt-20 p-12 gap-2  rounded-xl hover:shadow-2xl ">
           <img src={service2} alt="" />
           <h3 className="text-2xl font-bold text-slate-700 hover:text-lime-600 duration-700">
-            <Link to="/services" onClick={() => window.scrollTo(0, 0)}>Dental Care</Link>
+            <Link to="/services" onClick={() => window.scrollTo(0, 0)}>{t("HomePage_Card2_title")}</Link>
           </h3>
           <p className="text-center text-slate-700">
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo.
+          {t("HomePage_Card2_paragraph")}
           </p>
           <Link
             to="/services" onClick={() => window.scrollTo(0, 0)}
-            className="font-semibold text-slate-700 hover:text-lime-600 duration-700"
-          >
-            Read More
+            className="font-semibold text-slate-700 hover:text-lime-600 duration-700">
+          {t("HomePage_Card2_btn")}
           </Link>
         </div>
         <div className="HomePage_Card sm:w-80 w-9/12 h-96 bg-white flex flex-col items-center justify-center mt-20 p-12 gap-2  rounded-xl hover:shadow-2xl ">
           <img src={service3} alt="" />
           <h3 className="text-2xl font-bold text-slate-700 hover:text-lime-600 duration-700">
-            <Link to="/services" onClick={() => window.scrollTo(0, 0)}>Service-content</Link>
+            <Link to="/services" onClick={() => window.scrollTo(0, 0)}>{t("HomePage_Card3_title")}</Link>
           </h3>
           <p className="text-center text-slate-700">
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo.
+          {t("HomePage_Card3_paragraph")}
           </p>
           <Link
-            to="/services" onClick={() => window.scrollTo(0, 0)}
-            className="font-semibold text-slate-700 hover:text-lime-600 duration-700"
-          >
-            Read More
+          to="/services" onClick={() => window.scrollTo(0, 0)}
+          className="font-semibold text-slate-700 hover:text-lime-600 duration-700">
+          {t("HomePage_Card3_btn")}
           </Link>
         </div>
 
         <div className="HomePage_Card sm:w-80 w-9/12 h-96 bg-white flex flex-col items-center justify-center mt-20 p-12 gap-2  rounded-xl hover:shadow-2xl ">
           <img src={service4} alt="" />
           <h3 className="text-2xl font-bold text-slate-700 hover:text-lime-600 duration-700">
-            <Link to="/services" onClick={() => window.scrollTo(0, 0)}>Blood-Cancer</Link>
+            <Link to="/services" onClick={() => window.scrollTo(0, 0)}>{t("HomePage_Card4_title")}</Link>
           </h3>
           <p className="text-center text-slate-700">
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo.
+           {t("HomePage_Card4_paragraph")}
           </p>
           <Link
             to="/services" onClick={() => window.scrollTo(0, 0)}
-            className="font-semibold text-slate-700 hover:text-lime-600 duration-700"
-          >
-            Read More
+            className="font-semibold text-slate-700 hover:text-lime-600 duration-700">
+           {t("HomePage_Card4_btn")}
           </Link>
         </div>
 
         <div className="HomePage_Card sm:w-80 w-9/12 h-96 bg-white flex flex-col items-center justify-center mt-20 p-12 gap-2  rounded-xl hover:shadow-2xl ">
           <img src={service5} alt="" />
-          <h3 className="text-2xl font-bold text-slate-700 hover:text-lime-600 duration-700">
-            <Link to="/services" onClick={() => window.scrollTo(0, 0)}>Neurology Sargery</Link>
+          <h3 className="text-2xl font-bold text-center text-slate-700 hover:text-lime-600 duration-700">
+            <Link to="/services" onClick={() => window.scrollTo(0, 0)}>{t("HomePage_Card5_title")}</Link>
           </h3>
           <p className="text-center text-slate-700">
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo.
+          {t("HomePage_Card5_paragraph")}
           </p>
           <Link
             to="/services" onClick={() => window.scrollTo(0, 0)}
-            className="font-semibold text-slate-700 hover:text-lime-600 duration-700"
-          >
-            Read More
+            className="font-semibold text-slate-700 hover:text-lime-600 duration-700">
+           {t("HomePage_Card5_btn")}
           </Link>
         </div>
 
         <div className="HomePage_Card sm:w-80 w-9/12 h-96 bg-white flex flex-col items-center justify-center mt-20 p-12 gap-2  rounded-xl hover:shadow-2xl ">
           <img src={service6} alt="" />
-          <h3 className="text-2xl font-bold text-slate-700 hover:text-lime-600 duration-700">
-            <Link to="/services" onClick={() => window.scrollTo(0, 0)}>Allergic Issue</Link>
+          <h3 className="text-2xl font-bold text-center text-slate-700 hover:text-lime-600 duration-700">
+            <Link to="/services" onClick={() => window.scrollTo(0, 0)}>{t("HomePage_Card6_title")}</Link>
           </h3>
           <p className="text-center text-slate-700">
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo.
+          {t("HomePage_Card6_paragraph")}
           </p>
           <Link
             to="/services" onClick={() => window.scrollTo(0, 0)}
-            className="font-semibold text-slate-700 hover:text-lime-600 duration-700"
-          >
-            Read More
+            className="font-semibold text-slate-700 hover:text-lime-600 duration-700">
+            {t("HomePage_Card6_btn")}
           </Link>
         </div>
       </div>
@@ -369,11 +359,10 @@ export const HomePage_Profiles = () => {
       <div className="flex items-center lg:justify-between justify-center w-full h-full xl:px-32 lg:px-20 px-10 flex-wrap md:flex-nowrap">
         <div
           className="profile_title flex flex-col lg:items-start  items-center lg:justify-start justify-center lg:bg-left bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${Imgbackground})` }}
-        >
-          <h4 className="text-slate-700 font-bold">Our Team</h4>
+          style={{ backgroundImage: `url(${Imgbackground})` }}>
+          <h4 className="text-slate-700 font-bold">{t("HomePage_ourTeam")}</h4>
           <h2 className="xl:text-[50px] md:text-[40px] text-[30px] font-semibold text-slate-800 w-[70%] lg:text-start text-center">
-            A Professional & Care Provider
+          {t("HomePage_Section3_title")}
           </h2>
           <img src={Line} className="my-3" alt="" />
         </div>

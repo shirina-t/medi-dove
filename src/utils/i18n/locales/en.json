@@ -47,6 +47,29 @@
     "HomePage_Cards_Title2": "Healthcare Services",
     "HomePage_Card1_title": "Body Surgery",
     "HomePage_Card1_paragraph": "Body surgery helps improve health, restore function, and enhance well-being.",
-    "HomePage_Card1_btn": "Read More"
+    "HomePage_Card1_btn": "Read More",
+
+    "HomePage_Card2_title": "Dental Care",
+    "HomePage_Card2_paragraph": "Dental care prevents diseases, strengthens teeth, and ensures a healthy smile.",
+    "HomePage_Card2_btn": "Read More",
+
+    "HomePage_Card3_title": "Service-content",
+    "HomePage_Card3_paragraph": "Our services ensure quality, reliability, and customer satisfaction through expert solutions.",
+    "HomePage_Card3_btn": "Read More",
+
+    "HomePage_Card4_title": "Blood-Cancer",
+    "HomePage_Card4_paragraph": "Blood cancer affects cells, weakens immunity, and requires early medical treatment.",
+    "HomePage_Card4_btn": "Read More",
+
+    "HomePage_Card5_title": "Neurology Sargery",
+    "HomePage_Card5_paragraph": "Neurology surgery treats brain disorders, restores function, and improves patient health.",
+    "HomePage_Card5_btn": "Read More",
+
+    "HomePage_Card6_title": "Allergic Issue",
+    "HomePage_Card6_paragraph": "Allergic issues cause reactions, affect breathing, and need proper medical care.",
+    "HomePage_Card6_btn": "Read More",
+
+    "HomePage_ourTeam": "Our Team",
+    "HomePage_Section3_title": "A Professional & Care Provider"
 }
 
