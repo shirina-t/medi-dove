@@ -40,6 +40,13 @@
     "ShortStoryParagraph1": "MediDove Clinic is a modern healthcare center dedicated to providing top-quality medical services. With highly skilled doctors and advanced technology, we ensure the best treatment for our patients. Our mission is to deliver compassionate care, focusing on both physical and emotional well-being.",
     "ShortStoryParagraph2": "At MediDove, we believe in a patient-first approach. From routine check-ups to specialized treatments, we offer personalized care tailored to each individual's needs. Our commitment to excellence and innovation makes us a trusted choice for those seeking reliable and effective healthcare.",
     "ShortStory_founder": "Founder",
-    "ShortStory_departments": "Departments"
+    "ShortStory_founder_name": "Rosalina D. Williamson",
+    "ShortStory_departments": "Departments",
+
+    "HomePage_Cards_Title1": " Managed Your",
+    "HomePage_Cards_Title2": "Healthcare Services",
+    "HomePage_Card1_title": "Body Surgery",
+    "HomePage_Card1_paragraph": "Body surgery helps improve health, restore function, and enhance well-being.",
+    "HomePage_Card1_btn": "Read More"
 }
 
