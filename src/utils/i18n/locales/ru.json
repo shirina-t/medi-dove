@@ -69,7 +69,46 @@
   "HomePage_Card6_btn": "Подробнее",
 
   "HomePage_ourTeam": "Наша команда",
-  "HomePage_Section3_title": "Профессиональный и заботливый поставщик услуг"
+  "HomePage_Section3_title": "Профессиональный и заботливый поставщик услуг",
+  "HomePage_Section3_Founder": "ОСНОВАТЕЛЬ",
+  "HomePage_Section3_Founder_Name": "Розалина Д. Уильямсон",
+  "HomePage_Section3_Dentist1": "Стоматолог",
+  "HomePage_Section3_Dentist1_Name": "Диконда Пиран Уилл",
+  "HomePage_Section3_Neurologist1": "Невролог",
+  "HomePage_Section3_Neurologist1_Name": "Халк М. Кенбон",
+  "HomePage_Section3_Consultant": "Консультант",
+  "HomePage_Section3_Consultant_Name": "Халиам З. Диколаз",
+  "HomePage_Section3_Dentist2": "Стоматолог",
+  "HomePage_Section3_Dentist2_Name": "Николас Д. Кейс",
+  "HomePage_Section3_Neurologist2": "Невролог",
+  "HomePage_Section3_Neurologist2_Name": "Фумдон Х. Норман",
 
+  "HomePage_Section4_Available": "Мы доступны 24/7",
+  "HomePage_Section4_Title1": "Мы всегда готовы",
+  "HomePage_Section4_Title2": "К вызову.",
+  "HomePage_Section4_SatisfiedPatients": "Довольные пациенты",
+  "HomePage_Section4_Paragraph1": "Счастливые пациенты ценят хороший уход, доброжелательное обслуживание и отличную помощь, создавая доверие, комфорт и прочную преданность.",
+  "HomePage_Section4_Awards": "Мировые награды",
+  "HomePage_Section4_Paragraph2": "Мировые медицинские награды признают выдающиеся достижения в здравоохранении, исследованиях и инновациях.",
 
+  "HomePage_Section5_StayHealthy": "Будьте здоровы и сильны, чтобы наслаждаться жизнью",
+  "HomePage_Section5_Title": "Доверьтесь нам – мы всегда рядом, чтобы помочь и сделать всё снова хорошо.",
+  "HomePage_Section5_Btn": "Получить консультацию",
+
+  "HomePage_Section6_News": "Новости",
+  "HomePage_Section6_Title1": "Получайте каждое",
+  "HomePage_Section6_Title2": "Обновление здесь.",
+
+  "HomePage_Section7_Table1": "Медицина",
+ "HomePage_Section7_Table2": "Лекарства",
+
+ "HomePage_Section7_Table2_Title": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+  "HomePage_Section7_Table2_Paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident itaque perspiciatis magni hic cumque illum quibusdam blanditiis nesciunt.",
+  "HomePage_Calendar1": "23 Января 2022",
+  "HomePage_Calendar2": "23 Января 2022",
+  "HomePage_Calendar3": "23 Января 2022",
+  "HomePage_Comment1": "33 комментария",
+  "HomePage_Comment2": "33 комментария",
+  "HomePage_Comment3": "33 комментария",
+  "HomePage_PhoneBtn": "Позвонить"
 }

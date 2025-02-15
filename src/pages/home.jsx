@@ -387,10 +387,10 @@ export const HomePage_Profiles = () => {
             </span>
           </Link>
           <h3 className="text-2xl font-semibold text-slate-800 text-center">
-            Rosalina D. Williamson
+          {t("HomePage_Section3_Founder_Name")}
           </h3>
           <h4 className="text-center text-rose-600 font-semibold text-base uppercase">
-            Founder
+          {t("HomePage_Section3_Founder")}
           </h4>
         </div>
         <div className="relative">
@@ -401,10 +401,10 @@ export const HomePage_Profiles = () => {
             </span>
           </Link>
           <h3 className="text-2xl font-semibold text-slate-800 text-center">
-            Diconda PIran Will
+          {t("HomePage_Section3_Founder_Name")}
           </h3>
           <h4 className="text-center text-rose-600 font-semibold text-base uppercase">
-            dentist
+          {t("HomePage_Section3_Dentist1")}
           </h4>
         </div>
         <div className="relative">
@@ -415,10 +415,10 @@ export const HomePage_Profiles = () => {
             </span>
           </Link>
           <h3 className="text-2xl font-semibold text-slate-800 text-center">
-            Hulk M. Kenbon
+          {t("HomePage_Section3_Neurologist1_Name")}
           </h3>
           <h4 className="text-center text-rose-600 font-semibold text-base uppercase">
-            neurologist
+          {t("HomePage_Section3_Neurologist1")}
           </h4>
         </div>
         <div className="relative">
@@ -429,10 +429,10 @@ export const HomePage_Profiles = () => {
             </span>
           </Link>
           <h3 className="text-2xl font-semibold text-slate-800 text-center">
-            Haliam Z. Dicolaz
+          {t("HomePage_Section3_Consultant_Name")}
           </h3>
           <h4 className="text-center text-rose-600 font-semibold text-base uppercase">
-            Consultant
+          {t("HomePage_Section3_Consultant")}
           </h4>
         </div>
         <div className="relative">
@@ -443,10 +443,10 @@ export const HomePage_Profiles = () => {
             </span>
           </Link>
           <h3 className="text-2xl font-semibold text-slate-800 text-center">
-            Nicolas D. Case
+         {t("HomePage_Section3_Dentist2_Name")}
           </h3>
           <h4 className="text-center text-rose-600 font-semibold text-base uppercase">
-            dentist
+         {t("HomePage_Section3_Dentist2")}
           </h4>
         </div>
         <div className="relative">
@@ -457,10 +457,10 @@ export const HomePage_Profiles = () => {
             </span>
           </Link>
           <h3 className="text-2xl font-semibold text-slate-800 text-center">
-            Phumdon H. Norman
+          {t("HomePage_Section3_Neurologist2_Name")}
           </h3>
           <h4 className="text-center text-rose-600 font-semibold text-base uppercase">
-            neurologist
+          {t("HomePage_Section3_Neurologist2")}
           </h4>
         </div>
       </div>
@@ -486,17 +486,15 @@ export const Accessible = () => {
     >
       <div className="flex flex-col gap-5 lg:w-[80%] md:w-[50%] w-full">
         <h4 className="text-gray-600 text-xl font-bold">
-          We are available 24/7
+       {t("HomePage_Section4_Available")}
         </h4>
-        <h2 className="xl:text-6xl sm:text-5xl text-3xl">
-          We Always Ready <br /> For A Challenge.
-        </h2>
+        <div className="xl:text-6xl sm:text-5xl text-3xl">
+         <h2>{t("HomePage_Section4_Title1")}</h2>
+         <h2>{t("HomePage_Section4_Title2")}</h2>
+        </div>
         <Link to="/appointment" onClick={() => window.scrollTo(0, 0)}>
           <Button
-            className="sm:w-72 w-auto border-none"
-            variant="destructive"
-            size="lg"
-          >
+            className="sm:w-72 w-auto border-none" variant="destructive" size="lg">
             <span className="bg-white text-gray-800 rounded-full px-3 pb-0 lg:pb-2 text-4xl">
               +
             </span>
@@ -511,11 +509,10 @@ export const Accessible = () => {
           <div className="xl:w-1/2 w-auto">
             <h3 className="flex gap-2 items-center text-xl font-semibold">
               <UserRound />
-              Satisfied Patients
+            {t("HomePage_Section4_SatisfiedPatients")}
             </h3>
             <p className="text-gray-600 font-bold">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sed,
-              officia aut similique saepe laboriosam dolore minima amet alias?
+            {t("HomePage_Section4_Paragraph1")}
             </p>
           </div>
         </div>
@@ -525,11 +522,10 @@ export const Accessible = () => {
           <div className="xl:w-1/2 w-auto flex flex-col gap-2">
             <h3 className="flex gap-2 items-center text-xl font-semibold">
               <ThumbsUp />
-              Wolrd Awards
+           {t("HomePage_Section4_Awards")}
             </h3>
             <p className="text-gray-600 font-bold">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea natus
-              facilis voluptatibus totam harum voluptates ipsa dicta quam autem?
+           {t("HomePage_Section4_Paragraph2")}
             </p>
           </div>
         </div>
@@ -549,17 +545,17 @@ export const Consultant = () => {
   return (
     <div className="bg-slate-900 w-full h-full mb-20 flex flex-col items-center justify-center py-20 gap-8">
       <h4 className="text-gray-600 font-bold">
-        Stay healthy & strong to enjoy life
+    {t("HomePage_Section5_StayHealthy")}
       </h4>
       <p className="text-white xl:text-6xl lg:text-5xl text-4xl w-4/6 text-center">
-        Trust Us To Be There To Help All & Make Things Well Again.
+      {t("HomePage_Section5_Title")}
       </p>
       <Link to="/appointment" onClick={() => window.scrollTo(0, 0)}>
         <Button variant="outline" size="lg">
           <span className="bg-white text-gray-800 rounded-full px-3 pb-0 lg:pb-2 text-4xl">
             +
           </span>
-          <h2>Get a Consultant</h2>
+          <h2>{t("HomePage_Section5_Btn")}</h2>
         </Button>
       </Link>
     </div>
@@ -583,10 +579,11 @@ export const HomePage_Blog = () => {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <h4 className="text-xl text-slate-500 font-bold">News</h4>
-        <h2 className="lg:text-start text-center font-semibold text-gray-700 xl:text-[55px] lg:text-[45px] md:text-[40px] text-[35px] mb-2">
-          Get Every Single <br /> Updates Here.
-        </h2>
+        <h4 className="text-xl text-slate-500 font-bold">{t("HomePage_Section6_News")}</h4>
+        <div className="lg:text-start text-center font-semibold text-gray-700 xl:text-[55px] lg:text-[45px] md:text-[40px] text-[35px] mb-2">
+        <h2>{t("HomePage_Section6_Title1")}</h2>
+        <h2>{t("HomePage_Section6_Title2")}</h2>
+        </div>
         <img src={Line} alt="" className="mt-5" />
       </div>
       <Link to="/appointment" onClick={() => window.scrollTo(0, 0)}>
@@ -617,38 +614,38 @@ export const HomePage_News = () => {
     <div className="HomePage_News flex items-center justify-center gap-10 mb-20 flex-wrap">
       <div className="NewsCard1 xl:w-1/4 md:w-[40%] w-9/12">
         <img src={News1} alt="" className="w-full h-full" />
-        <Link to="/blog" className="flex gap-5 text-rose-600 font-semibold py-1 uppercase"><h4>Medical,</h4><h4>Medicine</h4></Link>
-        <Link to="/blog"><h2 className="text-2xl font-bold text-slate-800 hover:text-rose-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2></Link>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident itaque perspiciatis magni hic cumque  illum quibusdam blanditiis nesciunt.</p>
+        <Link to="/blog" className="flex gap-5 text-rose-600 font-semibold py-1 uppercase"><h4>{t("HomePage_Section7_Table1")},</h4><h4>{t("HomePage_Section7_Table2")}</h4></Link>
+        <Link to="/blog"><h2 className="text-2xl font-bold text-slate-800 hover:text-rose-600">{t("HomePage_Section7_Table2_Title")}</h2></Link>
+        <p>{t("HomePage_Section7_Table2_Paragraph")}</p>
       </div>
 
       <div className="NewsCard2 xl:w-1/4 md:w-[40%] w-9/12">
       <img src={News2} alt="" className="w-full h-full" />
-      <Link to="/blog" className="flex gap-5 text-rose-600 font-semibold py-1 uppercase"><h4>Medical,</h4><h4>Medicine</h4></Link>
-        <Link to="/blog"><h2 className="text-2xl font-bold text-slate-800 hover:text-rose-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2></Link>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci tenetur totam ad recusandae ipsa amet, officiis voluptatum. Fuga, a neque?</p>
+      <Link to="/blog" className="flex gap-5 text-rose-600 font-semibold py-1 uppercase"><h4>{t("HomePage_Section7_Table1")},</h4><h4>{t("HomePage_Section7_Table2")}</h4></Link>
+        <Link to="/blog"><h2 className="text-2xl font-bold text-slate-800 hover:text-rose-600">{t("HomePage_Section7_Table2_Title")}</h2></Link>
+        <p>{t("HomePage_Section7_Table2_Paragraph")}</p>
       </div>
 
       <div className="NewsCard3 xl:w-1/4 w-9/12 border-2 flex flex-col gap-4 border-violet-200">
         <div className="flex flex-col gap-2 px-8 pt-7">
-          <Link to="/blog"><p className="text-2xl font-semibold text-slate-800 hover:text-rose-600 hover:cursor-pointer">Lorem ipsum dolor sit amet consectetur adipisicing.</p></Link>
+          <Link to="/blog"><p className="text-2xl font-semibold text-slate-800 hover:text-rose-600 hover:cursor-pointer">{t("HomePage_Section7_Table2_Paragraph1")}</p></Link>
           <div className="flex gap-4 border-b-2 border-violet-200 pb-5 sm:flex-nowrap flex-wrap">
-            <h3 className="flex font-semibold gap-2"><Calendar />23rd Jan 2022</h3>
-            <Link to="/blog"><h3 className="flex font-semibold"><MessageCircle />33 Comments</h3></Link>
+            <h3 className="flex font-semibold gap-2"><Calendar />{t("HomePage_Calendar1")}</h3>
+            <Link to="/blog"><h3 className="flex font-semibold"><MessageCircle />{t("HomePage_Comment1")}</h3></Link>
           </div>
         </div>
         <div className="flex flex-col gap-2 px-8">
-          <Link to="/blog"><p className="text-2xl font-semibold text-slate-800 hover:text-rose-600 hover:cursor-pointer">Lorem ipsum dolor sit amet consectetur adipisicing.</p></Link>
+          <Link to="/blog"><p className="text-2xl font-semibold text-slate-800 hover:text-rose-600 hover:cursor-pointer">{t("HomePage_Section7_Table2_Paragraph2")}</p></Link>
           <div className="flex gap-4 border-b-2 border-violet-200 pb-5 sm:flex-nowrap flex-wrap">
-          <h3 className="flex font-semibold gap-2"><Calendar />23rd Jan 2022</h3>
-          <Link to="/blog"><h3 className="flex font-semibold"><MessageCircle />33 Comments</h3></Link>
+          <h3 className="flex font-semibold gap-2"><Calendar />{t("HomePage_Calendar2")}</h3>
+          <Link to="/blog"><h3 className="flex font-semibold"><MessageCircle />{t("HomePage_Comment2")}</h3></Link>
           </div>
         </div>
         <div className="flex flex-col gap-2 px-8 pb-7">
-          <Link to="/blog"><p className="text-2xl font-semibold text-slate-800 hover:text-rose-600 hover:cursor-pointer">Lorem ipsum dolor sit amet consectetur adipisicing.</p></Link>
+          <Link to="/blog"><p className="text-2xl font-semibold text-slate-800 hover:text-rose-600 hover:cursor-pointer">{t("HomePage_Section7_Table2_Paragraph3")}</p></Link>
           <div className="flex gap-4 sm:flex-nowrap flex-wrap">
-          <h3 className="flex font-semibold gap-2"><Calendar />23rd Jan 2022</h3>
-          <Link to="/blog"><h3 className="flex font-semibold"><MessageCircle />33 Comments</h3></Link>
+          <h3 className="flex font-semibold gap-2"><Calendar />{t("HomePage_Calendar3")}</h3>
+          <Link to="/blog"><h3 className="flex font-semibold"><MessageCircle />{t("HomePage_Comment3")}</h3></Link>
           </div>
         </div>
       </div>
@@ -672,7 +669,7 @@ export const Last_Button = () => {
       <Link to="/contact" onClick={() => window.scrollTo(0, 0)}> 
       <Button variant="outline" size="lg" className="py-7">
         <span className="bg-white text-gray-800 rounded-full px-3 py-3 text-4xl"><Phone fill="black"/></span>
-        <h2>Make Call</h2>
+        <h2>{t("HomePage_PhoneBtn")}</h2>
       </Button>
       </Link>
     </div>

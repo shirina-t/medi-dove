@@ -70,6 +70,46 @@
     "HomePage_Card6_btn": "Read More",
 
     "HomePage_ourTeam": "Our Team",
-    "HomePage_Section3_title": "A Professional & Care Provider"
+    "HomePage_Section3_title": "A Professional & Care Provider",
+    "HomePage_Section3_Founder": "FOUNDER",
+    "HomePage_Section3_Founder_Name": "Rosalina D. Williamson",
+    "HomePage_Section3_Dentist1": "Dentist",
+    "HomePage_Section3_Dentist1_Name": "Diconda PIran Will",
+    "HomePage_Section3_Neurologist1": "Neurologist",
+    "HomePage_Section3_Neurologist1_Name": "Hulk M. Kenbon",
+    "HomePage_Section3_Consultant": "Consultant",
+    "HomePage_Section3_Consultant_Name": "Haliam Z. Dicolaz",
+    "HomePage_Section3_Dentist2": "Dentist",
+    "HomePage_Section3_Dentist2_Name": "Nicolas D. Case",
+    "HomePage_Section3_Neurologist2": "Neurologist",
+    "HomePage_Section3_Neurologist2_Name": "Phumdon H. Norman",
+
+    "HomePage_Section4_Available": "We are available 24/7",
+    "HomePage_Section4_Title1": "We Always Ready",
+    "HomePage_Section4_Title2": "For A Challenge.",
+    "HomePage_Section4_SatisfiedPatients": "Satisfied Patients",
+    "HomePage_Section4_Paragraph1": "Happy patients love good care, kind service, and great help, building trust, ease, and strong loyalty forever",
+    "HomePage_Section4_Awards": "Wolrd Awards",
+    "HomePage_Section4_Paragraph2": "World medical awards recognize outstanding contributions in healthcare, research, and innovation",
+
+    "HomePage_Section5_StayHealthy": "Stay healthy & strong to enjoy life",
+    "HomePage_Section5_Title": "Trust Us To Be There To Help All & Make Things Well Again.",
+    "HomePage_Section5_Btn": "Get a Consultant",
+
+    "HomePage_Section6_News": "News",
+    "HomePage_Section6_Title1": "Get Every Single",
+    "HomePage_Section6_Title2": "Updates Here.",
+    "HomePage_Section7_Table1": "Medical",
+    "HomePage_Section7_Table2": "Medicine",
+
+    "HomePage_Section7_Table2_Title": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    "HomePage_Section7_Table2_Paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident itaque perspiciatis magni hic cumque illum quibusdam blanditiis nesciunt.",
+    "HomePage_Calendar1": "23rd Jan 2022",
+    "HomePage_Calendar2": "23rd Jan 2022",
+    "HomePage_Calendar3": "23rd Jan 2022",
+    "HomePage_Comment1": "33 Comments",
+    "HomePage_Comment2": "33 Comments",
+    "HomePage_Comment3": "33 Comments",
+    "HomePage_PhoneBtn": "Make a call"
 }
 
