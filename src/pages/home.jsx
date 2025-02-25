@@ -1,9 +1,10 @@
-
-
 import { useTranslation } from "react-i18next";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
+AOS.init(); 
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ArrowLeft, ArrowRight, Play } from "lucide-react";
 import slider1 from "../assets/images/slider1.jpg";
 import slider2 from "../assets/images/slider2.jpg";
@@ -43,7 +44,14 @@ export const Showcase = () => {
 
   const nextSlide = () => {
     setActiveSlide((prev) => (prev === 1 ? 2 : 1));
+    AOS.refresh();
   };
+
+
+  useEffect(() => {
+    AOS.init();  
+  }, []);
+
 
   return (
     <div
@@ -76,17 +84,16 @@ export const Showcase = () => {
         style={{ backgroundImage: `url(${slider1})` }}
       >
         <div className="slider_text xl:w-2/5 lg:w-2/4 md:w-9/12 absolute sm:top-[20%] sm:left-[10%] flex gap-2 flex-col sm:items-start items-center sm:justify-start px-1">
-          <h4 className="text-gray-600 font-semibold text-xl">
+          <h4 className="text-gray-600 font-semibold text-xl" data-aos="fade-up" data-aos-duration="1500">
           {t("SliderText1")}
           </h4>
-          <h2 className="xl:text-[60px] lg:text-[45px] text-[35px] font-semibold text-gray-800 flex md:text-start text-center">
+          <h2 className="xl:text-[60px] lg:text-[45px] text-[35px] font-semibold text-gray-800 flex md:text-start text-center" data-aos="fade-up" data-aos-duration="2000">
           {t("SliderText")}
           </h2>
-          <p className="text-lg">
+          <p className="text-lg" data-aos="fade-up" data-aos-duration="2000">
           {t("SliderParagraph")}
           </p>
-          <br />
-          <div className="showcase_buttons flex items-center gap-4 flex-wrap sm:justify-start justify-center">
+          <div className="showcase_buttons flex items-center gap-4 flex-wrap sm:justify-start justify-center mt-5" data-aos="fade-up" data-aos-duration="2000">
             <Link to="/appointment">
               <Button
                 className="slider1_buttons"
@@ -117,17 +124,17 @@ export const Showcase = () => {
         style={{ backgroundImage: `url(${slider2})` }}
       >
         <div className="slider_text xl:w-2/5 lg:w-2/4 md:w-9/12 absolute sm:top-[20%] sm:left-[10%] flex gap-2 flex-col sm:items-start items-center sm:justify-start px-1">
-          <h4 className="text-gray-600 font-semibold text-xl">
+          <h4 className="text-gray-600 font-semibold text-xl" data-aos="fade-up" data-aos-duration="1500">
           {t("SliderText1")}
           </h4>
-          <h2 className="xl:text-[60px] lg:text-[45px] text-[35px] font-semibold text-gray-800 flex md:text-start text-center">
+          <h2 className="xl:text-[60px] lg:text-[45px] text-[35px] font-semibold text-gray-800 flex md:text-start text-center" data-aos="fade-up" data-aos-duration="2000">
           {t("SliderText")}
           </h2>
-          <p className="text-lg">
+          <p className="text-lg" data-aos="fade-up" data-aos-duration="2000">
           {t("SliderParagraph")}
           </p>
-          <br />
-          <div className="showcase_buttons flex items-center gap-4 flex-wrap sm:justify-start justify-center">
+          {/* <br /> */}
+          <div className="showcase_buttons flex items-center gap-4 flex-wrap sm:justify-start justify-center mt-5" data-aos="fade-up" data-aos-duration="2000">
             <Button className="slider2_buttons" variant="destructive" size="lg">
               <span className="bg-white text-gray-800 rounded-full px-3 pb-0 lg:pb-2 text-4xl">
                 +
@@ -149,10 +156,6 @@ export const Showcase = () => {
     </div>
   );
 };
-
-
-
-
 
 
 
