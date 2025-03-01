@@ -1,6 +1,7 @@
 "use client";
 import { Bar, BarChart, CartesianGrid, Tooltip, XAxis } from "recharts";
 import { ChartContainer, ChartTooltipContent } from "@/ui/chart";
+import { useTranslation } from "react-i18next";
 
 import details from "/src/img/details.png";
 import back from "/src/img/back_icon.png";
@@ -57,6 +58,8 @@ const config = {
 function Details() {
   const [selectedTheme, setSelectedTheme] = useState("");
 
+  const { t } = useTranslation();
+
   function handleSubmit(event) {
     event.preventDefault();
     console.log("Selected Theme:", selectedTheme);
@@ -71,18 +74,18 @@ function Details() {
       >
         <div className="flex flex-col gap-10 sm:ml-10 md:ml-0 ml-10 ">
           <h3 className="font-bold text-xl opacity-50">
-            We are here for your care{" "}
+          {t("we_are_here")}
           </h3>
-          <h1 className="text-6xl font-bold text-[#223545]">Our Services</h1>
+          <h1 className="text-6xl font-bold text-[#223545]">{t("our_services")}</h1>
         </div>
 
         <div className="flex gap-1 font-semibold sm:ml-10 md:ml-0 ml-10 sm:mt-10 md:mt-0 mt-10 ">
           <Link to="/" className="opacity-50 text-gray-900 no-underline">
-            Home
+          {t("home")}
           </Link>
           <p>|</p>
           <Link to="/services" className="text-red-600 no-underline">
-            Details
+          {t("details")}
           </Link>
         </div>
       </div>
@@ -105,11 +108,11 @@ function Details() {
           />
           <div className="relative inset-0 flex flex-col justify-center items-start text-white mt-[-150px]">
             <p className="text-lg sm:text-xl lg:text-xl font-bold text-[#8fb569]">
-              DENTAL CARE
+            {t("DENTAL_CARE")}
             </p>
 
             <TextComponent type="heading">
-              We are here to help <br /> when you need us.
+            {t("We_are_here_to_help")}<br /> {t("when_you_need_us")}
             </TextComponent>
 
             {/* Decorative Lines */}
@@ -164,7 +167,7 @@ function Details() {
               </div>
               <div className="flex flex-col gap-3 ">
                 <p className="text-lg font-semibold text-black  hover:underline">
-                  PERSONAL CARE
+                  {t("PERSONAL_CARE")} 
                 </p>
                 <p className="flex flex-row gap-1 hover:underline">
                   <Check className="text-green-600" />
@@ -195,7 +198,7 @@ function Details() {
               </div>
               <div className="flex flex-col gap-3">
                 <p className="text-lg font-semibold text-black hover:underline">
-                  LIFESTYLE SUPPORT
+                  {t("LIFESTYLE_SUPPORT")}
                 </p>
                 <p className="flex flex-row gap-1 hover:underline">
                   <Check className="text-green-600" />
@@ -240,13 +243,13 @@ function Details() {
           <div>
             <div className="  flex flex-col justify-center items-start text-white mt-[50px] mb-10 ">
               <p className="text-lg sm:text-xl lg:text-xl font-bold text-[#8fb569]">
-                DOWNLOAD
+                {t("DOWNLOAD")}
               </p>
 
               <TextComponent type="heading">
-                FREE DOWNLOAD
+                {t("FREE_DOWNLOAD")}
                 <br />
-                RESOURCES
+                {t("RESOURCES")}
               </TextComponent>
 
               {/* Decorative Lines */}
@@ -346,7 +349,7 @@ function Details() {
         <div className="flex flex-col  w-[100%] sm:w-[100%]  md:w-[100%] lg:w-[450px]  h-full justify-center mx-auto md:mt-[100px] mb-[50px]">
           <div className="flex flex-col h-[660px] gap-10 justify-center w-[100%] px-10 shadow-lg border-t-[6px] border-[#8fb569]">
             <p className="text-2xl sm:text-4xl lg:text-5xl font-bold  text-[#223545]">
-              More Services
+              {t("More_Services")}
             </p>
             <ul className="flex flex-col gap-6 cursor-pointer font-semibold">
               <Link
@@ -355,7 +358,7 @@ function Details() {
                 className="flex flex-row items-center gap-3 hover:text-[#e12454]"
               >
                 <img src={service1} alt="Body Surgery" />
-                BODY SURGERY
+                {t("BODY_SURGERY")}
               </Link>
               <span className="w-100 h-[2px] bg-[#f2edff]"></span>
 
@@ -364,7 +367,7 @@ function Details() {
                 onClick={() => window.scrollTo(0, 0)}
                 className="flex flex-row items-center gap-3 hover:text-[#e12454]"
               >
-                <img src={service2} alt="Dental Care" /> DENTAL CARE
+                <img src={service2} alt="Dental Care" /> {t("DENTALlCARE")}
               </Link>
               <span className="w-100 h-[2px] bg-[#f2edff]"></span>
 
@@ -373,7 +376,7 @@ function Details() {
                 onClick={() => window.scrollTo(0, 0)}
                 className="flex flex-row items-center gap-3 hover:text-[#e12454]"
               >
-                <img src={service3} alt="Eye Care" /> EYE CARE
+                <img src={service3} alt="Eye Care" /> {t("EYE_CARE")}
               </Link>
               <span className="w-100 h-[2px] bg-[#f2edff]"></span>
 
@@ -382,7 +385,7 @@ function Details() {
                 onClick={() => window.scrollTo(0, 0)}
                 className="flex flex-row items-center gap-3 hover:text-[#e12454]"
               >
-                <img src={service4} alt="Blood Cancer" /> BLOOD CANCER
+                <img src={service4} alt="Blood Cancer" /> {t("BLOOD_CANCER")}
               </Link>
               <span className="w-100 h-[2px] bg-[#f2edff]"></span>
 
@@ -391,7 +394,7 @@ function Details() {
                 onClick={() => window.scrollTo(0, 0)}
                 className="flex flex-row items-center gap-3 hover:text-[#e12454]"
               >
-                <img src={service5} alt="Neurology Surgery" /> NEUROLOGY SURGERY
+                <img src={service5} alt="Neurology Surgery" /> {t("NEUROLOGY_SURGERY")}
               </Link>
               <span className="w-100 h-[2px] bg-[#f2edff]"></span>
 
@@ -400,7 +403,7 @@ function Details() {
                 onClick={() => window.scrollTo(0, 0)}
                 className="flex flex-row items-center gap-3 ml-1 hover:text-[#e12454]"
               >
-                <img src={service6} alt="Allergic Issue" /> ALLERGIC ISSUE
+                <img src={service6} alt="Allergic Issue" /> {t("ALLERGIC_ISSUE")}
               </Link>
             </ul>
           </div>
@@ -411,7 +414,7 @@ function Details() {
               className="mt-6 flex flex-col  m-auto w-full sm:w-[auto] sm:m-auto  md:m-auto lg:m-auto "
             >
               <p className="text-2xl sm:text-3xl lg:text-4xl font-bold  text-[#223545] mb-10 mx-auto">
-                Get Some Advice?
+                {t("advice")}
               </p>
 
               <CustomInput
@@ -462,11 +465,12 @@ function Details() {
               >
                 {" "}
                 <Button
+                
                   variant="default"
                   size="differentSize"
                   className="ml-[45px]  mx-auto sm:mx-auto md:mx-auto lg:mx-auto item-center sm:item-center md:item-center lg:item-center flex justify-center"
-                >
-                  REQUEST FOR CALL
+                > 
+                  {t("REQUEST_FOR_CALL")}
                 </Button>{" "}
               </Link>
             </form>
@@ -486,7 +490,7 @@ function Details() {
                 className="pointer-events-auto"
               >
                 <Button variant="default" showPlus={false} size="contactCustom">
-                  CONTACT US
+                  {t("CONTACT_US")}
                 </Button>
               </Link>
             </div>
