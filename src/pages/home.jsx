@@ -1,15 +1,13 @@
 import { useTranslation } from "react-i18next";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
-AOS.init(); 
-
 import { useState, useEffect } from "react";
 import { ArrowLeft, ArrowRight, Play } from "lucide-react";
 import slider1 from "../assets/images/slider1.jpg";
 import slider2 from "../assets/images/slider2.jpg";
 import { Button } from "../ui/button.jsx";
 import { Link } from "react-router-dom";
+
 
 export const Model = ({ isOpen, onClose }) => {
   if (!isOpen) return null; 
@@ -35,6 +33,7 @@ export const Model = ({ isOpen, onClose }) => {
   );
 };
 
+
 export const Showcase = () => {
   const [activeSlide, setActiveSlide] = useState(1);
   const [Arrows, setArrows] = useState(false);
@@ -47,10 +46,13 @@ export const Showcase = () => {
     AOS.refresh();
   };
 
-
   useEffect(() => {
-    AOS.init();  
+    AOS.init({
+      duration: 2000, 
+      once: true, 
+    });
   }, []);
+  
 
 
   return (
@@ -83,34 +85,26 @@ export const Showcase = () => {
         }`}
         style={{ backgroundImage: `url(${slider1})` }}
       >
-        <div className="slider_text xl:w-2/5 lg:w-2/4 md:w-9/12 absolute sm:top-[20%] sm:left-[10%] flex gap-2 flex-col sm:items-start items-center sm:justify-start px-1">
-          <h4 className="text-gray-600 font-semibold text-xl" data-aos="fade-up" data-aos-duration="1500">
+        <div className="slider_text xl:w-2/5 lg:w-2/4 md:w-9/12 absolute sm:top-[20%] sm:left-[10%] flex flex-col sm:items-start items-center sm:justify-start px-1">
+          <h4 className="text-gray-600 font-semibold text-xl text-center" data-aos="fade-up" data-aos-duration="1500">
           {t("SliderText1")}
           </h4>
-          <h2 className="xl:text-[60px] lg:text-[45px] text-[35px] font-semibold text-gray-800 flex md:text-start text-center" data-aos="fade-up" data-aos-duration="2000">
+          <h2 className="xl:text-[60px] lg:text-[45px] text-[35px] font-semibold text-gray-800 flex lg:text-start sm:text-start text-center" data-aos="fade-up" data-aos-duration="2000">
           {t("SliderText")}
           </h2>
-          <p className="text-lg" data-aos="fade-up" data-aos-duration="2000">
+          <p className="text-lg sm:text-start text-center" data-aos="fade-up" data-aos-duration="2000">
           {t("SliderParagraph")}
           </p>
-          <div className="showcase_buttons flex items-center gap-4 flex-wrap sm:justify-start justify-center mt-5" data-aos="fade-up" data-aos-duration="2000">
+          <div className="showcase_buttons flex items-center mt-3 gap-4 flex-wrap sm:justify-start justify-center" data-aos="fade-up" data-aos-duration="2000">
             <Link to="/appointment">
-              <Button
-                className="slider1_buttons"
-                variant="destructive"
-                size="lg"
-              >
-                <span className="bg-white text-gray-800 rounded-full px-3 pb-0 lg:pb-2 text-4xl">
-                  +
-                </span>
+              <Button className="slider1_buttons" variant="destructive"
+                size="lg">
+                <span className="bg-white text-gray-800 rounded-full px-3 md:pb-1 pb-2 text-4xl"> + </span>
                 <h2>{t("ButtonText")}</h2>
               </Button>
             </Link>
-            <Button
-              variant="outline"
-              className="w-auto h-auto py-6 px-6"
-              onClick={() => setModalOpen(true)}
-            >
+            <Button variant="outline" className="w-auto h-auto py-6 px-6"
+              onClick={() => setModalOpen(true)}>
               <Play fill="white" />
             </Button>
           </div>
@@ -123,20 +117,20 @@ export const Showcase = () => {
         }`}
         style={{ backgroundImage: `url(${slider2})` }}
       >
-        <div className="slider_text xl:w-2/5 lg:w-2/4 md:w-9/12 absolute sm:top-[20%] sm:left-[10%] flex gap-2 flex-col sm:items-start items-center sm:justify-start px-1">
-          <h4 className="text-gray-600 font-semibold text-xl" data-aos="fade-up" data-aos-duration="1500">
+        <div className="slider_text xl:w-2/5 lg:w-2/4 md:w-9/12 absolute sm:top-[20%] sm:left-[10%] flex flex-col sm:items-start items-center sm:justify-start px-1">
+          <h4 className="text-gray-600 font-semibold text-xl sm:text-start text-center" data-aos="fade-up" data-aos-duration="1500">
           {t("SliderText1")}
           </h4>
           <h2 className="xl:text-[60px] lg:text-[45px] text-[35px] font-semibold text-gray-800 flex md:text-start text-center" data-aos="fade-up" data-aos-duration="2000">
           {t("SliderText")}
           </h2>
-          <p className="text-lg" data-aos="fade-up" data-aos-duration="2000">
+          <p className="sm:text-lg text-base sm:text-start text-center" data-aos="fade-up" data-aos-duration="2000">
           {t("SliderParagraph")}
           </p>
           {/* <br /> */}
-          <div className="showcase_buttons flex items-center gap-4 flex-wrap sm:justify-start justify-center mt-5" data-aos="fade-up" data-aos-duration="2000">
+          <div className="showcase_buttons flex items-center gap-4 flex-wrap sm:justify-start justify-center mt-3" data-aos="fade-up" data-aos-duration="2000">
             <Button className="slider2_buttons" variant="destructive" size="lg">
-              <span className="bg-white text-gray-800 rounded-full px-3 pb-0 lg:pb-2 text-4xl">
+              <span className="bg-white text-gray-800 rounded-full px-3 md:pb-1 pb-2 text-4xl">
                 +
               </span>
               <h2>{t("ButtonText")}</h2>
@@ -179,7 +173,7 @@ export const Homepage_Section1 = () => {
         </div>
       </div>
 
-      <div className="Section1_text w-9/12 lg:w-1/2 text-center md:text-left flex lg:items-start items-center flex-col gap-2">
+      <div className="Section1_text w-11/12 lg:w-1/2 text-center md:text-left flex lg:items-start items-center flex-col gap-2">
         <h4 className="text-lg font-semibold text-gray-700">{t("Section1_text")}</h4>
         <h2 className="text-4xl xl:text-6xl xl:w-10/12 lg:text-5xl md:text-6xl text-slate-800 font-bold mt-2 lg:text-start text-center">
           {t("ShortStoryTitle")}
@@ -241,9 +235,9 @@ export const HomePage_Cards = () => {
       </div>
 
       <div className="flex flex-row flex-wrap xl:gap-28 lg:gap-18 md:gap-16 gap-10 bg-[#f4f9fc] items-center justify-center w-auto h-auto  pb-20">
-        <div className="HomePage_Card sm:w-80 w-9/12 sm:h-96 h-full bg-white flex flex-col items-center justify-center mt-20 sm:p-12 p-6 gap-2 rounded-xl hover:shadow-2xl shadow-gray-700">
+        <div className="HomePage_Card sm:w-80 w-11/12 sm:h-96 h-full bg-white flex flex-col items-center justify-center mt-20 sm:p-12 p-4 gap-2 rounded-xl hover:shadow-2xl shadow-gray-700">
           <img src={service1} alt="" />
-          <h3 className="text-2xl font-bold text-slate-700 hover:text-lime-600 duration-700">
+          <h3 className="text-2xl font-bold text-center text-slate-700 hover:text-lime-600 duration-700">
             <Link to="/services" onClick={() => window.scrollTo(0, 0)}>{t("HomePage_Card1_title")}</Link>
           </h3>
           <p className="text-center text-slate-700">
@@ -256,9 +250,9 @@ export const HomePage_Cards = () => {
           </Link>
         </div>
 
-        <div className="HomePage_Card sm:w-80 w-9/12 h-96 bg-white flex flex-col items-center justify-center mt-20 p-12 gap-2  rounded-xl hover:shadow-2xl ">
+        <div className="HomePage_Card sm:w-80 w-11/12 h-96 bg-white flex flex-col items-center justify-center mt-20 sm:p-12 p-4 gap-2  rounded-xl hover:shadow-2xl ">
           <img src={service2} alt="" />
-          <h3 className="text-2xl font-bold text-slate-700 hover:text-lime-600 duration-700">
+          <h3 className="text-2xl font-bold text-center text-slate-700 hover:text-lime-600 duration-700">
             <Link to="/services" onClick={() => window.scrollTo(0, 0)}>{t("HomePage_Card2_title")}</Link>
           </h3>
           <p className="text-center text-slate-700">
@@ -270,9 +264,9 @@ export const HomePage_Cards = () => {
           {t("HomePage_Card2_btn")}
           </Link>
         </div>
-        <div className="HomePage_Card sm:w-80 w-9/12 h-96 bg-white flex flex-col items-center justify-center mt-20 p-12 gap-2  rounded-xl hover:shadow-2xl ">
+        <div className="HomePage_Card sm:w-80 w-11/12 h-96 bg-white flex flex-col items-center justify-center mt-20 sm:p-12 p-4 gap-2  rounded-xl hover:shadow-2xl ">
           <img src={service3} alt="" />
-          <h3 className="text-2xl font-bold text-slate-700 hover:text-lime-600 duration-700">
+          <h3 className="text-2xl font-bold text-center text-slate-700 hover:text-lime-600 duration-700">
             <Link to="/services" onClick={() => window.scrollTo(0, 0)}>{t("HomePage_Card3_title")}</Link>
           </h3>
           <p className="text-center text-slate-700">
@@ -285,9 +279,9 @@ export const HomePage_Cards = () => {
           </Link>
         </div>
 
-        <div className="HomePage_Card sm:w-80 w-9/12 h-96 bg-white flex flex-col items-center justify-center mt-20 p-12 gap-2  rounded-xl hover:shadow-2xl ">
+        <div className="HomePage_Card sm:w-80 w-11/12 h-96 bg-white flex flex-col items-center justify-center mt-20 sm:p-12 p-4 gap-2  rounded-xl hover:shadow-2xl ">
           <img src={service4} alt="" />
-          <h3 className="text-2xl font-bold text-slate-700 hover:text-lime-600 duration-700">
+          <h3 className="text-2xl font-bold text-center text-slate-700 hover:text-lime-600 duration-700">
             <Link to="/services" onClick={() => window.scrollTo(0, 0)}>{t("HomePage_Card4_title")}</Link>
           </h3>
           <p className="text-center text-slate-700">
@@ -300,7 +294,7 @@ export const HomePage_Cards = () => {
           </Link>
         </div>
 
-        <div className="HomePage_Card sm:w-80 w-9/12 h-96 bg-white flex flex-col items-center justify-center mt-20 p-12 gap-2  rounded-xl hover:shadow-2xl ">
+        <div className="HomePage_Card sm:w-80 w-11/12 h-96 bg-white flex flex-col items-center justify-center mt-20 sm:p-12 p-4 gap-2  rounded-xl hover:shadow-2xl ">
           <img src={service5} alt="" />
           <h3 className="text-2xl font-bold text-center text-slate-700 hover:text-lime-600 duration-700">
             <Link to="/services" onClick={() => window.scrollTo(0, 0)}>{t("HomePage_Card5_title")}</Link>
@@ -315,7 +309,7 @@ export const HomePage_Cards = () => {
           </Link>
         </div>
 
-        <div className="HomePage_Card sm:w-80 w-9/12 h-96 bg-white flex flex-col items-center justify-center mt-20 p-12 gap-2  rounded-xl hover:shadow-2xl ">
+        <div className="HomePage_Card sm:w-80 w-11/12 h-96 bg-white flex flex-col items-center justify-center mt-20 sm:p-12 p-4 gap-2  rounded-xl hover:shadow-2xl ">
           <img src={service6} alt="" />
           <h3 className="text-2xl font-bold text-center text-slate-700 hover:text-lime-600 duration-700">
             <Link to="/services" onClick={() => window.scrollTo(0, 0)}>{t("HomePage_Card6_title")}</Link>
@@ -487,7 +481,7 @@ export const Accessible = () => {
       className="bg-slate-900 text-white w-full h-full py-20  xl:px-12 px-5 mb-12 flex justify-between items-center lg:flex-nowrap flex-wrap xl:gap-15 gap-10"
       style={{ backgroundImage: `url(${background})` }}
     >
-      <div className="flex flex-col gap-5 lg:w-[80%] md:w-[50%] w-full">
+      <div className="flex flex-col gap-5 lg:w-[80%] w-full">
         <h4 className="text-gray-600 text-xl font-bold">
        {t("HomePage_Section4_Available")}
         </h4>
@@ -498,7 +492,7 @@ export const Accessible = () => {
         <Link to="/appointment" onClick={() => window.scrollTo(0, 0)}>
           <Button
             className="sm:w-72 w-auto border-none" variant="destructive" size="lg">
-            <span className="bg-white text-gray-800 rounded-full px-3 pb-0 lg:pb-2 text-4xl">
+            <span className="bg-white text-gray-800 rounded-full px-3 md:pb-1 pb-2 text-4xl">
               +
             </span>
             <h2>{t("ButtonText")}</h2>
@@ -547,15 +541,15 @@ export const Consultant = () => {
 
   return (
     <div className="bg-slate-900 w-full h-full mb-20 flex flex-col items-center justify-center py-20 gap-8">
-      <h4 className="text-gray-600 font-bold">
+      <h4 className="text-gray-600 font-bold sm:text-start text-center">
     {t("HomePage_Section5_StayHealthy")}
       </h4>
-      <p className="text-white xl:text-6xl lg:text-5xl text-4xl w-4/6 text-center">
+      <p className="text-white xl:text-6xl lg:text-5xl sm:text-4xl text-3xl w-5/6 text-center">
       {t("HomePage_Section5_Title")}
       </p>
       <Link to="/appointment" onClick={() => window.scrollTo(0, 0)}>
         <Button variant="outline" size="lg">
-          <span className="bg-white text-gray-800 rounded-full px-3 pb-0 lg:pb-2 text-4xl">
+          <span className="bg-white text-gray-800 rounded-full px-3 md:pb-1 pb-2 text-4xl">
             +
           </span>
           <h2>{t("HomePage_Section5_Btn")}</h2>
@@ -615,21 +609,21 @@ export const HomePage_News = () => {
 
   return(
     <div className="HomePage_News flex items-center justify-center gap-10 mb-20 flex-wrap">
-      <div className="NewsCard1 xl:w-1/4 md:w-[40%] w-9/12">
+      <div className="NewsCard1 xl:w-1/4 md:w-[40%] w-9/12 sm:text-start text-center">
         <img src={News1} alt="" className="w-full h-full" />
         <Link to="/blog" className="flex gap-5 text-rose-600 font-semibold py-1 uppercase"><h4>{t("HomePage_Section7_Table1")},</h4><h4>{t("HomePage_Section7_Table2")}</h4></Link>
         <Link to="/blog"><h2 className="text-2xl font-bold text-slate-800 hover:text-rose-600">{t("HomePage_Section7_Table2_Title")}</h2></Link>
         <p>{t("HomePage_Section7_Table2_Paragraph")}</p>
       </div>
 
-      <div className="NewsCard2 xl:w-1/4 md:w-[40%] w-9/12">
+      <div className="NewsCard2 xl:w-1/4 md:w-[40%] w-9/12 sm:text-start text-center">
       <img src={News2} alt="" className="w-full h-full" />
       <Link to="/blog" className="flex gap-5 text-rose-600 font-semibold py-1 uppercase"><h4>{t("HomePage_Section7_Table1")},</h4><h4>{t("HomePage_Section7_Table2")}</h4></Link>
         <Link to="/blog"><h2 className="text-2xl font-bold text-slate-800 hover:text-rose-600">{t("HomePage_Section7_Table2_Title")}</h2></Link>
         <p>{t("HomePage_Section7_Table2_Paragraph")}</p>
       </div>
 
-      <div className="NewsCard3 xl:w-1/4 w-9/12 border-2 flex flex-col gap-4 border-violet-200">
+      <div className="NewsCard3 xl:w-1/4 w-9/12 border-2 flex flex-col gap-4 border-violet-200 sm:text-start text-center">
         <div className="flex flex-col gap-2 px-8 pt-7">
           <Link to="/blog"><p className="text-2xl font-semibold text-slate-800 hover:text-rose-600 hover:cursor-pointer">{t("HomePage_Section7_Table2_Paragraph1")}</p></Link>
           <div className="flex gap-4 border-b-2 border-violet-200 pb-5 sm:flex-nowrap flex-wrap">
@@ -658,8 +652,6 @@ export const HomePage_News = () => {
 
 
 import { Phone } from "lucide-react";
-import { changeLanguage } from "i18next";
-
 
 export const Last_Button = () => {
 
@@ -679,11 +671,6 @@ export const Last_Button = () => {
     </div>
   )
 }
-
-
-
-
-
 
 
 export const Home = () => {
